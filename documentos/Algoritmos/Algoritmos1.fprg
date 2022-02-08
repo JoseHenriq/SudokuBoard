@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JoseHenrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-10 06:48:40 "/>
+        <attribute name="created" value="Sm9zZUhlbnJpcXVlO01BUVVJTkEyOzIwMjEtMTEtMTA7IjExOjMwOjE5ICI7Mjk4Ng=="/>
+        <attribute name="edited" value="Sm9zZUhlbnJpcXVlO01BUVVJTkEyOzIwMjEtMTEtMTA7IjA2OjQ4OjQwICI7NzszMTA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="Opcao"/>
+            <if expression="Opcao = &quot;New game&quot;">
+                <then>
+                    <call expression="newGame(opcao)"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+    <function name="geraJogo" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="linhaQuad" type="Integer" array="True" size="9"/>
+            <declare name="coluna, linha, contaQuad, idxLinhaQuad" type="Integer" array="False" size=""/>
+            <assign variable="linha" expression="coluna = idxLinhaQuad = contaQuad = 0"/>
+            <while expression="contaQuad &lt; 9">
+                <if expression="contaQuad = 0 OR contaQuad = 4 OR contaQuad = 8">
+                    <then>
+                        <declare name="arNumQuad" type="Integer" array="True" size="9"/>
+                        <declare name="contaNum, numero, numRnd" type="Integer" array="False" size=""/>
+                        <assign variable="contaNum" expression="0"/>
+                        <while expression="contaNum &lt; 9">
+                            <comment text="Gera um n&#250;mero aleat&#243;rio que ainda n&#227;o esteja no quadrado."/>
+                            <declare name="flagNumExiste" type="Boolean" array="False" size=""/>
+                            <assign variable="flagNumOk" expression="false"/>
+                            <while expression="flagNumExiste = false">
+                                <comment text="Gera o numero aleat&#243;rio de 0 a 8."/>
+                                <assign variable="numRnd" expression="Random(9)"/>
+                                <comment text="Muda o n&#250;mero para 1 a 9."/>
+                                <assign variable="numero" expression="numRnd + 1"/>
+                                <comment text="Verifica se ele j&#225; existe no quadrado; se n&#227;o existir, insere-o."/>
+                                <declare name="idxNumQuad" type="Integer" array="False" size=""/>
+                                <assign variable="idxNumQuad" expression="0"/>
+                                <while expression="idxNumQuad &lt; size(arNumQuad) &amp;&amp; flagNumExiste = false">
+                                    <if expression="numero = arNumQuad[idxNumQuad]">
+                                        <then>
+                                            <assign variable="flagNumExiste" expression="true"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="idxNumQuad" expression="idxNumQuad + 1"/>
+                                        </else>
+                                    </if>
+                                </while>
+                            </while>
+                            <assign variable="arNumQuad[idxNumQuad]" expression="numero"/>
+                            <assign variable="contaNumQuad" expression="contaNumQuad + 1"/>
+                        </while>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="contaQuad" expression="contaQuad + 1"/>
+            </while>
+            <assign variable="contaQuad" expression="0"/>
+            <if expression="contaQuad &lt; 9">
+                <then>
+                    <assign variable="idxNumQuad" expression="0"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="" newline="True"/>
+        </body>
+    </function>
+    <function name="newGame" type="None" variable="">
+        <parameters>
+            <parameter name="opcao" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ar1" type="Integer" array="True" size="81"/>
+            <declare name="quadrado" type="Integer" array="True" size="9"/>
+            <assign variable="coluna" expression="0"/>
+            <assign variable="idxQuadrado" expression="0"/>
+            <call expression="geraJogo"/>
+        </body>
+    </function>
+</flowgorithm>

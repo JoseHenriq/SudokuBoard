@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/drawable/ic_moreWhite.xml" value="0.2203125" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/drawable/ic_morebranco.xml" value="0.2203125" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/layout/activity_adaptar.xml" value="0.22" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/layout/activity_jogar.xml" value="0.25" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/layout/alertdialog_paramJogo.xml" value="0.33" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/layout/alertdialog_param_jogo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/layout/inflate_ivnumdisp.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/layout/jogos_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/layout/toolbar.xml" value="0.1" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/menu/menu_adaptar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/menu/menu_main_sub.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/menu/menu_tresmore.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/menu/meu_submenu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku/app/src/main/res/xml/xml.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku_#9.0.158/app/src/main/res/layout/activity_adaptar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku_#9.0.158/app/src/main/res/layout/activity_jogar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku_#9.0.158/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku_#9.0.158/app/src/main/res/layout/alertdialog_param_jogo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Kotlin/Sudoku_#9.0.158/app/src/main/res/layout/jogos_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/layout/activity_adaptar.xml" value="0.20416666666666666" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/layout/activity_jogar.xml" value="0.33" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/layout/alertdialog_paramJogo.xml" value="0.5" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/layout/alertdialog_param_jogo.xml" value="0.20416666666666666" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/layout/jogos_item.xml" value="0.67" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/menu/menu_adaptar.xml" value="0.20416666666666666" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/menu/menu_adaptar_sub.xml" value="0.1" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/menu/menu_main_sub.xml" value="0.20416666666666666" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/menu/menu_sudoku.xml" value="0.20416666666666666" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/menu/menu_tresmore.xml" value="0.20416666666666666" />
+        <entry key="..\:/JoseHenrique/Estudos/Sudoku/app/src/main/res/menu/meu_submenu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

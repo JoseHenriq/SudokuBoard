@@ -1,0 +1,12 @@
+1- Instalar
+
+1.1- desinstalar a versão instalada;
+1.2- instalar a nova versão;
+1.2.1- observar durante a instalação:
+
+
+2- Iniciar
+
+
+
+3- 

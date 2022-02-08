@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<setup>
+	<header>
+		<id>modeloArqXmlSudokuSetUp.txt</id>
+	</header>
+	<body>
+		<limite_erros>-1</limite_erros>
+		<limite_tempo>00:00</limite_tempo>
+		<mostra_nums_iguais>false</mostra_nums_iguais>
+	</body>
+</setup>

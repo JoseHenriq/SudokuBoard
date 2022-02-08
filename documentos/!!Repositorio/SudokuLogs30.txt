@@ -1,0 +1,3081 @@
+================================================================================
+--------------------------------------------------------------------------------
+
+================================================================================
+Commit9.0.165- Manutenção - px
+================================================================================
+
+- não prmite digitar o '-' na edição do limite de erro; 
+  - mudado de 'number' para 'number signed'
+- implementado a não validação de 0 como limite de erros;
+
+================================================================================
+Commit9.0.164- Versão 9- QA
+================================================================================
+
+================================================================================
+Commit9.0.163- Versão 9- QA
+================================================================================
+2022-01-22 16:18:09.138 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-22 16:18:09.138 D: -> Dimensões screen:
+2022-01-22 16:18:09.143 D:    - largura  :  720,00 px (2,44")
+2022-01-22 16:18:09.146 D:    - altura   :  1280,00 px (4,33")
+2022-01-22 16:18:09.148 D:    - Diagonal :  4,97"
+2022-01-22 16:18:09.149 D:    - fatorlargura :  1,00
+2022-01-22 16:18:09.151 D:    - fatorAltura  :  1,00
+2022-01-22 16:18:09.151 D: -> BaseOS: 8.0.0 SDK_INT: API26
+--------------------------------------------------------------------------------
+2022-01-22 16:18:09.259 D: -> main Verifica permissões
+2022-01-22 16:18:09.260 D:    - Checa se permissões Ok
+2022-01-22 16:18:09.260 D:      - android.permission.INTERNET: true
+2022-01-22 16:18:09.261 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-22 16:18:09.261 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-22 16:18:09.276 D: Permission Granted!
+--------------------------------------------------------------------------------
+2022-01-22 16:18:09.276 D: -> Registra activity for result
+2022-01-22 16:18:09.293 D: -> leitura arquivo setup
+2022-01-22 16:18:09.302 D:    - limite: -1
+2022-01-22 16:18:09.302 D:    - limite: 00:00
+2022-01-22 16:18:09.302 D:    - mostra nums iguais: true
+--------------------------------------------------------------------------------
+2022-01-22 16:18:09.303 D: -> atualiza titles dos submenus Ok!
+2022-01-22 16:18:09.751 D: -> atualiza submenus Ok!
+2022-01-22 16:18:09.751 D: -> Atualiza arquivo de setup
+2022-01-22 16:18:09.751 D:    - lê arquivo modelo modelo_arq_xml_sudoku_setup
+2022-01-22 16:18:09.754 D:      <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+2022-01-22 16:18:09.754 D: -> Prepara conteudo a salvar conforme o modelo lido.
+2022-01-22 16:18:09.754 D:    <?xml version="1.0" encoding="utf-8"?><setup><header><id>modeloArqXmlSudokuSetUp.txt</id></header><body><limite_erros>-1</limite_erros><limite_tempo>00:00</limite_tempo><mostra_nums_iguais>true</mostra_nums_iguais></body></setup>
+2022-01-22 16:18:09.773 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/documentos/SudokuSetUp.txt OK!
+--------------------------------------------------------------------------------
+
+2022-01-22 16:13:05.132 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-22 16:13:05.132 D: -> Dimensões screen:
+2022-01-22 16:13:05.142 D:    - largura  :  720,00 px (2,44")
+2022-01-22 16:13:05.145 D:    - altura   :  1280,00 px (4,33")
+2022-01-22 16:13:05.148 D:    - Diagonal :  4,97"
+2022-01-22 16:13:05.150 D:    - fatorlargura :  1,00
+2022-01-22 16:13:05.152 D:    - fatorAltura  :  1,00
+2022-01-22 16:13:05.152 D: -> BaseOS: 8.0.0 SDK_INT: API26
+2022-01-22 16:13:05.363 D: -> main Verifica permissões
+2022-01-22 16:13:05.363 D:    - Checa se permissões Ok
+2022-01-22 16:13:05.364 D:      - android.permission.INTERNET: true
+2022-01-22 16:13:05.365 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-22 16:13:05.366 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-22 16:13:05.392 D: Permission Granted!
+2022-01-22 16:13:05.392 D: -> Registra activity for result
+2022-01-22 16:13:05.419 D: -> leitura arquivo setup
+2022-01-22 16:13:05.433 D:    - limite: -1
+2022-01-22 16:13:05.433 D:    - limite: 00:00
+2022-01-22 16:13:05.434 D:    - mostra nums iguais: true
+2022-01-22 16:13:05.434 D: -> atualiza titles dos submenus Ok!
+2022-01-22 16:13:06.318 D: -> atualiza submenus Ok!
+2022-01-22 16:13:06.319 D: -> Atualiza arquivo de setup
+2022-01-22 16:13:06.319 D:    - lê arquivo modelo modelo_arq_xml_sudoku_setup
+2022-01-22 16:13:06.325 D:      <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+2022-01-22 16:13:06.325 D: -> Prepara conteudo a salvar conforme o modelo lido.
+2022-01-22 16:13:06.326 D:    <?xml version="1.0" encoding="utf-8"?><setup><header><id>modeloArqXmlSudokuSetUp.txt</id></header><body><limite_erros>-1</limite_erros><limite_tempo>00:00</limite_tempo><mostra_nums_iguais>true</mostra_nums_iguais></body></setup>
+2022-01-22 16:13:06.366 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/documentos/SudokuSetUp.txt OK!
+2022-01-22 16:13:21.830 D: -> Tap em actionBar / Ajusta limite contagem de erros
+2022-01-22 16:13:38.872 D: -> Novos ajustes:
+2022-01-22 16:13:38.873 D:    - erros: 2
+2022-01-22 16:13:38.876 D:    - tempo: 10:00
+2022-01-22 16:13:38.877 D: -> atualiza submenus Ok!
+2022-01-22 16:13:38.877 D: -> Atualiza arquivo de setup
+2022-01-22 16:13:38.877 D:    - lê arquivo modelo modelo_arq_xml_sudoku_setup
+2022-01-22 16:13:38.881 D:      <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+    <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+2022-01-22 16:13:38.881 D: -> Prepara conteudo a salvar conforme o modelo lido.
+2022-01-22 16:13:38.882 D:    <?xml version="1.0" encoding="utf-8"?><setup><header><id>modeloArqXmlSudokuSetUp.txt</id></header><body><limite_erros>2</limite_erros><limite_tempo>10:00</limite_tempo><mostra_nums_iguais>true</mostra_nums_iguais></body></setup>
+    <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+2022-01-22 16:13:38.908 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/documentos/SudokuSetUp.txt OK!
+2022-01-22 16:13:47.169 D: -> Tap no btnGeraJogo
+2022-01-22 16:13:47.281 D:    - Nível: Fácil (20) Subnível: 0
+2022-01-22 16:13:47.346 D: -> Jogo 1: válido!
+2022-01-22 16:13:47.347 D: linha 0 : 3, 5, 6, 4, 8, 2, 7, 9, 1
+2022-01-22 16:13:47.347 D: linha 1 : 9, 7, 1, 5, 6, 3, 4, 2, 8
+2022-01-22 16:13:47.348 D: linha 2 : 2, 4, 8, 9, 1, 7, 3, 5, 6
+2022-01-22 16:13:47.348 D: linha 3 : 7, 2, 4, 1, 5, 6, 9, 8, 3
+2022-01-22 16:13:47.349 D: linha 4 : 1, 6, 9, 7, 3, 8, 2, 4, 5
+2022-01-22 16:13:47.349 D: linha 5 : 8, 3, 5, 2, 4, 9, 1, 6, 7
+2022-01-22 16:13:47.349 D: linha 6 : 6, 8, 2, 3, 7, 4, 5, 1, 9
+2022-01-22 16:13:47.350 D: linha 7 : 4, 1, 3, 8, 9, 5, 6, 7, 2
+2022-01-22 16:13:47.350 D: linha 8 : 5, 9, 7, 6, 2, 1, 8, 3, 4
+2022-01-22 16:13:47.353 D: -> Jogo gerado preparado:
+2022-01-22 16:13:47.353 D: linha 0 : 3, 5, 6, 4, 0, 2, 7, 9, 0
+2022-01-22 16:13:47.353 D: linha 1 : 9, 7, 0, 5, 6, 3, 0, 2, 8
+2022-01-22 16:13:47.353 D: linha 2 : 0, 4, 8, 0, 1, 7, 0, 5, 6
+2022-01-22 16:13:47.353 D: linha 3 : 0, 2, 4, 1, 5, 6, 9, 8, 0
+2022-01-22 16:13:47.353 D: linha 4 : 1, 0, 9, 0, 3, 8, 2, 4, 5
+2022-01-22 16:13:47.353 D: linha 5 : 0, 3, 5, 2, 4, 0, 1, 0, 7
+2022-01-22 16:13:47.353 D: linha 6 : 0, 8, 2, 3, 7, 0, 5, 1, 9
+2022-01-22 16:13:47.353 D: linha 7 : 4, 1, 0, 8, 0, 5, 6, 0, 0
+2022-01-22 16:13:47.353 D: linha 8 : 5, 9, 7, 6, 2, 1, 8, 3, 4
+2022-01-22 16:13:47.358 D: -> Gabarito gerado pelo Backtracking:
+2022-01-22 16:13:47.358 D: linha 0 : 3, 5, 6, 4, 8, 2, 7, 9, 1
+2022-01-22 16:13:47.358 D: linha 1 : 9, 7, 1, 5, 6, 3, 4, 2, 8
+2022-01-22 16:13:47.358 D: linha 2 : 2, 4, 8, 9, 1, 7, 3, 5, 6
+2022-01-22 16:13:47.358 D: linha 3 : 7, 2, 4, 1, 5, 6, 9, 8, 3
+2022-01-22 16:13:47.358 D: linha 4 : 1, 6, 9, 7, 3, 8, 2, 4, 5
+2022-01-22 16:13:47.358 D: linha 5 : 8, 3, 5, 2, 4, 9, 1, 6, 7
+2022-01-22 16:13:47.358 D: linha 6 : 6, 8, 2, 3, 7, 4, 5, 1, 9
+2022-01-22 16:13:47.358 D: linha 7 : 4, 1, 3, 8, 9, 5, 6, 7, 2
+2022-01-22 16:13:47.358 D: linha 8 : 5, 9, 7, 6, 2, 1, 8, 3, 4
+2022-01-22 16:13:47.360 D: -> Quantidade de clues:   20
+2022-01-22 16:13:47.360 D: -> Nível jogo gerado: Fácil
+2022-01-22 16:13:47.360 D:     - subnível: 0
+2022-01-22 16:13:51.207 D: -> onClick rbJogoMuitoDificil
+2022-01-22 16:13:53.527 D: -> Tap no btnAdaptaJogo
+2022-01-22 16:13:53.530 D:    - rbAdapta: Preset
+2022-01-22 16:13:57.707 D: -> "Cancela" was pressed
+2022-01-22 16:13:58.491 D: -> Tap no btnGeraJogo
+2022-01-22 16:13:58.626 D:    - Nível: Muito difícil (50) Subnível: 0
+2022-01-22 16:13:58.637 D: -> Jogo 1: válido!
+2022-01-22 16:13:58.638 D: linha 0 : 6, 3, 7, 4, 8, 1, 2, 9, 5
+2022-01-22 16:13:58.638 D: linha 1 : 2, 5, 8, 6, 9, 7, 1, 4, 3
+2022-01-22 16:13:58.638 D: linha 2 : 1, 9, 4, 3, 2, 5, 7, 8, 6
+2022-01-22 16:13:58.638 D: linha 3 : 4, 1, 5, 2, 3, 6, 8, 7, 9
+2022-01-22 16:13:58.638 D: linha 4 : 8, 7, 9, 5, 1, 4, 3, 6, 2
+2022-01-22 16:13:58.638 D: linha 5 : 3, 6, 2, 8, 7, 9, 4, 5, 1
+2022-01-22 16:13:58.638 D: linha 6 : 7, 4, 6, 1, 5, 3, 9, 2, 8
+2022-01-22 16:13:58.638 D: linha 7 : 5, 2, 3, 9, 4, 8, 6, 1, 7
+2022-01-22 16:13:58.638 D: linha 8 : 9, 8, 1, 7, 6, 2, 5, 3, 4
+2022-01-22 16:13:58.639 D: -> Jogo gerado preparado:
+2022-01-22 16:13:58.639 D: linha 0 : 0, 0, 7, 0, 8, 0, 2, 0, 0
+2022-01-22 16:13:58.639 D: linha 1 : 0, 5, 8, 6, 9, 0, 0, 0, 0
+2022-01-22 16:13:58.639 D: linha 2 : 0, 0, 4, 0, 0, 0, 7, 0, 6
+2022-01-22 16:13:58.639 D: linha 3 : 0, 1, 0, 0, 0, 0, 0, 7, 9
+2022-01-22 16:13:58.640 D: linha 4 : 8, 0, 0, 0, 0, 0, 0, 6, 0
+2022-01-22 16:13:58.640 D: linha 5 : 3, 0, 2, 0, 7, 9, 4, 0, 0
+2022-01-22 16:13:58.640 D: linha 6 : 7, 4, 0, 1, 5, 3, 0, 0, 8
+2022-01-22 16:13:58.640 D: linha 7 : 0, 0, 3, 9, 0, 0, 0, 1, 7
+2022-01-22 16:13:58.640 D: linha 8 : 0, 0, 0, 7, 0, 0, 0, 0, 0
+2022-01-22 16:13:58.647 D: -> Gabarito gerado pelo Backtracking:
+2022-01-22 16:13:58.648 D: linha 0 : 6, 3, 7, 4, 8, 1, 2, 9, 5
+2022-01-22 16:13:58.648 D: linha 1 : 2, 5, 8, 6, 9, 7, 1, 3, 4
+2022-01-22 16:13:58.648 D: linha 2 : 1, 9, 4, 2, 3, 5, 7, 8, 6
+2022-01-22 16:13:58.648 D: linha 3 : 4, 1, 5, 3, 2, 6, 8, 7, 9
+2022-01-22 16:13:58.648 D: linha 4 : 8, 7, 9, 5, 1, 4, 3, 6, 2
+2022-01-22 16:13:58.648 D: linha 5 : 3, 6, 2, 8, 7, 9, 4, 5, 1
+2022-01-22 16:13:58.648 D: linha 6 : 7, 4, 6, 1, 5, 3, 9, 2, 8
+2022-01-22 16:13:58.648 D: linha 7 : 5, 2, 3, 9, 4, 8, 6, 1, 7
+2022-01-22 16:13:58.648 D: linha 8 : 9, 8, 1, 7, 6, 2, 5, 4, 3
+2022-01-22 16:13:58.649 D: -> Quantidade de clues:   50
+2022-01-22 16:13:58.649 D: -> Nível jogo gerado: Muito difícil
+2022-01-22 16:13:58.649 D:     - subnível: 0
+2022-01-22 16:14:00.109 D: -> Tap no btnJogaJogo
+2022-01-22 16:14:00.140 D: -> Jogo válido! Limites:
+    Erro:  2 Tempo:  10:00
+2022-01-22 16:14:00.169 D: -> Preset 0
+2022-01-22 16:14:00.169 D:    - tenta adaptar o jogo (1)
+2022-01-22 16:14:00.169 D: linha 0 : 0, 0, 7, 0, 8, 0, 2, 0, 0
+2022-01-22 16:14:00.169 D: linha 1 : 0, 5, 8, 6, 9, 0, 0, 0, 0
+2022-01-22 16:14:00.169 D: linha 2 : 0, 0, 4, 0, 0, 0, 7, 0, 6
+2022-01-22 16:14:00.169 D: linha 3 : 0, 1, 0, 0, 0, 0, 0, 7, 9
+2022-01-22 16:14:00.169 D: linha 4 : 8, 0, 0, 0, 0, 0, 0, 6, 0
+2022-01-22 16:14:00.169 D: linha 5 : 3, 0, 2, 0, 7, 9, 4, 0, 0
+2022-01-22 16:14:00.170 D: linha 6 : 7, 4, 0, 1, 5, 3, 0, 0, 8
+2022-01-22 16:14:00.170 D: linha 7 : 0, 0, 3, 9, 0, 0, 0, 1, 7
+2022-01-22 16:14:00.170 D: linha 8 : 0, 0, 0, 7, 0, 0, 0, 0, 0
+2022-01-22 16:14:00.177 D: -> Jogo com preset 0 adaptado
+2022-01-22 16:14:00.177 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-22 16:14:00.177 D: linha 0 : 6, 3, 7, 4, 8, 1, 2, 9, 5
+2022-01-22 16:14:00.177 D: linha 1 : 2, 5, 8, 6, 9, 7, 1, 3, 4
+2022-01-22 16:14:00.178 D: linha 2 : 1, 9, 4, 2, 3, 5, 7, 8, 6
+2022-01-22 16:14:00.178 D: linha 3 : 4, 1, 5, 3, 2, 6, 8, 7, 9
+2022-01-22 16:14:00.178 D: linha 4 : 8, 7, 9, 5, 1, 4, 3, 6, 2
+2022-01-22 16:14:00.178 D: linha 5 : 3, 6, 2, 8, 7, 9, 4, 5, 1
+2022-01-22 16:14:00.178 D: linha 6 : 7, 4, 6, 1, 5, 3, 9, 2, 8
+2022-01-22 16:14:00.178 D: linha 7 : 5, 2, 3, 9, 4, 8, 6, 1, 7
+2022-01-22 16:14:00.178 D: linha 8 : 9, 8, 1, 7, 6, 2, 5, 4, 3
+2022-01-22 16:14:00.178 D: -> Jogo (preset):
+2022-01-22 16:14:00.178 D: linha 0 : 0, 0, 7, 0, 8, 0, 2, 0, 0
+2022-01-22 16:14:00.178 D: linha 1 : 0, 5, 8, 6, 9, 0, 0, 0, 0
+2022-01-22 16:14:00.178 D: linha 2 : 0, 0, 4, 0, 0, 0, 7, 0, 6
+2022-01-22 16:14:00.178 D: linha 3 : 0, 1, 0, 0, 0, 0, 0, 7, 9
+2022-01-22 16:14:00.179 D: linha 4 : 8, 0, 0, 0, 0, 0, 0, 6, 0
+2022-01-22 16:14:00.179 D: linha 5 : 3, 0, 2, 0, 7, 9, 4, 0, 0
+2022-01-22 16:14:00.179 D: linha 6 : 7, 4, 0, 1, 5, 3, 0, 0, 8
+2022-01-22 16:14:00.179 D: linha 7 : 0, 0, 3, 9, 0, 0, 0, 1, 7
+2022-01-22 16:14:00.179 D: linha 8 : 0, 0, 0, 7, 0, 0, 0, 0, 0
+2022-01-22 16:14:00.180 D: -> Quantidade de clues:   50
+2022-01-22 16:14:00.180 D: -> Nível jogo adaptado: Muito difícil
+2022-01-22 16:14:00.180 D:     - subnível: 0
+2022-01-22 16:14:00.777 D: -> Acerta crono.
+2022-01-22 16:14:00.782 D: -> Jogo:
+2022-01-22 16:14:00.782 D: linha 0 : 0, 0, 7, 0, 8, 0, 2, 0, 0
+2022-01-22 16:14:00.782 D: linha 1 : 0, 5, 8, 6, 9, 0, 0, 0, 0
+2022-01-22 16:14:00.783 D: linha 2 : 0, 0, 4, 0, 0, 0, 7, 0, 6
+2022-01-22 16:14:00.783 D: linha 3 : 0, 1, 0, 0, 0, 0, 0, 7, 9
+2022-01-22 16:14:00.783 D: linha 4 : 8, 0, 0, 0, 0, 0, 0, 6, 0
+2022-01-22 16:14:00.784 D: linha 5 : 3, 0, 2, 0, 7, 9, 4, 0, 0
+2022-01-22 16:14:00.784 D: linha 6 : 7, 4, 0, 1, 5, 3, 0, 0, 8
+2022-01-22 16:14:00.784 D: linha 7 : 0, 0, 3, 9, 0, 0, 0, 1, 7
+2022-01-22 16:14:00.785 D: linha 8 : 0, 0, 0, 7, 0, 0, 0, 0, 0
+2022-01-22 16:14:00.785 D: -> Gabarito:
+2022-01-22 16:14:00.785 D: linha 0 : 6, 3, 7, 4, 8, 1, 2, 9, 5
+2022-01-22 16:14:00.785 D: linha 1 : 2, 5, 8, 6, 9, 7, 1, 3, 4
+2022-01-22 16:14:00.785 D: linha 2 : 1, 9, 4, 2, 3, 5, 7, 8, 6
+2022-01-22 16:14:00.786 D: linha 3 : 4, 1, 5, 3, 2, 6, 8, 7, 9
+2022-01-22 16:14:00.786 D: linha 4 : 8, 7, 9, 5, 1, 4, 3, 6, 2
+2022-01-22 16:14:00.786 D: linha 5 : 3, 6, 2, 8, 7, 9, 4, 5, 1
+2022-01-22 16:14:00.787 D: linha 6 : 7, 4, 6, 1, 5, 3, 9, 2, 8
+2022-01-22 16:14:00.787 D: linha 7 : 5, 2, 3, 9, 4, 8, 6, 1, 7
+2022-01-22 16:14:00.787 D: linha 8 : 9, 8, 1, 7, 6, 2, 5, 4, 3
+2022-01-22 16:14:00.837 D: -> Array qtidd de jogos disponível por número:
+2022-01-22 16:14:00.839 D:    Num 1 6
+2022-01-22 16:14:00.840 D:    Num 2 7
+2022-01-22 16:14:00.842 D:    Num 3 6
+2022-01-22 16:14:00.844 D:    Num 4 6
+2022-01-22 16:14:00.845 D:    Num 5 7
+2022-01-22 16:14:00.847 D:    Num 6 6
+2022-01-22 16:14:00.848 D:    Num 7 2
+2022-01-22 16:14:00.849 D:    Num 8 5
+2022-01-22 16:14:00.851 D:    Num 9 5
+2022-01-22 16:14:06.704 D: -> 00:00 - Inicia
+2022-01-22 16:14:06.704 D: -> Acerta crono.
+2022-01-22 16:14:06.710 D: -> Parte o crono.
+2022-01-22 16:14:06.718 D: -> Final crono: 10:00
+2022-01-22 16:16:06.844 D: -> 01:59 - Pause
+2022-01-22 16:16:09.895 D: -> Tap no btn "Salvar" 
+2022-01-22 16:16:11.656 D: -> "Sim" was pressed
+2022-01-22 16:16:11.658 D: -> Arquivos raw (listRaw):
+2022-01-22 16:16:11.658 D: 0: modelo_arq_xml_sudoku1
+2022-01-22 16:16:11.658 D: -> Arquivo modelo_arq_xml_sudoku1:
+2022-01-22 16:16:11.664 D:    0: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-22 16:16:11.664 D: -> modelo arq Sudoku xml
+2022-01-22 16:16:11.664 D: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-22 16:16:11.768 D: -> Tag: 11, Conteudo: <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Muito difícil</nivel><subnivel>0</subnivel></header><body><linha0>0, 0, 7, 0, 8, 0, 2, 0, 0</linha0><linha1>0, 5, 8, 6, 9, 0, 0, 0, 0</linha1><linha2>0, 0, 4, 0, 0, 0, 7, 0, 6</linha2><linha3>0, 1, 0, 0, 0, 0, 0, 7, 9</linha3><linha4>8, 0, 0, 0, 0, 0, 0, 6, 0</linha4><linha5>3, 0, 2, 0, 7, 9, 4, 0, 0</linha5><linha6>7, 4, 0, 1, 5, 3, 0, 0, 8</linha6><linha7>0, 0, 3, 9, 0, 0, 0, 1, 7</linha7><linha8>0, 0, 0, 7, 0, 0, 0, 0, 0</linha8></body><jogos><id>1</id><opcaoJogo>JogoGerado</opcaoJogo><dataHora>22/01/2022 16:16:11</dataHora><tempoJogo>01:59</tempoJogo><erros>0</erros><status>ativo</status></jogos><body2><linha0>0, 0, 7, 0, 8, 0, 2, 9, 0</linha0><linha1>0, 5, 8, 6, 9, 7, 0, 0, 0</linha1><linha2>0, 0, 4, 0, 0, 0, 7, 8, 6</linha2><linha3>4, 1, 0, 0, 0, 0, 8, 7, 9</linha3><linha4>8, 7, 9, 0, 0, 0, 0, 6, 0</linha4><linha5>3, 0, 2, 0, 7, 9, 4, 0, 0</linha5><linha6>7, 4, 0, 1, 5, 3, 0, 0, 8</linha6><linha7>0, 0, 3, 9, 0, 0, 0, 1, 7</linha7><linha8>0, 0, 0, 7, 0, 0, 0, 0, 0</linha8></body2></presets>
+2022-01-22 16:16:11.801 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/jogos/jogo_63.xml OK!
+2022-01-22 16:16:11.801 D: -> Jogos salvos: 
+2022-01-22 16:16:11.807 D:    - jogo_63.xml
+2022-01-22 16:16:11.808 D:    - jogo_62.xml
+2022-01-22 16:16:11.808 D:    - jogo_61.xml
+2022-01-22 16:16:11.808 D:    - jogo_60.xml
+2022-01-22 16:16:11.808 D:    - jogo_59.xml
+2022-01-22 16:16:11.808 D:    - jogo_58.xml
+2022-01-22 16:16:11.808 D:    - jogo_57.xml
+2022-01-22 16:16:11.808 D:    - jogo_56.xml
+2022-01-22 16:16:11.808 D:    - jogo_55.xml
+2022-01-22 16:16:11.808 D:    - jogo_54.xml
+2022-01-22 16:16:11.808 D:    - jogo_53.xml
+2022-01-22 16:16:11.808 D:    - jogo_52.xml
+2022-01-22 16:16:11.808 D:    - jogo_51.xml
+2022-01-22 16:16:27.633 D: -> 01:59 - ReInicia
+2022-01-22 16:16:27.633 D: -> Acerta crono.
+2022-01-22 16:16:27.638 D: -> Parte o crono.
+2022-01-22 16:16:27.640 D: -> Final crono: 10:00
+2022-01-22 16:16:32.645 D:    - invalido Qm: Qm=8; lin=7; col=7 num=1
+2022-01-22 16:16:38.139 D:  - invalido col: linha=0; col=6; num=2
+2022-01-22 16:16:41.415 D: -> Tenta mais 1 erro.
+2022-01-22 16:16:47.775 D: -> leitura arquivo setup
+2022-01-22 16:16:47.781 D:    - limite: -1
+2022-01-22 16:16:47.781 D:    - limite: 00:00
+2022-01-22 16:16:47.782 D:    - mostra nums iguais: true
+2022-01-22 16:16:47.796 D: -> atualiza submenus Ok!
+2022-01-22 16:16:47.796 D: -> Atualiza arquivo de setup
+2022-01-22 16:16:47.796 D:    - lê arquivo modelo modelo_arq_xml_sudoku_setup
+2022-01-22 16:16:47.799 D:      <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+    <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+    <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+2022-01-22 16:16:47.799 D: -> Prepara conteudo a salvar conforme o modelo lido.
+2022-01-22 16:16:47.799 D:    <?xml version="1.0" encoding="utf-8"?><setup><header><id>modeloArqXmlSudokuSetUp.txt</id></header><body><limite_erros>3</limite_erros><limite_tempo>10:00</limite_tempo><mostra_nums_iguais>true</mostra_nums_iguais></body></setup>
+    <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+    <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+2022-01-22 16:16:47.816 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/documentos/SudokuSetUp.txt OK!
+2022-01-22 16:16:47.816 D: -> atualiza titles dos submenus Ok!
+--------------------------------------------------------------------------------
+2022-01-22 15:59:08.772 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-22 15:59:08.773 D: -> Dimensões screen:
+2022-01-22 15:59:08.787 D:    - largura  :  720,00 px (2,44")
+2022-01-22 15:59:08.791 D:    - altura   :  1280,00 px (4,33")
+2022-01-22 15:59:08.794 D:    - Diagonal :  4,97"
+2022-01-22 15:59:08.796 D:    - fatorlargura :  1,00
+2022-01-22 15:59:08.798 D:    - fatorAltura  :  1,00
+2022-01-22 15:59:08.798 D: -> BaseOS: 8.0.0 SDK_INT: API26
+--------------------------------------------------------------------------------
+2022-01-22 15:59:08.989 D: -> main Verifica permissões
+2022-01-22 15:59:08.989 D:    - Checa se permissões Ok
+2022-01-22 15:59:08.997 D:      - android.permission.INTERNET: true
+2022-01-22 15:59:08.999 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-22 15:59:09.000 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-22 15:59:09.024 D: Permission Granted!
+--------------------------------------------------------------------------------
+2022-01-22 15:59:09.025 D: -> Registra activity for result
+--------------------------------------------------------------------------------
+2022-01-22 15:59:09.098 D: -> leitura arquivo setup
+2022-01-22 15:59:09.120 D:    - limite: -1
+2022-01-22 15:59:09.120 D:    - limite: 00:00
+2022-01-22 15:59:09.121 D:    - mostra nums iguais: true
+--------------------------------------------------------------------------------
+2022-01-22 15:59:09.121 D: -> atualiza titles dos submenus Ok!
+--------------------------------------------------------------------------------
+2022-01-22 15:59:10.045 D: -> atualiza submenus Ok!
+--------------------------------------------------------------------------------
+2022-01-22 15:59:10.045 D: -> Atualiza arquivo de setup
+2022-01-22 15:59:10.045 D:    - lê arquivo modelo modelo_arq_xml_sudoku_setup
+2022-01-22 15:59:10.049 D:      <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+2022-01-22 15:59:10.049 D: -> Prepara conteudo a salvar conforme o modelo lido.
+2022-01-22 15:59:10.050 D:    <?xml version="1.0" encoding="utf-8"?><setup><header><id>modeloArqXmlSudokuSetUp.txt</id></header><body><limite_erros>-1</limite_erros><limite_tempo>00:00</limite_tempo><mostra_nums_iguais>true</mostra_nums_iguais></body></setup>
+--------------------------------------------------------------------------------
+2022-01-22 15:34:19.915 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-22 15:34:19.915 D: -> Dimensões screen:
+2022-01-22 15:34:19.933 D:    - largura  :  720,00 px (2,44")
+2022-01-22 15:34:19.938 D:    - altura   :  1280,00 px (4,33")
+2022-01-22 15:34:19.941 D:    - Diagonal :  4,97"
+2022-01-22 15:34:19.944 D:    - fatorlargura :  1,00
+2022-01-22 15:34:19.948 D:    - fatorAltura  :  1,00
+2022-01-22 15:34:19.949 D: -> BaseOS: 8.0.0 SDK_INT: API26
+--------------------------------------------------------------------------------
+2022-01-22 15:34:20.168 D: -> main Verifica permissões
+2022-01-22 15:34:20.170 D:    - Checa se permissões Ok
+2022-01-22 15:34:20.171 D:      - android.permission.INTERNET: true
+2022-01-22 15:34:20.173 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-22 15:34:20.173 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-22 15:34:20.208 D: Permission Granted!
+--------------------------------------------------------------------------------
+2022-01-22 15:34:20.208 D: -> Registra activity for result
+--------------------------------------------------------------------------------
+2022-01-22 15:34:20.250 D: -> leitura arquivo setup
+2022-01-22 15:34:20.283 D:    - limite: -1
+2022-01-22 15:34:20.283 D:    - limite: 00:00
+2022-01-22 15:34:20.283 D:    - mostra nums iguais: true
+--------------------------------------------------------------------------------
+2022-01-22 15:34:20.284 D: -> atualiza titles dos submenus Ok!
+2022-01-22 15:34:21.891 D: -> atualiza submenus Ok!
+2022-01-22 15:34:21.891 D: -> Atualiza arquivo de setup
+2022-01-22 15:34:21.891 D:    - lê arquivo modelo modelo_arq_xml_sudoku_setup
+2022-01-22 15:34:21.896 D:      <?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
+--------------------------------------------------------------------------------
+2022-01-22 15:34:21.896 D: -> Prepara conteudo a salvar conforme o modelo lido.
+--------------------------------------------------------------------------------
+
+================================================================================
+Commit9.0.162- Versão 9- QA
+================================================================================
+Commit9.0.161- Versão 9- QA
+================================================================================
+2022-01-22 08:09:11.908 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-22 08:09:11.908 D: -> Dimensões screen:
+2022-01-22 08:09:11.916 D:    - largura  :  720,00 px (2,44")
+2022-01-22 08:09:11.919 D:    - altura   :  1280,00 px (4,33")
+2022-01-22 08:09:11.921 D:    - Diagonal :  4,97"
+2022-01-22 08:09:11.923 D:    - fatorlargura :  1,00
+2022-01-22 08:09:11.925 D:    - fatorAltura  :  1,00
+2022-01-22 08:09:11.925 D: -> BaseOS: 8.0.0 SDK_INT: API26
+--------------------------------------------------------------------------------
+2022-01-22 08:09:12.063 D: -> main Verifica permissões
+2022-01-22 08:09:12.063 D:    - Checa se permissões Ok
+2022-01-22 08:09:12.065 D:      - android.permission.INTERNET: true
+2022-01-22 08:09:12.065 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-22 08:09:12.066 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-22 08:09:12.087 D: Permission Granted!
+--------------------------------------------------------------------------------
+2022-01-22 08:09:12.088 D: -> Registra activity for result
+--------------------------------------------------------------------------------
+2022-01-22 08:09:12.114 D: -> leitura arquivo setup
+2022-01-22 08:09:12.129 D:    - limite: -1
+2022-01-22 08:09:12.130 D:    - limite: 00:00
+2022-01-22 08:09:12.130 D:    - mostr nums iguais: false
+
+--------------------------------------------------------------------------------
+2022-01-22 07:50:00.801 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-22 07:50:00.801 D: -> Dimensões screen:
+2022-01-22 07:50:00.810 D:    - largura  :  720,00 px (2,44")
+2022-01-22 07:50:00.813 D:    - altura   :  1280,00 px (4,33")
+2022-01-22 07:50:00.815 D:    - Diagonal :  4,97"
+2022-01-22 07:50:00.817 D:    - fatorlargura :  1,00
+2022-01-22 07:50:00.820 D:    - fatorAltura  :  1,00
+2022-01-22 07:50:00.820 D: -> BaseOS: 8.0.0 SDK_INT: API26
+--------------------------------------------------------------------------------
+2022-01-22 07:50:01.000 D: -> main Verifica permissões
+2022-01-22 07:50:01.000 D:    - Checa se permissões Ok
+2022-01-22 07:50:01.001 D:      - android.permission.INTERNET: true
+2022-01-22 07:50:01.002 D:      - android.permission.READ_EXTERNAL_STORAGE: false
+2022-01-22 07:50:01.002 D:      - android.permission.WRITE_EXTERNAL_STORAGE: false
+2022-01-22 07:50:01.002 D: -> Recurso SEM Permissão atual:
+2022-01-22 07:50:01.003 D:    - android.permission.READ_EXTERNAL_STORAGE
+2022-01-22 07:50:01.003 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-22 07:50:01.003 D: -> SO solicita autorização para permissão:
+2022-01-22 07:50:01.003 D:    - android.permission.READ_EXTERNAL_STORAGE
+2022-01-22 07:50:01.003 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-22 07:50:01.144 D: Permission unGranted
+--------------------------------------------------------------------------------
+2022-01-22 07:50:01.145 D: -> Registra activity for result
+--------------------------------------------------------------------------------
+2022-01-22 07:50:01.212 D: -> leitura arquivo setup
+2022-01-22 07:50:01.239 D: -> Não existe esse campo!
+2022-01-22 07:50:01.239 D:    - limite: 
+2022-01-22 07:50:01.239 D: -> Erro: For input string: ""
+2022-01-22 07:50:02.948 D: -> leitura arquivo setup
+2022-01-22 07:50:02.967 D: -> Não existe esse campo!
+2022-01-22 07:50:02.967 D:    - limite: 
+2022-01-22 07:50:02.967 D: -> Erro: For input string: ""
+--------------------------------------------------------------------------------
+2022-01-22 07:50:33.629 D: Permissions: 
+    android.permission.READ_EXTERNAL_STORAGE=0 
+    android.permission.WRITE_EXTERNAL_STORAGE=0 
+2022-01-22 07:50:33.629 D: - Permissão concedida!
+--------------------------------------------------------------------------------
+2022-01-22 07:50:33.728 D: -> leitura arquivo setup
+2022-01-22 07:50:33.743 D:    - limite: -1
+2022-01-22 07:50:33.743 D:    - limite: 00:00
+2022-01-22 07:50:33.744 D:    - mostr nums iguais: false
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+================================================================================
+Commit9.0.160- Versão 9- QA
+================================================================================
+2022-01-21 20:48:56.062 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-21 20:48:56.062 D: -> Dimensões screen:
+2022-01-21 20:48:56.095 D:    - largura  :  720,00 px (2,44")
+2022-01-21 20:48:56.099 D:    - altura   :  1280,00 px (4,33")
+2022-01-21 20:48:56.101 D:    - Diagonal :  4,97"
+2022-01-21 20:48:56.103 D:    - fatorlargura :  1,00
+2022-01-21 20:48:56.105 D:    - fatorAltura  :  1,00
+2022-01-21 20:48:56.106 D: -> BaseOS: 8.0.0 SDK_INT: API26
+2022-01-21 20:48:56.391 D: -> main Verifica permissões
+2022-01-21 20:48:56.391 D:    - Checa se permissões Ok
+2022-01-21 20:48:56.392 D:      - android.permission.INTERNET: true
+2022-01-21 20:48:56.393 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-21 20:48:56.394 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-21 20:48:56.424 D: Permission Granted!
+2022-01-21 20:48:56.424 D: -> Registra activity for result
+2022-01-21 20:48:56.426 D: -> leitura arquivo setup
+2022-01-21 20:48:56.438 D:    - limite: -1
+2022-01-21 20:48:56.438 D:    - limite: 00:00
+2022-01-21 20:48:56.439 D:    - mostr nums iguais: false
+2022-01-21 20:48:56.444 D: -> Erro: lateinit property subMenuLimiteQtiErros has not been initialized
+2022-01-21 20:48:56.470 D: -> leitura arquivo setup
+2022-01-21 20:48:56.478 D:    - limite: -1
+2022-01-21 20:48:56.478 D:    - limite: 00:00
+2022-01-21 20:48:56.479 D:    - mostr nums iguais: false
+2022-01-21 20:48:56.484 D: -> Erro: lateinit property subMenuLimiteQtiErros has not been initialized
+
+================================================================================
+Commit9.0.159- Versão 9- QA
+================================================================================
+
+================================================================================
+Commit9.0.158- Versão 9- QA
+================================================================================
+
+================================================================================
+Commit9.0.157- Versão 9- finalizações release 2
+================================================================================
+Commit9.0.157- Versão 9- finalizações release 1
+================================================================================
+
+================================================================================
+Commit9.0.156- Versão 9- limiteTempoJogo - 2
+================================================================================
+
+- limiteTempoJogo
+
+--------------------------------------------------------------------------------
+2022-01-19 16:20:54.006 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-19 16:20:54.006 D: -> Dimensões screen:
+2022-01-19 16:20:54.012 D:    - largura  :  720,00 px (2,44")
+2022-01-19 16:20:54.015 D:    - altura   :  1280,00 px (4,33")
+2022-01-19 16:20:54.017 D:    - Diagonal :  4,97"
+2022-01-19 16:20:54.019 D:    - fatorlargura :  1,00
+2022-01-19 16:20:54.021 D:    - fatorAltura  :  1,00
+2022-01-19 16:20:54.021 D: -> BaseOS: 8.0.0 SDK_INT: API26
+--------------------------------------------------------------------------------
+2022-01-19 16:20:54.157 D: -> main Verifica permissões
+2022-01-19 16:20:54.157 D:    - Checa se permissões Ok
+2022-01-19 16:20:54.158 D:      - android.permission.INTERNET: true
+2022-01-19 16:20:54.159 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-19 16:20:54.160 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-19 16:20:54.180 D: Permission Granted!
+--------------------------------------------------------------------------------
+2022-01-19 16:20:54.180 D: -> Registra activity for result
+--------------------------------------------------------------------------------
+2022-01-19 16:20:54.213 D: -> Erro: lateinit property subMenuLimiteQtiErros has not been initialized
+--------------------------------------------------------------------------------
+2022-01-19 16:21:04.275 D: -> Tap em actionBar / Ajusta tempo de jogo
+--------------------------------------------------------------------------------
+2022-01-19 16:21:11.355 D: -> Novos ajustes:
+2022-01-19 16:21:11.356 D:    - limite de erros: -1
+2022-01-19 16:21:11.378 D: -> Formato incorreto. Entre com "MM:ss"
+--------------------------------------------------------------------------------
+2022-01-19 16:21:18.522 D: -> Tap em actionBar / Ajusta tempo de jogo
+--------------------------------------------------------------------------------
+2022-01-19 16:21:24.637 D: -> Novos ajustes:
+2022-01-19 16:21:24.637 D:    - limite de erros: -1
+2022-01-19 16:21:24.653 D: -> Formato incorreto. Entre com "MM:ss"
+--------------------------------------------------------------------------------
+2022-01-19 16:21:33.753 D: -> Tap em actionBar / Ajusta tempo de jogo
+2022-01-19 16:21:42.058 D: -> Novos ajustes:
+2022-01-19 16:21:42.058 D:    - limite de erros: -1
+2022-01-19 16:21:42.058 D:    - limite de tempo: 00:15
+--------------------------------------------------------------------------------
+
+================================================================================
+Commit9.0.155- Versão 9- 1
+================================================================================
+
+- limiteTempoJogo
+
+
+================================================================================
+Commit9.0.154- Versão 9- 8 
+================================================================================
+2022-01-19 11:53:57.314 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-19 11:53:57.314 D: -> Dimensões screen:
+2022-01-19 11:53:57.350 D:    - largura  :  720,00 px (2,44")
+2022-01-19 11:53:57.353 D:    - altura   :  1280,00 px (4,33")
+2022-01-19 11:53:57.355 D:    - Diagonal :  4,97"
+2022-01-19 11:53:57.357 D:    - fatorlargura :  1,00
+2022-01-19 11:53:57.358 D:    - fatorAltura  :  1,00
+2022-01-19 11:53:57.358 D: -> BaseOS: 8.0.0 SDK_INT: API26
+--------------------------------------------------------------------------------
+2022-01-19 11:53:57.629 D: -> main Verifica permissões
+2022-01-19 11:53:57.629 D:    - Checa se permissões Ok
+2022-01-19 11:53:57.675 D:      - android.permission.INTERNET: true
+2022-01-19 11:53:57.678 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-19 11:53:57.679 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-19 11:53:57.706 D: Permission Granted!
+--------------------------------------------------------------------------------
+2022-01-19 11:53:57.706 D: -> Registra activity for result
+--------------------------------------------------------------------------------
+2022-01-19 11:53:57.792 D: -> Erro: lateinit property subMenuLimiteQtiErros has not been initialized
+--------------------------------------------------------------------------------
+2022-01-19 11:54:05.729 D: -> Tap em actionBar / Ajusta limite contagem de erros
+2022-01-19 11:54:11.046 D: -> Novos ajustes:
+2022-01-19 11:54:11.047 D:    - limite de erros: 3
+2022-01-19 11:54:11.047 D:    - limite de tempo: 00:00
+--------------------------------------------------------------------------------
+2022-01-19 11:54:21.516 D: -> onClick rbJogoMuitoDificil
+--------------------------------------------------------------------------------
+2022-01-19 11:54:23.136 D: -> Tap no btnGeraJogo
+2022-01-19 11:54:23.255 D:    - Nível: Muito Difícil (50) Subnível: 0
+2022-01-19 11:54:34.352 D: -> Jogo 24: válido!
+2022-01-19 11:54:34.353 D: linha 0 : 9, 4, 6, 7, 2, 1, 5, 3, 8
+2022-01-19 11:54:34.354 D: linha 1 : 7, 3, 8, 5, 6, 4, 1, 9, 2
+2022-01-19 11:54:34.354 D: linha 2 : 1, 2, 5, 3, 9, 8, 6, 4, 7
+2022-01-19 11:54:34.354 D: linha 3 : 5, 1, 3, 4, 8, 7, 9, 2, 6
+2022-01-19 11:54:34.355 D: linha 4 : 6, 9, 7, 1, 5, 2, 4, 8, 3
+2022-01-19 11:54:34.358 D: linha 5 : 2, 8, 4, 6, 3, 9, 7, 1, 5
+2022-01-19 11:54:34.359 D: linha 6 : 8, 5, 1, 2, 4, 6, 3, 7, 9
+2022-01-19 11:54:34.359 D: linha 7 : 4, 6, 9, 8, 7, 3, 2, 5, 1
+2022-01-19 11:54:34.359 D: linha 8 : 3, 7, 2, 9, 1, 5, 8, 6, 4
+2022-01-19 11:54:34.364 D: -> Jogo gerado preparado:
+2022-01-19 11:54:34.364 D: linha 0 : 9, 4, 6, 0, 0, 1, 5, 0, 8
+2022-01-19 11:54:34.364 D: linha 1 : 0, 3, 0, 5, 0, 4, 0, 0, 2
+2022-01-19 11:54:34.365 D: linha 2 : 1, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-19 11:54:34.365 D: linha 3 : 0, 1, 0, 0, 8, 7, 9, 0, 0
+2022-01-19 11:54:34.365 D: linha 4 : 0, 0, 7, 0, 5, 0, 4, 0, 3
+2022-01-19 11:54:34.365 D: linha 5 : 0, 0, 4, 6, 0, 9, 7, 0, 0
+2022-01-19 11:54:34.365 D: linha 6 : 0, 5, 0, 0, 0, 6, 0, 7, 9
+2022-01-19 11:54:34.366 D: linha 7 : 0, 0, 0, 0, 7, 0, 0, 0, 0
+2022-01-19 11:54:34.366 D: linha 8 : 0, 0, 0, 9, 0, 0, 8, 0, 4
+2022-01-19 11:54:34.411 D: -> Gabarito gerado pelo Backtracking:
+2022-01-19 11:54:34.411 D: linha 0 : 9, 4, 6, 7, 2, 1, 5, 3, 8
+2022-01-19 11:54:34.411 D: linha 1 : 7, 3, 8, 5, 6, 4, 1, 9, 2
+2022-01-19 11:54:34.411 D: linha 2 : 1, 2, 5, 3, 9, 8, 6, 4, 7
+2022-01-19 11:54:34.411 D: linha 3 : 2, 1, 3, 4, 8, 7, 9, 5, 6
+2022-01-19 11:54:34.411 D: linha 4 : 6, 9, 7, 1, 5, 2, 4, 8, 3
+2022-01-19 11:54:34.411 D: linha 5 : 5, 8, 4, 6, 3, 9, 7, 2, 1
+2022-01-19 11:54:34.411 D: linha 6 : 8, 5, 1, 2, 4, 6, 3, 7, 9
+2022-01-19 11:54:34.412 D: linha 7 : 4, 6, 9, 8, 7, 3, 2, 1, 5
+2022-01-19 11:54:34.412 D: linha 8 : 3, 7, 2, 9, 1, 5, 8, 6, 4
+2022-01-19 11:54:34.420 D: -> Quantidade de clues:   50
+2022-01-19 11:54:34.421 D: -> Nível jogo gerado: Muito difícil
+2022-01-19 11:54:34.421 D:     - subnível: 0
+--------------------------------------------------------------------------------
+2022-01-19 11:54:36.213 D: -> Tap no btnJogaJogo
+--------------------------------------------------------------------------------
+2022-01-19 11:54:36.215 D: Qm Lin Col Num val
+--------------------------------------------------------------------------------
+2022-01-19 11:54:36.416 D: -> Jogo válido!
+2022-01-19 11:54:36.929 D: -> Preset 0
+2022-01-19 11:54:36.930 D:    - tenta adaptar o jogo (1)
+2022-01-19 11:54:36.930 D: linha 0 : 9, 4, 6, 0, 0, 1, 5, 0, 8
+2022-01-19 11:54:36.930 D: linha 1 : 0, 3, 0, 5, 0, 4, 0, 0, 2
+2022-01-19 11:54:36.930 D: linha 2 : 1, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-19 11:54:36.931 D: linha 3 : 0, 1, 0, 0, 8, 7, 9, 0, 0
+2022-01-19 11:54:36.931 D: linha 4 : 0, 0, 7, 0, 5, 0, 4, 0, 3
+2022-01-19 11:54:36.931 D: linha 5 : 0, 0, 4, 6, 0, 9, 7, 0, 0
+2022-01-19 11:54:36.931 D: linha 6 : 0, 5, 0, 0, 0, 6, 0, 7, 9
+2022-01-19 11:54:36.932 D: linha 7 : 0, 0, 0, 0, 7, 0, 0, 0, 0
+2022-01-19 11:54:36.932 D: linha 8 : 0, 0, 0, 9, 0, 0, 8, 0, 4
+2022-01-19 11:54:36.987 D: -> Jogo com preset 0 adaptado
+2022-01-19 11:54:36.987 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-19 11:54:36.987 D: linha 0 : 9, 4, 6, 7, 2, 1, 5, 3, 8
+2022-01-19 11:54:36.987 D: linha 1 : 7, 3, 8, 5, 6, 4, 1, 9, 2
+2022-01-19 11:54:36.987 D: linha 2 : 1, 2, 5, 3, 9, 8, 6, 4, 7
+2022-01-19 11:54:36.988 D: linha 3 : 2, 1, 3, 4, 8, 7, 9, 5, 6
+2022-01-19 11:54:36.988 D: linha 4 : 6, 9, 7, 1, 5, 2, 4, 8, 3
+2022-01-19 11:54:36.988 D: linha 5 : 5, 8, 4, 6, 3, 9, 7, 2, 1
+2022-01-19 11:54:36.988 D: linha 6 : 8, 5, 1, 2, 4, 6, 3, 7, 9
+2022-01-19 11:54:36.988 D: linha 7 : 4, 6, 9, 8, 7, 3, 2, 1, 5
+2022-01-19 11:54:36.988 D: linha 8 : 3, 7, 2, 9, 1, 5, 8, 6, 4
+2022-01-19 11:54:36.988 D: -> Jogo (preset):
+2022-01-19 11:54:36.988 D: linha 0 : 9, 4, 6, 0, 0, 1, 5, 0, 8
+2022-01-19 11:54:36.988 D: linha 1 : 0, 3, 0, 5, 0, 4, 0, 0, 2
+2022-01-19 11:54:36.989 D: linha 2 : 1, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-19 11:54:36.989 D: linha 3 : 0, 1, 0, 0, 8, 7, 9, 0, 0
+2022-01-19 11:54:36.989 D: linha 4 : 0, 0, 7, 0, 5, 0, 4, 0, 3
+2022-01-19 11:54:36.989 D: linha 5 : 0, 0, 4, 6, 0, 9, 7, 0, 0
+2022-01-19 11:54:36.989 D: linha 6 : 0, 5, 0, 0, 0, 6, 0, 7, 9
+2022-01-19 11:54:36.989 D: linha 7 : 0, 0, 0, 0, 7, 0, 0, 0, 0
+2022-01-19 11:54:36.989 D: linha 8 : 0, 0, 0, 9, 0, 0, 8, 0, 4
+2022-01-19 11:54:36.991 D: -> Quantidade de clues:   50
+2022-01-19 11:54:36.991 D: -> Nível jogo adaptado: Muito difícil
+2022-01-19 11:54:36.991 D:     - subnível: 0
+--------------------------------------------------------------------------------
+2022-01-19 11:54:37.666 D: -> Acerta crono.
+--------------------------------------------------------------------------------
+2022-01-19 11:54:37.668 D: -> Jogo:
+2022-01-19 11:54:37.669 D: linha 0 : 9, 4, 6, 0, 0, 1, 5, 0, 8
+2022-01-19 11:54:37.669 D: linha 1 : 0, 3, 0, 5, 0, 4, 0, 0, 2
+2022-01-19 11:54:37.669 D: linha 2 : 1, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-19 11:54:37.670 D: linha 3 : 0, 1, 0, 0, 8, 7, 9, 0, 0
+2022-01-19 11:54:37.670 D: linha 4 : 0, 0, 7, 0, 5, 0, 4, 0, 3
+2022-01-19 11:54:37.670 D: linha 5 : 0, 0, 4, 6, 0, 9, 7, 0, 0
+2022-01-19 11:54:37.670 D: linha 6 : 0, 5, 0, 0, 0, 6, 0, 7, 9
+2022-01-19 11:54:37.670 D: linha 7 : 0, 0, 0, 0, 7, 0, 0, 0, 0
+2022-01-19 11:54:37.671 D: linha 8 : 0, 0, 0, 9, 0, 0, 8, 0, 4
+2022-01-19 11:54:37.671 D: -> Gabarito:
+2022-01-19 11:54:37.671 D: linha 0 : 9, 4, 6, 7, 2, 1, 5, 3, 8
+2022-01-19 11:54:37.671 D: linha 1 : 7, 3, 8, 5, 6, 4, 1, 9, 2
+2022-01-19 11:54:37.671 D: linha 2 : 1, 2, 5, 3, 9, 8, 6, 4, 7
+2022-01-19 11:54:37.672 D: linha 3 : 2, 1, 3, 4, 8, 7, 9, 5, 6
+2022-01-19 11:54:37.672 D: linha 4 : 6, 9, 7, 1, 5, 2, 4, 8, 3
+2022-01-19 11:54:37.672 D: linha 5 : 5, 8, 4, 6, 3, 9, 7, 2, 1
+2022-01-19 11:54:37.672 D: linha 6 : 8, 5, 1, 2, 4, 6, 3, 7, 9
+2022-01-19 11:54:37.672 D: linha 7 : 4, 6, 9, 8, 7, 3, 2, 1, 5
+2022-01-19 11:54:37.673 D: linha 8 : 3, 7, 2, 9, 1, 5, 8, 6, 4
+2022-01-19 11:54:37.720 D: -> Array qtidd de jogos disponível por número:
+2022-01-19 11:54:37.722 D:    Num 1 6
+2022-01-19 11:54:37.724 D:    Num 2 8
+2022-01-19 11:54:37.727 D:    Num 3 7
+2022-01-19 11:54:37.729 D:    Num 4 4
+2022-01-19 11:54:37.731 D:    Num 5 5
+2022-01-19 11:54:37.733 D:    Num 6 6
+2022-01-19 11:54:37.735 D:    Num 7 4
+2022-01-19 11:54:37.737 D:    Num 8 6
+2022-01-19 11:54:37.739 D:    Num 9 4
+--------------------------------------------------------------------------------
+2022-01-19 11:54:45.094 D: -> 00:00 - Inicia
+2022-01-19 11:54:45.094 D: -> Acerta crono.
+2022-01-19 11:54:45.102 D: -> Parte o crono.
+2022-01-19 11:54:48.500 D:    - invalido Qm: Qm=8; lin=6; col=7 num=7
+2022-01-19 11:54:51.807 D:    - invalido Qm: Qm=8; lin=8; col=6 num=8
+2022-01-19 11:54:54.596 D:    - invalido Qm: Qm=8; lin=6; col=8 num=9
+2022-01-19 11:54:57.425 D: -> Tenta mais 1 erro.
+2022-01-19 11:55:20.785 D:  - invalido col: linha=0; col=6; num=5
+2022-01-19 11:55:24.463 D: -> Tenta mais 1 erro.
+2022-01-19 11:55:32.175 D:  - invalido col: linha=0; col=6; num=5
+2022-01-19 11:55:36.704 D: -> Tenta mais 1 erro.
+2022-01-19 11:56:48.454 D: -> Tap em actionBar / Desligar App
+2022-01-19 11:56:50.591 D: -> Confirma que FIM!
+--------------------------------------------------------------------------------
+
+================================================================================
+Commit9.0.153- Versão 9- 7 
+================================================================================
+
+================================================================================
+Commit9.0.152- Versão 9- 6
+================================================================================
+
+================================================================================
+Commit9.0.151- Versão 9- 5
+================================================================================
+
+--------------------------------------------------------------------------------
+2022-01-18 09:12:06.179 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-18 09:12:06.179 D: -> Dimensões screen:
+2022-01-18 09:12:06.192 D:    - largura  :  720,00 px (2,44")
+2022-01-18 09:12:06.196 D:    - altura   :  1280,00 px (4,33")
+2022-01-18 09:12:06.198 D:    - Diagonal :  4,97"
+2022-01-18 09:12:06.200 D:    - fatorlargura :  1,00
+2022-01-18 09:12:06.203 D:    - fatorAltura  :  1,00
+2022-01-18 09:12:06.203 D: -> BaseOS: 8.0.0 SDK_INT: API26
+2022-01-18 09:12:06.362 D: -> main Verifica permissões
+2022-01-18 09:12:06.362 D:    - Checa se permissões Ok
+2022-01-18 09:12:06.363 D:      - android.permission.INTERNET: true
+2022-01-18 09:12:06.364 D:      - android.permission.READ_EXTERNAL_STORAGE: false
+2022-01-18 09:12:06.365 D:      - android.permission.WRITE_EXTERNAL_STORAGE: false
+2022-01-18 09:12:06.365 D: -> Recurso SEM Permissão atual:
+2022-01-18 09:12:06.366 D:    - android.permission.READ_EXTERNAL_STORAGE
+2022-01-18 09:12:06.366 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-18 09:12:06.366 D: -> SO solicita autorização para permissão:
+2022-01-18 09:12:06.366 D:    - android.permission.READ_EXTERNAL_STORAGE
+2022-01-18 09:12:06.366 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-18 09:12:06.663 D: Permission unGranted
+2022-01-18 09:12:06.663 D: -> Registra activity for result
+2022-01-18 09:12:09.386 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-18 09:12:09.386 D: -> Dimensões screen:
+2022-01-18 09:12:09.392 D:    - largura  :  720,00 px (2,44")
+2022-01-18 09:12:09.395 D:    - altura   :  1280,00 px (4,33")
+2022-01-18 09:12:09.397 D:    - Diagonal :  4,97"
+2022-01-18 09:12:09.399 D:    - fatorlargura :  1,00
+2022-01-18 09:12:09.401 D:    - fatorAltura  :  1,00
+2022-01-18 09:12:09.401 D: -> BaseOS: 8.0.0 SDK_INT: API26
+2022-01-18 09:12:09.642 D: -> main Verifica permissões
+2022-01-18 09:12:09.642 D:    - Checa se permissões Ok
+2022-01-18 09:12:09.643 D:      - android.permission.INTERNET: true
+2022-01-18 09:12:09.644 D:      - android.permission.READ_EXTERNAL_STORAGE: false
+2022-01-18 09:12:09.646 D:      - android.permission.WRITE_EXTERNAL_STORAGE: false
+2022-01-18 09:12:09.646 D: -> Recurso SEM Permissão atual:
+2022-01-18 09:12:09.646 D:    - android.permission.READ_EXTERNAL_STORAGE
+2022-01-18 09:12:09.646 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-18 09:12:09.646 D: -> SO solicita autorização para permissão:
+2022-01-18 09:12:09.646 D:    - android.permission.READ_EXTERNAL_STORAGE
+2022-01-18 09:12:09.646 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-18 09:12:09.651 D: Permissions: 
+2022-01-18 09:12:09.651 D: - Permissão concedida!
+2022-01-18 09:12:09.701 D: Permission unGranted
+2022-01-18 09:12:09.701 D: -> Registra activity for result
+2022-01-18 09:12:14.086 D: Permissions: 
+    android.permission.READ_EXTERNAL_STORAGE=0 
+    android.permission.WRITE_EXTERNAL_STORAGE=0 
+2022-01-18 09:12:14.086 D: - Permissão concedida!
+2022-01-18 09:12:24.576 D: -> Tap em actionBar / Ajusta limite contagem de erros
+2022-01-18 09:12:29.277 D: -> Cancelou ajustes dos limites de Erros e Tempo
+2022-01-18 09:13:30.825 D: Smartphone: samsung - SM-G570M  Build: on5xelte
+2022-01-18 09:13:30.825 D: -> Dimensões screen:
+2022-01-18 09:13:30.844 D:    - largura  :  720,00 px (2,44")
+2022-01-18 09:13:30.847 D:    - altura   :  1280,00 px (4,33")
+2022-01-18 09:13:30.849 D:    - Diagonal :  4,97"
+2022-01-18 09:13:30.851 D:    - fatorlargura :  1,00
+2022-01-18 09:13:30.852 D:    - fatorAltura  :  1,00
+2022-01-18 09:13:30.853 D: -> BaseOS: 8.0.0 SDK_INT: API26
+2022-01-18 09:13:31.051 D: -> main Verifica permissões
+2022-01-18 09:13:31.051 D:    - Checa se permissões Ok
+2022-01-18 09:13:31.066 D:      - android.permission.INTERNET: true
+2022-01-18 09:13:31.067 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-18 09:13:31.068 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-18 09:13:31.101 D: Permission Granted!
+2022-01-18 09:13:31.102 D: -> Registra activity for result
+2022-01-18 09:13:39.625 D: -> Tap em actionBar / Ajusta limite contagem de erros
+2022-01-18 09:14:06.940 D: -> Cancelou ajustes dos limites de Erros e Tempo
+2022-01-18 09:14:12.228 D: -> Tap em actionBar / Ajusta tempo de jogo
+2022-01-18 09:14:15.401 D: -> Ajusta limites de Erros e Tempo
+
+
+================================================================================
+Commit9.0.150- Versão 9- 4
+================================================================================
+- 
+
+================================================================================
+Commit9.0.149- Versão9- 3
+================================================================================
+- 
+
+================================================================================
+Commit9.0.148- Versão9- 2
+================================================================================
+- 
+
+--------------------------------------------------------------------------------
+2022-01-16 07:21:07.874 D: Smartphone: samsung - SM-G570 MBuild: on5xelte
+2022-01-16 07:21:07.874 D: -> Dimensões screen:
+2022-01-16 07:21:07.881 D:    - largura  :  720,00 px (2,44")
+2022-01-16 07:21:07.884 D:    - altura   :  1280,00 px (4,33")
+2022-01-16 07:21:07.886 D:    - Diagonal :  4,97"
+2022-01-16 07:21:07.887 D:    - fatorlargura :  1,00
+2022-01-16 07:21:07.888 D:    - fatorAltura  :  1,00
+2022-01-16 07:21:07.888 D: -> BaseOS: 8.0.0 SDK_INT: API26
+--------------------------------------------------------------------------------
+2022-01-16 07:21:08.001 D: -> main Verifica permissões
+2022-01-16 07:21:08.001 D:    - Checa se permissões Ok
+2022-01-16 07:21:08.002 D:      - android.permission.INTERNET: true
+2022-01-16 07:21:08.003 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-16 07:21:08.003 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-16 07:21:08.019 D: Permission Granted!
+--------------------------------------------------------------------------------
+2022-01-16 07:21:08.019 D: -> Registra activity for result
+--------------------------------------------------------------------------------
+2022-01-16 07:21:22.294 D: -> Tap em actionBar / Mostrar números iguais
+2022-01-16 07:21:26.041 D: -> Tap em actionBar / Não mostrar números iguais
+2022-01-16 07:21:32.844 D: -> Tap em actionBar / Mostrar números iguais
+--------------------------------------------------------------------------------
+2022-01-16 07:21:37.743 D: -> Tap no btnGeraJogo
+2022-01-16 07:21:37.852 D:    - Nível: Fácil (20) Subnível: 0
+2022-01-16 07:21:38.504 D: -> Jogo 15: válido!
+2022-01-16 07:21:38.505 D: linha 0 : 3, 7, 6, 4, 9, 1, 2, 8, 5
+2022-01-16 07:21:38.505 D: linha 1 : 2, 1, 8, 5, 3, 6, 9, 4, 7
+2022-01-16 07:21:38.505 D: linha 2 : 9, 5, 4, 7, 8, 2, 3, 1, 6
+2022-01-16 07:21:38.506 D: linha 3 : 8, 9, 7, 3, 6, 5, 4, 2, 1
+2022-01-16 07:21:38.506 D: linha 4 : 1, 6, 2, 8, 4, 9, 7, 5, 3
+2022-01-16 07:21:38.506 D: linha 5 : 4, 3, 5, 2, 1, 7, 8, 6, 9
+2022-01-16 07:21:38.507 D: linha 6 : 7, 4, 3, 1, 5, 8, 6, 9, 2
+2022-01-16 07:21:38.507 D: linha 7 : 6, 2, 1, 9, 7, 4, 5, 3, 8
+2022-01-16 07:21:38.507 D: linha 8 : 5, 8, 9, 6, 2, 3, 1, 7, 4
+2022-01-16 07:21:38.510 D: -> Jogo gerado preparado:
+2022-01-16 07:21:38.510 D: linha 0 : 0, 7, 6, 4, 0, 1, 2, 8, 5
+2022-01-16 07:21:38.510 D: linha 1 : 2, 0, 0, 0, 3, 0, 9, 4, 7
+2022-01-16 07:21:38.510 D: linha 2 : 9, 5, 4, 7, 8, 2, 0, 1, 0
+2022-01-16 07:21:38.510 D: linha 3 : 8, 9, 7, 3, 6, 5, 4, 2, 1
+2022-01-16 07:21:38.510 D: linha 4 : 1, 6, 2, 0, 4, 9, 0, 5, 3
+2022-01-16 07:21:38.510 D: linha 5 : 0, 0, 5, 0, 1, 7, 8, 6, 0
+2022-01-16 07:21:38.510 D: linha 6 : 7, 4, 3, 0, 5, 8, 6, 0, 2
+2022-01-16 07:21:38.510 D: linha 7 : 6, 0, 1, 0, 7, 4, 5, 3, 8
+2022-01-16 07:21:38.510 D: linha 8 : 5, 0, 9, 6, 2, 3, 1, 7, 0
+2022-01-16 07:21:38.514 D: -> Gabarito gerado pelo Backtracking:
+2022-01-16 07:21:38.514 D: linha 0 : 3, 7, 6, 4, 9, 1, 2, 8, 5
+2022-01-16 07:21:38.514 D: linha 1 : 2, 1, 8, 5, 3, 6, 9, 4, 7
+2022-01-16 07:21:38.514 D: linha 2 : 9, 5, 4, 7, 8, 2, 3, 1, 6
+2022-01-16 07:21:38.514 D: linha 3 : 8, 9, 7, 3, 6, 5, 4, 2, 1
+2022-01-16 07:21:38.514 D: linha 4 : 1, 6, 2, 8, 4, 9, 7, 5, 3
+2022-01-16 07:21:38.514 D: linha 5 : 4, 3, 5, 2, 1, 7, 8, 6, 9
+2022-01-16 07:21:38.514 D: linha 6 : 7, 4, 3, 1, 5, 8, 6, 9, 2
+2022-01-16 07:21:38.514 D: linha 7 : 6, 2, 1, 9, 7, 4, 5, 3, 8
+2022-01-16 07:21:38.514 D: linha 8 : 5, 8, 9, 6, 2, 3, 1, 7, 4
+2022-01-16 07:21:38.516 D: -> Quantidade de clues:   20
+2022-01-16 07:21:38.516 D: -> Nível jogo gerado: Fácil
+2022-01-16 07:21:38.516 D:     - subnível: 0
+--------------------------------------------------------------------------------
+2022-01-16 07:21:39.597 D: -> Tap no btnJogaJogo
+--------------------------------------------------------------------------------
+2022-01-16 07:21:39.598 D: Qm Lin Col Num val
+2022-01-16 07:21:39.621 D: -> Jogo válido!
+2022-01-16 07:21:39.652 D: -> Preset 0
+2022-01-16 07:21:39.653 D:    - tenta adaptar o jogo (1)
+2022-01-16 07:21:39.653 D: linha 0 : 0, 7, 6, 4, 0, 1, 2, 8, 5
+2022-01-16 07:21:39.653 D: linha 1 : 2, 0, 0, 0, 3, 0, 9, 4, 7
+2022-01-16 07:21:39.653 D: linha 2 : 9, 5, 4, 7, 8, 2, 0, 1, 0
+2022-01-16 07:21:39.653 D: linha 3 : 8, 9, 7, 3, 6, 5, 4, 2, 1
+2022-01-16 07:21:39.653 D: linha 4 : 1, 6, 2, 0, 4, 9, 0, 5, 3
+2022-01-16 07:21:39.653 D: linha 5 : 0, 0, 5, 0, 1, 7, 8, 6, 0
+2022-01-16 07:21:39.653 D: linha 6 : 7, 4, 3, 0, 5, 8, 6, 0, 2
+2022-01-16 07:21:39.653 D: linha 7 : 6, 0, 1, 0, 7, 4, 5, 3, 8
+2022-01-16 07:21:39.653 D: linha 8 : 5, 0, 9, 6, 2, 3, 1, 7, 0
+2022-01-16 07:21:39.654 D: -> Jogo com preset 0 adaptado
+2022-01-16 07:21:39.654 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-16 07:21:39.654 D: linha 0 : 3, 7, 6, 4, 9, 1, 2, 8, 5
+2022-01-16 07:21:39.654 D: linha 1 : 2, 1, 8, 5, 3, 6, 9, 4, 7
+2022-01-16 07:21:39.654 D: linha 2 : 9, 5, 4, 7, 8, 2, 3, 1, 6
+2022-01-16 07:21:39.654 D: linha 3 : 8, 9, 7, 3, 6, 5, 4, 2, 1
+2022-01-16 07:21:39.654 D: linha 4 : 1, 6, 2, 8, 4, 9, 7, 5, 3
+2022-01-16 07:21:39.654 D: linha 5 : 4, 3, 5, 2, 1, 7, 8, 6, 9
+2022-01-16 07:21:39.654 D: linha 6 : 7, 4, 3, 1, 5, 8, 6, 9, 2
+2022-01-16 07:21:39.654 D: linha 7 : 6, 2, 1, 9, 7, 4, 5, 3, 8
+2022-01-16 07:21:39.654 D: linha 8 : 5, 8, 9, 6, 2, 3, 1, 7, 4
+2022-01-16 07:21:39.654 D: -> Jogo (preset):
+2022-01-16 07:21:39.654 D: linha 0 : 0, 7, 6, 4, 0, 1, 2, 8, 5
+2022-01-16 07:21:39.654 D: linha 1 : 2, 0, 0, 0, 3, 0, 9, 4, 7
+2022-01-16 07:21:39.654 D: linha 2 : 9, 5, 4, 7, 8, 2, 0, 1, 0
+2022-01-16 07:21:39.655 D: linha 3 : 8, 9, 7, 3, 6, 5, 4, 2, 1
+2022-01-16 07:21:39.655 D: linha 4 : 1, 6, 2, 0, 4, 9, 0, 5, 3
+2022-01-16 07:21:39.655 D: linha 5 : 0, 0, 5, 0, 1, 7, 8, 6, 0
+2022-01-16 07:21:39.655 D: linha 6 : 7, 4, 3, 0, 5, 8, 6, 0, 2
+2022-01-16 07:21:39.655 D: linha 7 : 6, 0, 1, 0, 7, 4, 5, 3, 8
+2022-01-16 07:21:39.655 D: linha 8 : 5, 0, 9, 6, 2, 3, 1, 7, 0
+2022-01-16 07:21:39.656 D: -> Quantidade de clues:   20
+2022-01-16 07:21:39.656 D: -> Nível jogo adaptado: Fácil
+2022-01-16 07:21:39.656 D:     - subnível: 0
+--------------------------------------------------------------------------------
+2022-01-16 07:21:40.080 D: -> Acerta crono.
+--------------------------------------------------------------------------------
+2022-01-16 07:21:40.082 D: -> Jogo:
+2022-01-16 07:21:40.082 D: linha 0 : 0, 7, 6, 4, 0, 1, 2, 8, 5
+2022-01-16 07:21:40.083 D: linha 1 : 2, 0, 0, 0, 3, 0, 9, 4, 7
+2022-01-16 07:21:40.083 D: linha 2 : 9, 5, 4, 7, 8, 2, 0, 1, 0
+2022-01-16 07:21:40.083 D: linha 3 : 8, 9, 7, 3, 6, 5, 4, 2, 1
+2022-01-16 07:21:40.083 D: linha 4 : 1, 6, 2, 0, 4, 9, 0, 5, 3
+2022-01-16 07:21:40.083 D: linha 5 : 0, 0, 5, 0, 1, 7, 8, 6, 0
+2022-01-16 07:21:40.084 D: linha 6 : 7, 4, 3, 0, 5, 8, 6, 0, 2
+2022-01-16 07:21:40.084 D: linha 7 : 6, 0, 1, 0, 7, 4, 5, 3, 8
+2022-01-16 07:21:40.084 D: linha 8 : 5, 0, 9, 6, 2, 3, 1, 7, 0
+2022-01-16 07:21:40.084 D: -> Gabarito:
+2022-01-16 07:21:40.084 D: linha 0 : 3, 7, 6, 4, 9, 1, 2, 8, 5
+2022-01-16 07:21:40.084 D: linha 1 : 2, 1, 8, 5, 3, 6, 9, 4, 7
+2022-01-16 07:21:40.084 D: linha 2 : 9, 5, 4, 7, 8, 2, 3, 1, 6
+2022-01-16 07:21:40.085 D: linha 3 : 8, 9, 7, 3, 6, 5, 4, 2, 1
+2022-01-16 07:21:40.085 D: linha 4 : 1, 6, 2, 8, 4, 9, 7, 5, 3
+2022-01-16 07:21:40.085 D: linha 5 : 4, 3, 5, 2, 1, 7, 8, 6, 9
+2022-01-16 07:21:40.085 D: linha 6 : 7, 4, 3, 1, 5, 8, 6, 9, 2
+2022-01-16 07:21:40.085 D: linha 7 : 6, 2, 1, 9, 7, 4, 5, 3, 8
+2022-01-16 07:21:40.085 D: linha 8 : 5, 8, 9, 6, 2, 3, 1, 7, 4
+2022-01-16 07:21:40.150 D: -> Array qtidd de jogos disponível por número:
+2022-01-16 07:21:40.151 D:    Num 1 2
+2022-01-16 07:21:40.152 D:    Num 2 2
+2022-01-16 07:21:40.154 D:    Num 3 3
+2022-01-16 07:21:40.155 D:    Num 4 2
+2022-01-16 07:21:40.156 D:    Num 5 1
+2022-01-16 07:21:40.157 D:    Num 6 2
+2022-01-16 07:21:40.158 D:    Num 7 1
+2022-01-16 07:21:40.160 D:    Num 8 3
+2022-01-16 07:21:40.161 D:    Num 9 4
+--------------------------------------------------------------------------------
+2022-01-16 07:22:35.492 D: -> onClick rbJogoMuitoDificil
+2022-01-16 07:22:37.434 D: -> Tap no btnGeraJogo
+2022-01-16 07:22:37.541 D:    - Nível: Muito Difícil (50) Subnível: 0
+2022-01-16 07:22:37.744 D: -> Jogo 5: válido!
+2022-01-16 07:22:37.744 D: linha 0 : 2, 9, 6, 4, 8, 1, 5, 3, 7
+2022-01-16 07:22:37.744 D: linha 1 : 3, 4, 8, 5, 6, 7, 2, 1, 9
+2022-01-16 07:22:37.744 D: linha 2 : 1, 7, 5, 2, 9, 3, 4, 6, 8
+2022-01-16 07:22:37.744 D: linha 3 : 9, 6, 3, 7, 5, 8, 1, 4, 2
+2022-01-16 07:22:37.744 D: linha 4 : 5, 2, 1, 9, 4, 6, 7, 8, 3
+2022-01-16 07:22:37.744 D: linha 5 : 7, 8, 4, 3, 1, 2, 6, 9, 5
+2022-01-16 07:22:37.744 D: linha 6 : 6, 3, 7, 1, 2, 9, 8, 5, 4
+2022-01-16 07:22:37.744 D: linha 7 : 8, 5, 2, 6, 3, 4, 9, 7, 1
+2022-01-16 07:22:37.745 D: linha 8 : 4, 1, 9, 8, 7, 5, 3, 2, 6
+2022-01-16 07:22:37.745 D: -> Jogo gerado preparado:
+2022-01-16 07:22:37.745 D: linha 0 : 2, 9, 0, 0, 0, 1, 0, 0, 0
+2022-01-16 07:22:37.745 D: linha 1 : 0, 0, 0, 0, 0, 0, 2, 0, 0
+2022-01-16 07:22:37.745 D: linha 2 : 0, 0, 5, 2, 0, 0, 4, 0, 8
+2022-01-16 07:22:37.745 D: linha 3 : 0, 0, 0, 0, 0, 0, 1, 4, 0
+2022-01-16 07:22:37.745 D: linha 4 : 5, 2, 0, 0, 4, 0, 7, 0, 0
+2022-01-16 07:22:37.746 D: linha 5 : 0, 0, 4, 3, 0, 0, 6, 0, 5
+2022-01-16 07:22:37.746 D: linha 6 : 0, 3, 7, 0, 0, 0, 0, 0, 4
+2022-01-16 07:22:37.746 D: linha 7 : 0, 5, 2, 0, 3, 4, 0, 7, 0
+2022-01-16 07:22:37.746 D: linha 8 : 4, 0, 9, 8, 0, 0, 3, 0, 6
+2022-01-16 07:22:37.747 D: -> Gabarito gerado pelo Backtracking:
+2022-01-16 07:22:37.747 D: linha 0 : 2, 9, 3, 4, 8, 1, 5, 6, 7
+2022-01-16 07:22:37.747 D: linha 1 : 1, 4, 8, 5, 6, 7, 2, 3, 9
+2022-01-16 07:22:37.747 D: linha 2 : 7, 6, 5, 2, 9, 3, 4, 1, 8
+2022-01-16 07:22:37.747 D: linha 3 : 3, 8, 6, 7, 5, 9, 1, 4, 2
+2022-01-16 07:22:37.747 D: linha 4 : 5, 2, 1, 6, 4, 8, 7, 9, 3
+2022-01-16 07:22:37.747 D: linha 5 : 9, 7, 4, 3, 1, 2, 6, 8, 5
+2022-01-16 07:22:37.747 D: linha 6 : 8, 3, 7, 1, 2, 6, 9, 5, 4
+2022-01-16 07:22:37.747 D: linha 7 : 6, 5, 2, 9, 3, 4, 8, 7, 1
+2022-01-16 07:22:37.747 D: linha 8 : 4, 1, 9, 8, 7, 5, 3, 2, 6
+2022-01-16 07:22:37.748 D: -> Quantidade de clues:   50
+2022-01-16 07:22:37.748 D: -> Nível jogo gerado: Muito difícil
+2022-01-16 07:22:37.748 D:     - subnível: 0
+2022-01-16 07:22:39.790 D: -> Tap no btnJogaJogo
+2022-01-16 07:22:39.790 D: Qm Lin Col Num val
+2022-01-16 07:22:39.806 D: -> Jogo válido!
+2022-01-16 07:22:39.831 D: -> Preset 0
+2022-01-16 07:22:39.831 D:    - tenta adaptar o jogo (1)
+2022-01-16 07:22:39.831 D: linha 0 : 2, 9, 0, 0, 0, 1, 0, 0, 0
+2022-01-16 07:22:39.831 D: linha 1 : 0, 0, 0, 0, 0, 0, 2, 0, 0
+2022-01-16 07:22:39.831 D: linha 2 : 0, 0, 5, 2, 0, 0, 4, 0, 8
+2022-01-16 07:22:39.831 D: linha 3 : 0, 0, 0, 0, 0, 0, 1, 4, 0
+2022-01-16 07:22:39.831 D: linha 4 : 5, 2, 0, 0, 4, 0, 7, 0, 0
+2022-01-16 07:22:39.831 D: linha 5 : 0, 0, 4, 3, 0, 0, 6, 0, 5
+2022-01-16 07:22:39.831 D: linha 6 : 0, 3, 7, 0, 0, 0, 0, 0, 4
+2022-01-16 07:22:39.831 D: linha 7 : 0, 5, 2, 0, 3, 4, 0, 7, 0
+2022-01-16 07:22:39.831 D: linha 8 : 4, 0, 9, 8, 0, 0, 3, 0, 6
+2022-01-16 07:22:39.832 D: -> Jogo com preset 0 adaptado
+2022-01-16 07:22:39.833 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-16 07:22:39.833 D: linha 0 : 2, 9, 3, 4, 8, 1, 5, 6, 7
+2022-01-16 07:22:39.833 D: linha 1 : 1, 4, 8, 5, 6, 7, 2, 3, 9
+2022-01-16 07:22:39.833 D: linha 2 : 7, 6, 5, 2, 9, 3, 4, 1, 8
+2022-01-16 07:22:39.833 D: linha 3 : 3, 8, 6, 7, 5, 9, 1, 4, 2
+2022-01-16 07:22:39.833 D: linha 4 : 5, 2, 1, 6, 4, 8, 7, 9, 3
+2022-01-16 07:22:39.833 D: linha 5 : 9, 7, 4, 3, 1, 2, 6, 8, 5
+2022-01-16 07:22:39.833 D: linha 6 : 8, 3, 7, 1, 2, 6, 9, 5, 4
+2022-01-16 07:22:39.833 D: linha 7 : 6, 5, 2, 9, 3, 4, 8, 7, 1
+2022-01-16 07:22:39.833 D: linha 8 : 4, 1, 9, 8, 7, 5, 3, 2, 6
+2022-01-16 07:22:39.833 D: -> Jogo (preset):
+2022-01-16 07:22:39.833 D: linha 0 : 2, 9, 0, 0, 0, 1, 0, 0, 0
+2022-01-16 07:22:39.833 D: linha 1 : 0, 0, 0, 0, 0, 0, 2, 0, 0
+2022-01-16 07:22:39.834 D: linha 2 : 0, 0, 5, 2, 0, 0, 4, 0, 8
+2022-01-16 07:22:39.834 D: linha 3 : 0, 0, 0, 0, 0, 0, 1, 4, 0
+2022-01-16 07:22:39.834 D: linha 4 : 5, 2, 0, 0, 4, 0, 7, 0, 0
+2022-01-16 07:22:39.834 D: linha 5 : 0, 0, 4, 3, 0, 0, 6, 0, 5
+2022-01-16 07:22:39.834 D: linha 6 : 0, 3, 7, 0, 0, 0, 0, 0, 4
+2022-01-16 07:22:39.834 D: linha 7 : 0, 5, 2, 0, 3, 4, 0, 7, 0
+2022-01-16 07:22:39.834 D: linha 8 : 4, 0, 9, 8, 0, 0, 3, 0, 6
+2022-01-16 07:22:39.835 D: -> Quantidade de clues:   50
+2022-01-16 07:22:39.835 D: -> Nível jogo adaptado: Muito difícil
+2022-01-16 07:22:39.835 D:     - subnível: 0
+2022-01-16 07:22:40.214 D: -> Acerta crono.
+2022-01-16 07:22:40.214 D: -> Jogo:
+2022-01-16 07:22:40.215 D: linha 0 : 2, 9, 0, 0, 0, 1, 0, 0, 0
+2022-01-16 07:22:40.215 D: linha 1 : 0, 0, 0, 0, 0, 0, 2, 0, 0
+2022-01-16 07:22:40.215 D: linha 2 : 0, 0, 5, 2, 0, 0, 4, 0, 8
+2022-01-16 07:22:40.215 D: linha 3 : 0, 0, 0, 0, 0, 0, 1, 4, 0
+2022-01-16 07:22:40.215 D: linha 4 : 5, 2, 0, 0, 4, 0, 7, 0, 0
+2022-01-16 07:22:40.215 D: linha 5 : 0, 0, 4, 3, 0, 0, 6, 0, 5
+2022-01-16 07:22:40.215 D: linha 6 : 0, 3, 7, 0, 0, 0, 0, 0, 4
+2022-01-16 07:22:40.215 D: linha 7 : 0, 5, 2, 0, 3, 4, 0, 7, 0
+2022-01-16 07:22:40.215 D: linha 8 : 4, 0, 9, 8, 0, 0, 3, 0, 6
+2022-01-16 07:22:40.215 D: -> Gabarito:
+2022-01-16 07:22:40.215 D: linha 0 : 2, 9, 3, 4, 8, 1, 5, 6, 7
+2022-01-16 07:22:40.215 D: linha 1 : 1, 4, 8, 5, 6, 7, 2, 3, 9
+2022-01-16 07:22:40.215 D: linha 2 : 7, 6, 5, 2, 9, 3, 4, 1, 8
+2022-01-16 07:22:40.215 D: linha 3 : 3, 8, 6, 7, 5, 9, 1, 4, 2
+2022-01-16 07:22:40.215 D: linha 4 : 5, 2, 1, 6, 4, 8, 7, 9, 3
+2022-01-16 07:22:40.216 D: linha 5 : 9, 7, 4, 3, 1, 2, 6, 8, 5
+2022-01-16 07:22:40.216 D: linha 6 : 8, 3, 7, 1, 2, 6, 9, 5, 4
+2022-01-16 07:22:40.216 D: linha 7 : 6, 5, 2, 9, 3, 4, 8, 7, 1
+2022-01-16 07:22:40.216 D: linha 8 : 4, 1, 9, 8, 7, 5, 3, 2, 6
+2022-01-16 07:22:40.245 D: -> Array qtidd de jogos disponível por número:
+2022-01-16 07:22:40.246 D:    Num 1 7
+2022-01-16 07:22:40.247 D:    Num 2 4
+2022-01-16 07:22:40.248 D:    Num 3 5
+2022-01-16 07:22:40.249 D:    Num 4 2
+2022-01-16 07:22:40.250 D:    Num 5 5
+2022-01-16 07:22:40.251 D:    Num 6 7
+2022-01-16 07:22:40.253 D:    Num 7 6
+2022-01-16 07:22:40.254 D:    Num 8 7
+2022-01-16 07:22:40.255 D:    Num 9 7
+2022-01-16 07:23:21.477 D: -> Tap no btnAdaptaJogo
+2022-01-16 07:23:21.479 D:    - rbAdapta: Preset
+2022-01-16 07:23:23.083 D: -> "Carrega" was pressed
+2022-01-16 07:23:23.186 D: -> Presset is checked
+2022-01-16 07:23:23.211 D: -> Launch AdaptarActivity
+2022-01-16 07:23:23.403 D: -> Jogos salvos: 
+2022-01-16 07:23:23.404 D:    - jogo_38.xml
+2022-01-16 07:23:23.418 D:    - jogo_37.xml
+2022-01-16 07:23:23.428 D:    - jogo_36.xml
+2022-01-16 07:23:23.437 D:    - jogo_35.xml
+2022-01-16 07:23:23.446 D:    - jogo_34.xml
+2022-01-16 07:23:23.454 D:    - jogo_33.xml
+2022-01-16 07:23:23.463 D:    - jogo_32.xml
+2022-01-16 07:23:23.472 D:    - jogo_31.xml
+2022-01-16 07:23:23.482 D:    - jogo_30.xml
+2022-01-16 07:23:23.492 D:    - jogo_29.xml
+2022-01-16 07:23:23.500 D:    - jogo_28.xml
+2022-01-16 07:23:23.509 D:    - jogo_26.xml
+2022-01-16 07:23:31.033 D: -> Tap em actionBar / Des_selecionar
+2022-01-16 07:23:38.279 D: -> Tap em actionBar / Selecionar Todos
+2022-01-16 07:23:42.822 D: -> Tap em actionBar / Des_selecionar
+2022-01-16 07:23:47.382 D: -> Tap em actionBar / Selecionar Todos
+2022-01-16 07:23:49.987 D: -> Tap em actionBar / Des_selecionar
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+2022-01-16 07:23:51.838 D: Smartphone: samsung - SM-G570MBuild: on5xelte
+2022-01-16 07:23:51.838 D: -> Dimensões screen:
+2022-01-16 07:23:51.840 D:    - largura  :  720,00 px (2,44")
+2022-01-16 07:23:51.841 D:    - altura   :  1280,00 px (4,33")
+2022-01-16 07:23:51.842 D:    - Diagonal :  4,97"
+2022-01-16 07:23:51.842 D:    - fatorlargura :  1,00
+2022-01-16 07:23:51.843 D:    - fatorAltura  :  1,00
+2022-01-16 07:23:51.843 D: -> BaseOS: 8.0.0 SDK_INT: API26
+2022-01-16 07:23:51.921 D: -> main Verifica permissões
+2022-01-16 07:23:51.921 D:    - Checa se permissões Ok
+2022-01-16 07:23:51.922 D:      - android.permission.INTERNET: true
+2022-01-16 07:23:51.923 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-16 07:23:51.923 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-16 07:23:51.933 D: Permission Granted!
+2022-01-16 07:23:51.933 D: -> Registra activity for result
+2022-01-16 07:23:59.732 D: -> onClick rbJogoDificil
+2022-01-16 07:24:08.125 D: -> Tap no btnGeraJogo
+2022-01-16 07:24:08.229 D:    - Nível: Difícil (40) Subnível: 9
+2022-01-16 07:24:08.336 D: -> Jogo 3: válido!
+2022-01-16 07:24:08.336 D: linha 0 : 6, 1, 9, 7, 5, 4, 2, 8, 3
+2022-01-16 07:24:08.336 D: linha 1 : 7, 4, 2, 8, 3, 9, 5, 1, 6
+2022-01-16 07:24:08.336 D: linha 2 : 3, 5, 8, 2, 6, 1, 4, 7, 9
+2022-01-16 07:24:08.336 D: linha 3 : 1, 2, 3, 9, 7, 8, 6, 5, 4
+2022-01-16 07:24:08.336 D: linha 4 : 9, 7, 5, 1, 4, 6, 3, 2, 8
+2022-01-16 07:24:08.336 D: linha 5 : 8, 6, 4, 5, 2, 3, 1, 9, 7
+2022-01-16 07:24:08.336 D: linha 6 : 4, 8, 1, 6, 9, 5, 7, 3, 2
+2022-01-16 07:24:08.336 D: linha 7 : 5, 3, 7, 4, 8, 2, 9, 6, 1
+2022-01-16 07:24:08.337 D: linha 8 : 2, 9, 6, 3, 1, 7, 8, 4, 5
+2022-01-16 07:24:08.337 D: -> Jogo gerado preparado:
+2022-01-16 07:24:08.337 D: linha 0 : 0, 0, 9, 0, 0, 0, 2, 0, 3
+2022-01-16 07:24:08.337 D: linha 1 : 7, 0, 0, 0, 0, 9, 0, 0, 6
+2022-01-16 07:24:08.337 D: linha 2 : 0, 5, 8, 0, 0, 1, 4, 0, 9
+2022-01-16 07:24:08.337 D: linha 3 : 0, 0, 0, 0, 0, 0, 6, 5, 0
+2022-01-16 07:24:08.338 D: linha 4 : 0, 0, 5, 1, 4, 0, 0, 2, 8
+2022-01-16 07:24:08.338 D: linha 5 : 0, 6, 0, 0, 2, 0, 0, 0, 7
+2022-01-16 07:24:08.338 D: linha 6 : 4, 8, 0, 0, 0, 0, 0, 0, 0
+2022-01-16 07:24:08.338 D: linha 7 : 5, 3, 0, 4, 0, 0, 0, 0, 1
+2022-01-16 07:24:08.338 D: linha 8 : 2, 9, 0, 3, 1, 0, 8, 0, 0
+2022-01-16 07:24:08.340 D: -> Gabarito gerado pelo Backtracking:
+2022-01-16 07:24:08.340 D: linha 0 : 6, 1, 9, 7, 5, 4, 2, 8, 3
+2022-01-16 07:24:08.340 D: linha 1 : 7, 4, 2, 8, 3, 9, 5, 1, 6
+2022-01-16 07:24:08.341 D: linha 2 : 3, 5, 8, 2, 6, 1, 4, 7, 9
+2022-01-16 07:24:08.341 D: linha 3 : 1, 2, 3, 9, 7, 8, 6, 5, 4
+2022-01-16 07:24:08.341 D: linha 4 : 9, 7, 5, 1, 4, 6, 3, 2, 8
+2022-01-16 07:24:08.341 D: linha 5 : 8, 6, 4, 5, 2, 3, 1, 9, 7
+2022-01-16 07:24:08.341 D: linha 6 : 4, 8, 1, 6, 9, 5, 7, 3, 2
+2022-01-16 07:24:08.341 D: linha 7 : 5, 3, 7, 4, 8, 2, 9, 6, 1
+2022-01-16 07:24:08.341 D: linha 8 : 2, 9, 6, 3, 1, 7, 8, 4, 5
+2022-01-16 07:24:08.342 D: -> Quantidade de clues:   49
+2022-01-16 07:24:08.342 D: -> Nível jogo gerado: Difícil
+2022-01-16 07:24:08.342 D:     - subnível: 9
+2022-01-16 07:24:16.525 D: -> Tap no btnGeraJogo
+2022-01-16 07:24:16.629 D:    - Nível: Difícil (40) Subnível: 9
+2022-01-16 07:24:17.136 D: -> Jogo 11: válido!
+2022-01-16 07:24:17.136 D: linha 0 : 5, 1, 4, 8, 2, 7, 6, 3, 9
+2022-01-16 07:24:17.136 D: linha 1 : 8, 9, 6, 3, 1, 5, 2, 7, 4
+2022-01-16 07:24:17.136 D: linha 2 : 3, 7, 2, 6, 4, 9, 8, 5, 1
+2022-01-16 07:24:17.137 D: linha 3 : 7, 4, 3, 2, 6, 8, 1, 9, 5
+2022-01-16 07:24:17.137 D: linha 4 : 1, 6, 5, 9, 7, 3, 4, 8, 2
+2022-01-16 07:24:17.137 D: linha 5 : 2, 8, 9, 4, 5, 1, 3, 6, 7
+2022-01-16 07:24:17.137 D: linha 6 : 4, 3, 8, 5, 9, 2, 7, 1, 6
+2022-01-16 07:24:17.137 D: linha 7 : 6, 5, 1, 7, 8, 4, 9, 2, 3
+2022-01-16 07:24:17.137 D: linha 8 : 9, 2, 7, 1, 3, 6, 5, 4, 8
+2022-01-16 07:24:17.137 D: -> Jogo gerado preparado:
+2022-01-16 07:24:17.137 D: linha 0 : 0, 1, 0, 8, 0, 7, 6, 3, 0
+2022-01-16 07:24:17.137 D: linha 1 : 0, 0, 0, 3, 0, 0, 0, 0, 4
+2022-01-16 07:24:17.137 D: linha 2 : 3, 0, 2, 6, 4, 0, 8, 5, 1
+2022-01-16 07:24:17.137 D: linha 3 : 0, 0, 3, 2, 6, 0, 0, 0, 0
+2022-01-16 07:24:17.137 D: linha 4 : 1, 6, 0, 0, 0, 0, 4, 0, 2
+2022-01-16 07:24:17.138 D: linha 5 : 0, 8, 0, 4, 0, 1, 0, 0, 0
+2022-01-16 07:24:17.138 D: linha 6 : 4, 0, 8, 0, 0, 0, 0, 0, 6
+2022-01-16 07:24:17.138 D: linha 7 : 0, 5, 0, 7, 8, 0, 0, 0, 3
+2022-01-16 07:24:17.138 D: linha 8 : 0, 0, 0, 0, 3, 0, 0, 0, 0
+2022-01-16 07:24:17.138 D: -> Gabarito gerado pelo Backtracking:
+2022-01-16 07:24:17.138 D: linha 0 : 5, 1, 4, 8, 2, 7, 6, 3, 9
+2022-01-16 07:24:17.138 D: linha 1 : 8, 9, 6, 3, 1, 5, 2, 7, 4
+2022-01-16 07:24:17.138 D: linha 2 : 3, 7, 2, 6, 4, 9, 8, 5, 1
+2022-01-16 07:24:17.138 D: linha 3 : 7, 4, 3, 2, 6, 8, 1, 9, 5
+2022-01-16 07:24:17.139 D: linha 4 : 1, 6, 5, 9, 7, 3, 4, 8, 2
+2022-01-16 07:24:17.139 D: linha 5 : 2, 8, 9, 4, 5, 1, 3, 6, 7
+2022-01-16 07:24:17.139 D: linha 6 : 4, 3, 8, 5, 9, 2, 7, 1, 6
+2022-01-16 07:24:17.139 D: linha 7 : 6, 5, 1, 7, 8, 4, 9, 2, 3
+2022-01-16 07:24:17.139 D: linha 8 : 9, 2, 7, 1, 3, 6, 5, 4, 8
+2022-01-16 07:24:17.139 D: -> Quantidade de clues:   49
+2022-01-16 07:24:17.139 D: -> Nível jogo gerado: Difícil
+2022-01-16 07:24:17.139 D:     - subnível: 9
+2022-01-16 07:24:18.680 D: -> Tap no btnAdaptaJogo
+2022-01-16 07:24:18.681 D:    - rbAdapta: Preset
+2022-01-16 07:24:22.824 D: -> "Edita" was pressed
+2022-01-16 07:24:28.225 D: -> onClick rbPreset
+2022-01-16 07:24:28.327 D: -> Presset is checked
+2022-01-16 07:24:28.343 D: -> Launch AdaptarActivity
+2022-01-16 07:24:28.440 D: -> Jogos salvos: 
+2022-01-16 07:24:28.441 D:    - jogo_38.xml
+2022-01-16 07:24:28.449 D:    - jogo_37.xml
+2022-01-16 07:24:28.456 D:    - jogo_36.xml
+2022-01-16 07:24:28.464 D:    - jogo_35.xml
+2022-01-16 07:24:28.473 D:    - jogo_34.xml
+2022-01-16 07:24:28.480 D:    - jogo_33.xml
+2022-01-16 07:24:28.488 D:    - jogo_32.xml
+2022-01-16 07:24:28.495 D:    - jogo_31.xml
+2022-01-16 07:24:28.503 D:    - jogo_30.xml
+2022-01-16 07:24:28.510 D:    - jogo_29.xml
+2022-01-16 07:24:28.518 D:    - jogo_28.xml
+2022-01-16 07:24:28.526 D:    - jogo_26.xml
+--------------------------------------------------------------------------------
+2022-01-16 07:24:37.052 D: -> Del sel checkBox 0
+2022-01-16 07:24:37.053 D: -> itemsChkDel: [true, false, false, false, false, false, false, false, false, false, false, false]
+2022-01-16 07:24:38.271 D: -> Del sel checkBox 0
+2022-01-16 07:24:38.272 D: -> itemsChkDel: [false, false, false, false, false, false, false, false, false, false, false, false]
+2022-01-16 07:24:39.290 D: -> arqTxt 0
+2022-01-16 07:24:39.291 D: -> Não existe esse campo!
+2022-01-16 07:24:39.291 D: -> Tapped 0: !
+2022-01-16 07:24:39.291 D: -> item textViews:
+    Arq: jogo_38.xml  JogoPresetado: jogo_36.xml
+    Data: 15/01/2022 11:33:48  Status: ativo  Nivel: Difícil  sub: 9  Erros: 2  tempo: 04:58
+2022-01-16 07:24:39.291 D: -> nome do arquivo: jogo_38.xml
+2022-01-16 07:24:39.295 D: -> dados do jogo salvo:
+    <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Difícil</nivel><subnivel>9</subnivel></header><body><linha0>5, 0, 0, 4, 8, 0, 1, 3, 9</linha0><linha1>0, 9, 1, 3, 0, 0, 5, 8, 0</linha1><linha2>8, 0, 3, 9, 1, 5, 0, 0, 0</linha2><linha3>0, 5, 2, 0, 4, 7, 3, 9, 0</linha3><linha4>3, 0, 9, 5, 0, 8, 0, 0, 7</linha4><linha5>0, 1, 0, 0, 3, 9, 0, 5, 0</linha5><linha6>9, 7, 6, 8, 5, 0, 0, 4, 3</linha6><linha7>0, 3, 5, 0, 9, 4, 0, 6, 0</linha7><linha8>1, 0, 0, 0, 6, 3, 9, 0, 5</linha8></body><jogos><id>1</id><opcaoJogo>JogoPresetado: jogo_36.xml</opcaoJogo><dataHora>15/01/2022 11:33:48</dataHora><tempoJogo>04:58</tempoJogo><erros>2</erros><status>ativo</status></jogos><body2><linha0>5, 0, 0, 4, 8, 0, 1, 3, 9</linha0><linha1>0, 9, 1, 3, 0, 0, 5, 8, 0</linha1><linha2>8, 0, 3, 9, 1, 5, 0, 0, 0</linha2><linha3>0, 5, 2, 1, 4, 7, 3, 9, 0</linha3><linha4>3, 0, 9, 5, 0, 8, 0, 1, 7</linha4><linha5>0, 1, 0, 0, 3, 9, 0, 5, 0</linha5><linha6>9, 7, 6, 8, 5, 1, 0, 4, 3</linha6><linha7>0, 3, 5, 0, 9, 4, 0, 6, 1</linha7><linha8>1, 0, 0, 0, 6, 3, 9, 0, 5</linha8></body2></presets>
+2022-01-16 07:24:39.295 D: -> status: NÃO finalizado
+2022-01-16 07:24:41.597 D: -> "Continua" was pressed
+2022-01-16 07:24:41.623 D: -> Preset 0
+2022-01-16 07:24:41.623 D:    - tenta adaptar o jogo (1)
+2022-01-16 07:24:41.623 D: linha 0 : 5, 0, 0, 4, 8, 0, 1, 3, 9
+2022-01-16 07:24:41.623 D: linha 1 : 0, 9, 1, 3, 0, 0, 5, 8, 0
+2022-01-16 07:24:41.623 D: linha 2 : 8, 0, 3, 9, 1, 5, 0, 0, 0
+2022-01-16 07:24:41.623 D: linha 3 : 0, 5, 2, 1, 4, 7, 3, 9, 0
+2022-01-16 07:24:41.624 D: linha 4 : 3, 0, 9, 5, 0, 8, 0, 1, 7
+2022-01-16 07:24:41.624 D: linha 5 : 0, 1, 0, 0, 3, 9, 0, 5, 0
+2022-01-16 07:24:41.624 D: linha 6 : 9, 7, 6, 8, 5, 1, 0, 4, 3
+2022-01-16 07:24:41.624 D: linha 7 : 0, 3, 5, 0, 9, 4, 0, 6, 1
+2022-01-16 07:24:41.624 D: linha 8 : 1, 0, 0, 0, 6, 3, 9, 0, 5
+2022-01-16 07:24:41.624 D: -> Jogo com preset 0 adaptado
+2022-01-16 07:24:41.624 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-16 07:24:41.624 D: linha 0 : 5, 2, 7, 4, 8, 6, 1, 3, 9
+2022-01-16 07:24:41.624 D: linha 1 : 4, 9, 1, 3, 7, 2, 5, 8, 6
+2022-01-16 07:24:41.624 D: linha 2 : 8, 6, 3, 9, 1, 5, 7, 2, 4
+2022-01-16 07:24:41.624 D: linha 3 : 6, 5, 2, 1, 4, 7, 3, 9, 8
+2022-01-16 07:24:41.624 D: linha 4 : 3, 4, 9, 5, 2, 8, 6, 1, 7
+2022-01-16 07:24:41.624 D: linha 5 : 7, 1, 8, 6, 3, 9, 4, 5, 2
+2022-01-16 07:24:41.624 D: linha 6 : 9, 7, 6, 8, 5, 1, 2, 4, 3
+2022-01-16 07:24:41.625 D: linha 7 : 2, 3, 5, 7, 9, 4, 8, 6, 1
+2022-01-16 07:24:41.625 D: linha 8 : 1, 8, 4, 2, 6, 3, 9, 7, 5
+2022-01-16 07:24:41.625 D: -> Jogo (preset):
+2022-01-16 07:24:41.625 D: linha 0 : 5, 0, 0, 4, 8, 0, 1, 3, 9
+2022-01-16 07:24:41.625 D: linha 1 : 0, 9, 1, 3, 0, 0, 5, 8, 0
+2022-01-16 07:24:41.625 D: linha 2 : 8, 0, 3, 9, 1, 5, 0, 0, 0
+2022-01-16 07:24:41.625 D: linha 3 : 0, 5, 2, 1, 4, 7, 3, 9, 0
+2022-01-16 07:24:41.625 D: linha 4 : 3, 0, 9, 5, 0, 8, 0, 1, 7
+2022-01-16 07:24:41.625 D: linha 5 : 0, 1, 0, 0, 3, 9, 0, 5, 0
+2022-01-16 07:24:41.625 D: linha 6 : 9, 7, 6, 8, 5, 1, 0, 4, 3
+2022-01-16 07:24:41.625 D: linha 7 : 0, 3, 5, 0, 9, 4, 0, 6, 1
+2022-01-16 07:24:41.625 D: linha 8 : 1, 0, 0, 0, 6, 3, 9, 0, 5
+2022-01-16 07:24:41.626 D: -> Quantidade de clues:   29
+2022-01-16 07:24:41.626 D: -> Nível jogo adaptado: Fácil
+2022-01-16 07:24:41.626 D:     - subnível: 9
+2022-01-16 07:24:41.626 D: idxLin = 0
+2022-01-16 07:24:41.626 D: idxLin = 1
+2022-01-16 07:24:41.626 D: idxLin = 2
+2022-01-16 07:24:41.626 D: idxLin = 3
+2022-01-16 07:24:41.626 D: idxLin = 4
+2022-01-16 07:24:41.626 D: idxLin = 5
+2022-01-16 07:24:41.626 D: idxLin = 6
+2022-01-16 07:24:41.626 D: idxLin = 7
+2022-01-16 07:24:41.627 D: idxLin = 8
+2022-01-16 07:24:41.627 D: Qm Lin Col Num val
+2022-01-16 07:24:41.873 D: -> Acerta crono.
+2022-01-16 07:24:41.873 D: -> Jogo:
+2022-01-16 07:24:41.873 D: linha 0 : 5, 0, 0, 4, 8, 0, 1, 3, 9
+2022-01-16 07:24:41.874 D: linha 1 : 0, 9, 1, 3, 0, 0, 5, 8, 0
+2022-01-16 07:24:41.874 D: linha 2 : 8, 0, 3, 9, 1, 5, 0, 0, 0
+2022-01-16 07:24:41.874 D: linha 3 : 0, 5, 2, 1, 4, 7, 3, 9, 0
+2022-01-16 07:24:41.874 D: linha 4 : 3, 0, 9, 5, 0, 8, 0, 1, 7
+2022-01-16 07:24:41.874 D: linha 5 : 0, 1, 0, 0, 3, 9, 0, 5, 0
+2022-01-16 07:24:41.874 D: linha 6 : 9, 7, 6, 8, 5, 1, 0, 4, 3
+2022-01-16 07:24:41.874 D: linha 7 : 0, 3, 5, 0, 9, 4, 0, 6, 1
+2022-01-16 07:24:41.874 D: linha 8 : 1, 0, 0, 0, 6, 3, 9, 0, 5
+2022-01-16 07:24:41.874 D: -> Gabarito:
+2022-01-16 07:24:41.874 D: linha 0 : 5, 2, 7, 4, 8, 6, 1, 3, 9
+2022-01-16 07:24:41.874 D: linha 1 : 4, 9, 1, 3, 7, 2, 5, 8, 6
+2022-01-16 07:24:41.874 D: linha 2 : 8, 6, 3, 9, 1, 5, 7, 2, 4
+2022-01-16 07:24:41.874 D: linha 3 : 6, 5, 2, 1, 4, 7, 3, 9, 8
+2022-01-16 07:24:41.874 D: linha 4 : 3, 4, 9, 5, 2, 8, 6, 1, 7
+2022-01-16 07:24:41.874 D: linha 5 : 7, 1, 8, 6, 3, 9, 4, 5, 2
+2022-01-16 07:24:41.874 D: linha 6 : 9, 7, 6, 8, 5, 1, 2, 4, 3
+2022-01-16 07:24:41.874 D: linha 7 : 2, 3, 5, 7, 9, 4, 8, 6, 1
+2022-01-16 07:24:41.874 D: linha 8 : 1, 8, 4, 2, 6, 3, 9, 7, 5
+2022-01-16 07:24:41.899 D: -> Array qtidd de jogos disponível por número:
+2022-01-16 07:24:41.900 D:    Num 1 0
+2022-01-16 07:24:41.900 D:    Num 2 8
+2022-01-16 07:24:41.901 D:    Num 3 0
+2022-01-16 07:24:41.902 D:    Num 4 5
+2022-01-16 07:24:41.903 D:    Num 5 0
+2022-01-16 07:24:41.903 D:    Num 6 6
+2022-01-16 07:24:41.904 D:    Num 7 6
+2022-01-16 07:24:41.905 D:    Num 8 4
+2022-01-16 07:24:41.906 D:    Num 9 0
+--------------------------------------------------------------------------------
+2022-01-16 07:24:58.798 D: -> 04:58 - Inicia
+--------------------------------------------------------------------------------
+2022-01-16 07:24:58.800 D: -> Acerta crono.
+--------------------------------------------------------------------------------
+2022-01-16 07:24:58.805 D: -> Parte o crono.
+--------------------------------------------------------------------------------
+2022-01-16 07:28:14.623 D: -> 08:12 - Fim
+--------------------------------------------------------------------------------
+2022-01-16 07:28:19.204 D: -> Tap no btn "Salvar" 
+--------------------------------------------------------------------------------
+2022-01-16 07:28:21.878 D: -> "Sim" was pressed
+2022-01-16 07:28:21.880 D: -> Arquivos raw (listRaw):
+2022-01-16 07:28:21.880 D: 0: modelo_arq_xml_sudoku1
+2022-01-16 07:28:21.880 D: -> Arquivo modelo_arq_xml_sudoku1:
+2022-01-16 07:28:21.887 D:    0: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-16 07:28:21.887 D: -> modelo arq Sudoku xml
+2022-01-16 07:28:21.887 D: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-16 07:28:21.995 D: -> Tag: 12, Conteudo: <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Difícil</nivel><subnivel>9</subnivel></header><body><linha0>5, 0, 0, 4, 8, 0, 1, 3, 9</linha0><linha1>0, 9, 1, 3, 0, 0, 5, 8, 0</linha1><linha2>8, 0, 3, 9, 1, 5, 0, 0, 0</linha2><linha3>0, 5, 2, 1, 4, 7, 3, 9, 0</linha3><linha4>3, 0, 9, 5, 0, 8, 0, 1, 7</linha4><linha5>0, 1, 0, 0, 3, 9, 0, 5, 0</linha5><linha6>9, 7, 6, 8, 5, 1, 0, 4, 3</linha6><linha7>0, 3, 5, 0, 9, 4, 0, 6, 1</linha7><linha8>1, 0, 0, 0, 6, 3, 9, 0, 5</linha8></body><jogos><id>1</id><opcaoJogo>JogoPresetado: jogo_38.xml</opcaoJogo><dataHora>16/01/2022 07:28:21</dataHora><tempoJogo>08:12</tempoJogo><erros>3</erros><status>finalizado</status></jogos></presets>
+2022-01-16 07:28:22.022 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/jogos/jogo_39.xml OK!
+2022-01-16 07:28:22.023 D: -> Jogos salvos: 
+2022-01-16 07:28:22.027 D:    - jogo_39.xml
+2022-01-16 07:28:22.027 D:    - jogo_38.xml
+2022-01-16 07:28:22.027 D:    - jogo_37.xml
+2022-01-16 07:28:22.027 D:    - jogo_36.xml
+2022-01-16 07:28:22.027 D:    - jogo_35.xml
+2022-01-16 07:28:22.027 D:    - jogo_34.xml
+2022-01-16 07:28:22.027 D:    - jogo_33.xml
+2022-01-16 07:28:22.027 D:    - jogo_32.xml
+2022-01-16 07:28:22.027 D:    - jogo_31.xml
+2022-01-16 07:28:22.027 D:    - jogo_30.xml
+2022-01-16 07:28:22.028 D:    - jogo_29.xml
+2022-01-16 07:28:22.028 D:    - jogo_28.xml
+2022-01-16 07:28:22.028 D:    - jogo_26.xml
+--------------------------------------------------------------------------------
+2022-01-16 07:28:31.019 D: -> Retorna da activity for result
+2022-01-16 07:28:31.020 D: -> activity results NÃO OK!
+--------------------------------------------------------------------------------
+2022-01-16 07:32:25.405 D: -> Tap em actionBar / Mostrar números iguais
+2022-01-16 07:32:27.370 D: -> onClick rbJogoMuitoDificil
+2022-01-16 07:32:30.404 D: -> onClick rbJogoDificil
+2022-01-16 07:32:34.222 D: -> Tap em actionBar / Não mostrar números iguais
+2022-01-16 07:33:15.914 D: -> onClick rbJogoMuitoDificil
+2022-01-16 07:33:24.963 D: -> Tap no btnGeraJogo
+2022-01-16 07:33:25.066 D:    - Nível: Muito Difícil (50) Subnível: 0
+2022-01-16 07:33:25.253 D: -> Jogo 5: válido!
+2022-01-16 07:33:25.254 D: linha 0 : 7, 8, 6, 9, 3, 2, 4, 5, 1
+2022-01-16 07:33:25.254 D: linha 1 : 2, 4, 5, 8, 6, 1, 9, 3, 7
+2022-01-16 07:33:25.254 D: linha 2 : 1, 9, 3, 4, 5, 7, 2, 6, 8
+2022-01-16 07:33:25.254 D: linha 3 : 9, 5, 4, 2, 7, 8, 3, 1, 6
+2022-01-16 07:33:25.254 D: linha 4 : 6, 3, 1, 5, 4, 9, 7, 8, 2
+2022-01-16 07:33:25.254 D: linha 5 : 8, 7, 2, 3, 1, 6, 5, 4, 9
+2022-01-16 07:33:25.254 D: linha 6 : 5, 1, 9, 7, 8, 4, 6, 2, 3
+2022-01-16 07:33:25.254 D: linha 7 : 3, 2, 8, 6, 9, 5, 1, 7, 4
+2022-01-16 07:33:25.254 D: linha 8 : 4, 6, 7, 1, 2, 3, 8, 9, 5
+2022-01-16 07:33:25.254 D: -> Jogo gerado preparado:
+2022-01-16 07:33:25.254 D: linha 0 : 7, 0, 6, 9, 0, 2, 0, 5, 0
+2022-01-16 07:33:25.255 D: linha 1 : 2, 0, 0, 0, 0, 0, 0, 3, 7
+2022-01-16 07:33:25.255 D: linha 2 : 0, 0, 3, 4, 0, 7, 2, 6, 0
+2022-01-16 07:33:25.255 D: linha 3 : 0, 5, 0, 0, 0, 0, 0, 0, 6
+2022-01-16 07:33:25.255 D: linha 4 : 6, 0, 0, 5, 0, 9, 7, 0, 0
+2022-01-16 07:33:25.255 D: linha 5 : 0, 0, 2, 0, 0, 6, 5, 4, 0
+2022-01-16 07:33:25.255 D: linha 6 : 0, 1, 0, 0, 8, 0, 6, 0, 0
+2022-01-16 07:33:25.255 D: linha 7 : 0, 0, 0, 0, 9, 0, 1, 7, 0
+2022-01-16 07:33:25.255 D: linha 8 : 4, 0, 0, 0, 0, 0, 0, 0, 5
+2022-01-16 07:33:25.262 D: -> Gabarito gerado pelo Backtracking:
+2022-01-16 07:33:25.263 D: linha 0 : 7, 4, 6, 9, 3, 2, 8, 5, 1
+2022-01-16 07:33:25.263 D: linha 1 : 2, 9, 5, 1, 6, 8, 4, 3, 7
+2022-01-16 07:33:25.263 D: linha 2 : 1, 8, 3, 4, 5, 7, 2, 6, 9
+2022-01-16 07:33:25.263 D: linha 3 : 8, 5, 1, 7, 4, 3, 9, 2, 6
+2022-01-16 07:33:25.263 D: linha 4 : 6, 3, 4, 5, 2, 9, 7, 1, 8
+2022-01-16 07:33:25.263 D: linha 5 : 9, 7, 2, 8, 1, 6, 5, 4, 3
+2022-01-16 07:33:25.263 D: linha 6 : 3, 1, 7, 2, 8, 5, 6, 9, 4
+2022-01-16 07:33:25.263 D: linha 7 : 5, 6, 8, 3, 9, 4, 1, 7, 2
+2022-01-16 07:33:25.263 D: linha 8 : 4, 2, 9, 6, 7, 1, 3, 8, 5
+2022-01-16 07:33:25.264 D: -> Quantidade de clues:   50
+2022-01-16 07:33:25.264 D: -> Nível jogo gerado: Muito difícil
+2022-01-16 07:33:25.265 D:     - subnível: 0
+
+================================================================================
+Commit147- Versão 9 - 1
+================================================================================
+- limite erros; limite tempo; mostra nos =s
+
+================================================================================
+Commit146- Preparação para Versão 9 - 1
+================================================================================
+- início versão 9
+
+================================================================================
+Commit145- revisões
+================================================================================
+- fluxograma vsdx 
+
+================================================================================
+Commit144- layout dos radiobuttons de níveis - 3
+================================================================================
+- melhoria do layout dos níveis 
+
+================================================================================
+Commit144- bug na edição de preset - 2
+================================================================================
+- edição de preset OK! (bug no uso de array público de JogaJogoActivity)
+
+--------------------------------------------------------------------------------
+2022-01-14 15:38:18.692 D: -> Tap no btnAdaptaJogo
+2022-01-14 15:38:18.692 D:    - rbAdapta: Edição
+2022-01-14 15:38:20.053 D: -> "Carrega" was pressed
+2022-01-14 15:38:20.166 D: -> Presset is checked
+2022-01-14 15:38:20.181 D: -> Launch AdaptarActivity
+2022-01-14 15:38:20.257 D: -> Jogos salvos: 
+2022-01-14 15:38:20.257 D:    - jogo_15.xml
+2022-01-14 15:38:20.262 D:    - jogo_14.xml
+2022-01-14 15:38:20.268 D:    - jogo_13.xml
+2022-01-14 15:38:20.274 D:    - jogo_12.xml
+2022-01-14 15:38:20.278 D:    - jogo_11.xml
+2022-01-14 15:38:20.283 D:    - jogo_10.xml
+2022-01-14 15:38:20.289 D:    - jogo_9.xml
+2022-01-14 15:38:20.293 D:    - jogo_8.xml
+2022-01-14 15:38:20.298 D:    - jogo_7.xml
+2022-01-14 15:38:20.303 D:    - jogo_6.xml
+2022-01-14 15:38:20.308 D:    - jogo_5.xml
+2022-01-14 15:38:20.313 D:    - jogo_4.xml
+2022-01-14 15:38:20.318 D:    - jogo_3.xml
+2022-01-14 15:38:28.961 D: -> Del sel checkBox 1
+2022-01-14 15:38:28.961 D: -> itemsChkDel: [false, true, false, false, false, false, false, false, false, false, false, false, false]
+2022-01-14 15:38:29.626 D: -> Del sel checkBox 2
+2022-01-14 15:38:29.626 D: -> itemsChkDel: [false, true, true, false, false, false, false, false, false, false, false, false, false]
+2022-01-14 15:38:35.645 D: -> Del sel checkBox 3
+2022-01-14 15:38:35.645 D: -> itemsChkDel: [false, true, true, true, false, false, false, false, false, false, false, false, false]
+2022-01-14 15:38:36.534 D: -> Del sel checkBox 4
+2022-01-14 15:38:36.534 D: -> itemsChkDel: [false, true, true, true, true, false, false, false, false, false, false, false, false]
+2022-01-14 15:38:38.008 D: -> Tap no 'three dots' actionBar menu
+2022-01-14 15:38:39.660 D: -> Tap em actionBar / Des_selecionar
+2022-01-14 15:38:41.171 D: -> Tap no 'three dots' actionBar menu
+2022-01-14 15:38:42.544 D: -> Tap em actionBar / Selecionar Todos
+2022-01-14 15:38:43.887 D: -> Tap no 'three dots' actionBar menu
+2022-01-14 15:38:45.491 D: -> Tap em actionBar / Des_selecionar
+2022-01-14 15:38:47.113 D: -> Del sel checkBox 1
+2022-01-14 15:38:47.113 D: -> itemsChkDel: [false, true, false, false, false, false, false, false, false, false, false, false, false]
+2022-01-14 15:38:47.614 D: -> Del sel checkBox 2
+2022-01-14 15:38:47.614 D: -> itemsChkDel: [false, true, true, false, false, false, false, false, false, false, false, false, false]
+2022-01-14 15:38:48.085 D: -> Del sel checkBox 3
+2022-01-14 15:38:48.085 D: -> itemsChkDel: [false, true, true, true, false, false, false, false, false, false, false, false, false]
+2022-01-14 15:38:48.545 D: -> Del sel checkBox 4
+2022-01-14 15:38:48.545 D: -> itemsChkDel: [false, true, true, true, true, false, false, false, false, false, false, false, false]
+2022-01-14 15:38:51.584 D: -> Tap no 'three dots' actionBar menu
+2022-01-14 15:38:52.928 D: -> Tap em actionBar / Deletar selecionados
+2022-01-14 15:38:52.939 D:    - Deleção de: jogo_14.xml OK!
+2022-01-14 15:38:52.952 D:    - Deleção de: jogo_13.xml OK!
+2022-01-14 15:38:52.961 D:    - Deleção de: jogo_12.xml OK!
+2022-01-14 15:38:52.971 D:    - Deleção de: jogo_11.xml OK!
+2022-01-14 15:38:52.984 D: -> Jogos salvos: 
+2022-01-14 15:38:52.984 D:    - jogo_15.xml
+2022-01-14 15:38:52.994 D:    - jogo_10.xml
+2022-01-14 15:38:53.003 D:    - jogo_9.xml
+2022-01-14 15:38:53.012 D:    - jogo_8.xml
+2022-01-14 15:38:53.022 D:    - jogo_7.xml
+2022-01-14 15:38:53.029 D:    - jogo_6.xml
+2022-01-14 15:38:53.036 D:    - jogo_5.xml
+2022-01-14 15:38:53.043 D:    - jogo_4.xml
+2022-01-14 15:38:53.050 D:    - jogo_3.xml
+2022-01-14 15:38:53.203 D: -> Retorna da activity for result
+2022-01-14 15:38:53.203 D: -> activity results OK! Status: Deletar Jogo
+2022-01-14 15:38:53.339 D: -> Jogos salvos: 
+2022-01-14 15:38:53.339 D:    - jogo_15.xml
+2022-01-14 15:38:53.345 D:    - jogo_10.xml
+2022-01-14 15:38:53.352 D:    - jogo_9.xml
+2022-01-14 15:38:53.357 D:    - jogo_8.xml
+2022-01-14 15:38:53.362 D:    - jogo_7.xml
+2022-01-14 15:38:53.367 D:    - jogo_6.xml
+2022-01-14 15:38:53.372 D:    - jogo_5.xml
+2022-01-14 15:38:53.378 D:    - jogo_4.xml
+2022-01-14 15:38:53.382 D:    - jogo_3.xml
+2022-01-14 15:40:41.088 D: -> onClick rbJogoDificil
+2022-01-14 15:40:43.033 D: -> Tap no btnGeraJogo
+2022-01-14 15:40:43.135 D:    - Nível: Difícil (40) Subnível: 9
+2022-01-14 15:40:43.391 D: -> Jogo 19: válido!
+2022-01-14 15:40:43.391 D: linha 0 : 8, 3, 7, 5, 2, 4, 6, 1, 9
+2022-01-14 15:40:43.391 D: linha 1 : 1, 5, 9, 6, 8, 7, 3, 2, 4
+2022-01-14 15:40:43.391 D: linha 2 : 4, 6, 2, 3, 1, 9, 5, 8, 7
+2022-01-14 15:40:43.391 D: linha 3 : 7, 8, 3, 4, 5, 6, 1, 9, 2
+2022-01-14 15:40:43.391 D: linha 4 : 9, 1, 6, 8, 7, 2, 4, 3, 5
+2022-01-14 15:40:43.391 D: linha 5 : 2, 4, 5, 1, 9, 3, 8, 7, 6
+2022-01-14 15:40:43.391 D: linha 6 : 3, 2, 8, 9, 4, 5, 7, 6, 1
+2022-01-14 15:40:43.391 D: linha 7 : 5, 9, 1, 7, 6, 8, 2, 4, 3
+2022-01-14 15:40:43.391 D: linha 8 : 6, 7, 4, 2, 3, 1, 9, 5, 8
+2022-01-14 15:40:43.392 D: -> Jogo gerado preparado:
+2022-01-14 15:40:43.392 D: linha 0 : 0, 3, 0, 5, 0, 4, 0, 1, 9
+2022-01-14 15:40:43.392 D: linha 1 : 0, 0, 0, 0, 8, 0, 3, 2, 0
+2022-01-14 15:40:43.392 D: linha 2 : 0, 6, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:40:43.392 D: linha 3 : 0, 8, 0, 0, 5, 6, 1, 0, 0
+2022-01-14 15:40:43.392 D: linha 4 : 0, 0, 0, 8, 0, 2, 0, 0, 5
+2022-01-14 15:40:43.392 D: linha 5 : 2, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:40:43.392 D: linha 6 : 3, 2, 0, 9, 4, 0, 0, 6, 0
+2022-01-14 15:40:43.392 D: linha 7 : 0, 0, 0, 0, 6, 8, 2, 4, 3
+2022-01-14 15:40:43.392 D: linha 8 : 6, 0, 0, 2, 3, 0, 9, 5, 0
+2022-01-14 15:40:43.396 D: -> Gabarito gerado pelo Backtracking:
+2022-01-14 15:40:43.396 D: linha 0 : 8, 3, 2, 5, 7, 4, 6, 1, 9
+2022-01-14 15:40:43.396 D: linha 1 : 1, 4, 5, 6, 8, 9, 3, 2, 7
+2022-01-14 15:40:43.396 D: linha 2 : 7, 6, 9, 3, 2, 1, 5, 8, 4
+2022-01-14 15:40:43.397 D: linha 3 : 4, 8, 3, 7, 5, 6, 1, 9, 2
+2022-01-14 15:40:43.397 D: linha 4 : 9, 7, 6, 8, 1, 2, 4, 3, 5
+2022-01-14 15:40:43.397 D: linha 5 : 2, 5, 1, 4, 9, 3, 8, 7, 6
+2022-01-14 15:40:43.397 D: linha 6 : 3, 2, 8, 9, 4, 5, 7, 6, 1
+2022-01-14 15:40:43.397 D: linha 7 : 5, 9, 7, 1, 6, 8, 2, 4, 3
+2022-01-14 15:40:43.397 D: linha 8 : 6, 1, 4, 2, 3, 7, 9, 5, 8
+2022-01-14 15:40:43.398 D: -> Quantidade de clues:   49
+2022-01-14 15:40:43.398 D: -> Nível jogo gerado: Difícil
+2022-01-14 15:40:43.398 D:     - subnível: 9
+2022-01-14 15:40:44.671 D: -> Tap no btnJogaJogo
+2022-01-14 15:40:44.672 D: Qm Lin Col Num val
+2022-01-14 15:40:44.684 D: -> Jogo válido!
+2022-01-14 15:40:44.737 D: -> Preset 0
+2022-01-14 15:40:44.737 D:    - tenta adaptar o jogo (1)
+2022-01-14 15:40:44.737 D: linha 0 : 0, 3, 0, 5, 0, 4, 0, 1, 9
+2022-01-14 15:40:44.737 D: linha 1 : 0, 0, 0, 0, 8, 0, 3, 2, 0
+2022-01-14 15:40:44.737 D: linha 2 : 0, 6, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:40:44.737 D: linha 3 : 0, 8, 0, 0, 5, 6, 1, 0, 0
+2022-01-14 15:40:44.737 D: linha 4 : 0, 0, 0, 8, 0, 2, 0, 0, 5
+2022-01-14 15:40:44.737 D: linha 5 : 2, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:40:44.737 D: linha 6 : 3, 2, 0, 9, 4, 0, 0, 6, 0
+2022-01-14 15:40:44.737 D: linha 7 : 0, 0, 0, 0, 6, 8, 2, 4, 3
+2022-01-14 15:40:44.737 D: linha 8 : 6, 0, 0, 2, 3, 0, 9, 5, 0
+2022-01-14 15:40:44.742 D: -> Jogo com preset 0 adaptado
+2022-01-14 15:40:44.742 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-14 15:40:44.742 D: linha 0 : 8, 3, 2, 5, 7, 4, 6, 1, 9
+2022-01-14 15:40:44.742 D: linha 1 : 1, 4, 5, 6, 8, 9, 3, 2, 7
+2022-01-14 15:40:44.742 D: linha 2 : 7, 6, 9, 3, 2, 1, 5, 8, 4
+2022-01-14 15:40:44.742 D: linha 3 : 4, 8, 3, 7, 5, 6, 1, 9, 2
+2022-01-14 15:40:44.742 D: linha 4 : 9, 7, 6, 8, 1, 2, 4, 3, 5
+2022-01-14 15:40:44.742 D: linha 5 : 2, 5, 1, 4, 9, 3, 8, 7, 6
+2022-01-14 15:40:44.742 D: linha 6 : 3, 2, 8, 9, 4, 5, 7, 6, 1
+2022-01-14 15:40:44.742 D: linha 7 : 5, 9, 7, 1, 6, 8, 2, 4, 3
+2022-01-14 15:40:44.743 D: linha 8 : 6, 1, 4, 2, 3, 7, 9, 5, 8
+2022-01-14 15:40:44.743 D: -> Jogo (preset):
+2022-01-14 15:40:44.743 D: linha 0 : 0, 3, 0, 5, 0, 4, 0, 1, 9
+2022-01-14 15:40:44.743 D: linha 1 : 0, 0, 0, 0, 8, 0, 3, 2, 0
+2022-01-14 15:40:44.743 D: linha 2 : 0, 6, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:40:44.743 D: linha 3 : 0, 8, 0, 0, 5, 6, 1, 0, 0
+2022-01-14 15:40:44.743 D: linha 4 : 0, 0, 0, 8, 0, 2, 0, 0, 5
+2022-01-14 15:40:44.743 D: linha 5 : 2, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:40:44.743 D: linha 6 : 3, 2, 0, 9, 4, 0, 0, 6, 0
+2022-01-14 15:40:44.743 D: linha 7 : 0, 0, 0, 0, 6, 8, 2, 4, 3
+2022-01-14 15:40:44.743 D: linha 8 : 6, 0, 0, 2, 3, 0, 9, 5, 0
+2022-01-14 15:40:44.744 D: -> Quantidade de clues:   49
+2022-01-14 15:40:44.744 D: -> Nível jogo adaptado: Difícil
+2022-01-14 15:40:44.744 D:     - subnível: 9
+2022-01-14 15:40:44.900 D: -> Acerta crono.
+2022-01-14 15:40:44.901 D: -> Jogo:
+2022-01-14 15:40:44.901 D: linha 0 : 0, 3, 0, 5, 0, 4, 0, 1, 9
+2022-01-14 15:40:44.901 D: linha 1 : 0, 0, 0, 0, 8, 0, 3, 2, 0
+2022-01-14 15:40:44.901 D: linha 2 : 0, 6, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:40:44.901 D: linha 3 : 0, 8, 0, 0, 5, 6, 1, 0, 0
+2022-01-14 15:40:44.901 D: linha 4 : 0, 0, 0, 8, 0, 2, 0, 0, 5
+2022-01-14 15:40:44.901 D: linha 5 : 2, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:40:44.901 D: linha 6 : 3, 2, 0, 9, 4, 0, 0, 6, 0
+2022-01-14 15:40:44.901 D: linha 7 : 0, 0, 0, 0, 6, 8, 2, 4, 3
+2022-01-14 15:40:44.901 D: linha 8 : 6, 0, 0, 2, 3, 0, 9, 5, 0
+2022-01-14 15:40:44.901 D: -> Gabarito:
+2022-01-14 15:40:44.901 D: linha 0 : 8, 3, 2, 5, 7, 4, 6, 1, 9
+2022-01-14 15:40:44.901 D: linha 1 : 1, 4, 5, 6, 8, 9, 3, 2, 7
+2022-01-14 15:40:44.901 D: linha 2 : 7, 6, 9, 3, 2, 1, 5, 8, 4
+2022-01-14 15:40:44.901 D: linha 3 : 4, 8, 3, 7, 5, 6, 1, 9, 2
+2022-01-14 15:40:44.902 D: linha 4 : 9, 7, 6, 8, 1, 2, 4, 3, 5
+2022-01-14 15:40:44.902 D: linha 5 : 2, 5, 1, 4, 9, 3, 8, 7, 6
+2022-01-14 15:40:44.902 D: linha 6 : 3, 2, 8, 9, 4, 5, 7, 6, 1
+2022-01-14 15:40:44.902 D: linha 7 : 5, 9, 7, 1, 6, 8, 2, 4, 3
+2022-01-14 15:40:44.902 D: linha 8 : 6, 1, 4, 2, 3, 7, 9, 5, 8
+2022-01-14 15:40:44.911 D: -> Array qtidd de jogos disponível por número:
+2022-01-14 15:40:44.912 D:    Num 1 7
+2022-01-14 15:40:44.913 D:    Num 2 3
+2022-01-14 15:40:44.913 D:    Num 3 4
+2022-01-14 15:40:44.913 D:    Num 4 6
+2022-01-14 15:40:44.913 D:    Num 5 5
+2022-01-14 15:40:44.914 D:    Num 6 4
+2022-01-14 15:40:44.914 D:    Num 7 9
+2022-01-14 15:40:44.914 D:    Num 8 5
+2022-01-14 15:40:44.914 D:    Num 9 6
+2022-01-14 15:40:47.568 D: -> Tap no btn "Salvar" 
+2022-01-14 15:40:48.951 D: -> "Sim" was pressed
+2022-01-14 15:40:48.951 D: -> Arquivos raw (listRaw):
+2022-01-14 15:40:48.951 D: 0: modelo_arq_xml_sudoku1
+2022-01-14 15:40:48.951 D: -> Arquivo modelo_arq_xml_sudoku1:
+2022-01-14 15:40:48.953 D:    0: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 15:40:48.953 D: -> modelo arq Sudoku xml
+2022-01-14 15:40:48.953 D: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 15:40:48.955 D: -> Tag: 11, Conteudo: <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Difícil</nivel><subnivel>9</subnivel></header><body><linha0>0, 3, 0, 5, 0, 4, 0, 1, 9</linha0><linha1>0, 0, 0, 0, 8, 0, 3, 2, 0</linha1><linha2>0, 6, 0, 0, 0, 0, 0, 0, 0</linha2><linha3>0, 8, 0, 0, 5, 6, 1, 0, 0</linha3><linha4>0, 0, 0, 8, 0, 2, 0, 0, 5</linha4><linha5>2, 0, 0, 0, 0, 0, 0, 0, 0</linha5><linha6>3, 2, 0, 9, 4, 0, 0, 6, 0</linha6><linha7>0, 0, 0, 0, 6, 8, 2, 4, 3</linha7><linha8>6, 0, 0, 2, 3, 0, 9, 5, 0</linha8></body><jogos><id>1</id><opcaoJogo>JogoGerado</opcaoJogo><dataHora>14/01/2022 15:40:48</dataHora><tempoJogo>00:00</tempoJogo><erros>0</erros><status>ativo</status></jogos><body2><linha0>0, 3, 0, 5, 0, 4, 0, 1, 9</linha0><linha1>0, 0, 0, 0, 8, 0, 3, 2, 0</linha1><linha2>0, 6, 0, 0, 0, 0, 0, 0, 0</linha2><linha3>0, 8, 0, 0, 5, 6, 1, 0, 0</linha3><linha4>0, 0, 0, 8, 0, 2, 0, 0, 5</linha4><linha5>2, 0, 0, 0, 0, 0, 0, 0, 0</linha5><linha6>3, 2, 0, 9, 4, 0, 0, 6, 0</linha6><linha7>0, 0, 0, 0, 6, 8, 2, 4, 3</linha7><linha8>6, 0, 0, 2, 3, 0, 9, 5, 0</linha8></body2></presets>
+2022-01-14 15:40:48.984 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/jogos/jogo_16.xml OK!
+2022-01-14 15:40:48.984 D: -> Jogos salvos: 
+2022-01-14 15:40:48.993 D:    - jogo_16.xml
+2022-01-14 15:40:48.993 D:    - jogo_15.xml
+2022-01-14 15:40:48.993 D:    - jogo_10.xml
+2022-01-14 15:40:48.993 D:    - jogo_9.xml
+2022-01-14 15:40:48.993 D:    - jogo_8.xml
+2022-01-14 15:40:48.993 D:    - jogo_7.xml
+2022-01-14 15:40:48.993 D:    - jogo_6.xml
+2022-01-14 15:40:48.993 D:    - jogo_5.xml
+2022-01-14 15:40:48.993 D:    - jogo_4.xml
+2022-01-14 15:40:48.993 D:    - jogo_3.xml
+
+
+--------------------------------------------------------------------------------
+2022-01-14 15:13:59.828 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 15:13:59.828 D: -> Dimensões screen:
+2022-01-14 15:13:59.830 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 15:13:59.831 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 15:13:59.831 D:    - Diagonal :  4.88"
+2022-01-14 15:13:59.831 D:    - fatorlargura :  0.92
+2022-01-14 15:13:59.831 D:    - fatorAltura  :  1.00
+2022-01-14 15:13:59.831 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 15:13:59.992 D: -> main Verifica permissões
+2022-01-14 15:13:59.992 D:    - Checa se permissões Ok
+2022-01-14 15:14:00.087 D:      - android.permission.INTERNET: true
+2022-01-14 15:14:00.089 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 15:14:00.090 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-14 15:14:00.102 D: Permission Granted!
+2022-01-14 15:14:00.102 D: -> Registra activity for result
+2022-01-14 15:15:43.314 D: -> Tap no btnAdaptaJogo
+2022-01-14 15:15:43.314 D:    - rbAdapta: Preset
+2022-01-14 15:15:43.327 D: -> Tap no btnAdaptaJogo
+2022-01-14 15:15:43.327 D:    - rbAdapta: Preset
+2022-01-14 15:15:47.417 D: -> "Edita" was pressed
+2022-01-14 15:16:04.945 D: -> "Edita" was pressed
+2022-01-14 15:16:07.987 D: -> SudokuBoard:
+2022-01-14 15:16:07.987 D: -> Celula tocada: linha = 0, coluna = 0, numero = 0
+2022-01-14 15:16:09.297 D: -> ivNumDisp:
+2022-01-14 15:16:09.342 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:16:09.342 D:    - arIntQti: 
+    8, 9, 9, 9, 9, 9, 9, 9, 9
+2022-01-14 15:16:10.639 D: -> SudokuBoard:
+2022-01-14 15:16:10.640 D: -> Celula tocada: linha = 1, coluna = 1, numero = 0
+2022-01-14 15:16:11.934 D: -> ivNumDisp:
+2022-01-14 15:16:11.956 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:16:11.956 D:    - arIntQti: 
+    8, 8, 9, 9, 9, 9, 9, 9, 9
+2022-01-14 15:16:13.091 D: -> SudokuBoard:
+2022-01-14 15:16:13.091 D: -> Celula tocada: linha = 2, coluna = 2, numero = 0
+2022-01-14 15:16:14.450 D: -> ivNumDisp:
+2022-01-14 15:16:14.486 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:16:14.486 D:    - arIntQti: 
+    8, 8, 8, 9, 9, 9, 9, 9, 9
+2022-01-14 15:16:17.553 D: -> SudokuBoard:
+2022-01-14 15:16:17.553 D: -> Celula tocada: linha = 3, coluna = 3, numero = 0
+2022-01-14 15:16:18.863 D: -> ivNumDisp:
+2022-01-14 15:16:18.899 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:16:18.899 D:    - arIntQti: 
+    8, 8, 8, 8, 9, 9, 9, 9, 9
+2022-01-14 15:16:19.688 D: -> SudokuBoard:
+2022-01-14 15:16:19.688 D: -> Celula tocada: linha = 4, coluna = 4, numero = 0
+2022-01-14 15:16:20.704 D: -> ivNumDisp:
+2022-01-14 15:16:20.746 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:16:20.746 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 9, 9, 9, 9
+2022-01-14 15:16:21.696 D: -> SudokuBoard:
+2022-01-14 15:16:21.696 D: -> Celula tocada: linha = 5, coluna = 5, numero = 0
+2022-01-14 15:16:22.679 D: -> ivNumDisp:
+2022-01-14 15:16:22.715 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:16:22.716 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 9, 9, 9
+2022-01-14 15:16:23.471 D: -> SudokuBoard:
+2022-01-14 15:16:23.472 D: -> Celula tocada: linha = 6, coluna = 6, numero = 0
+2022-01-14 15:16:24.663 D: -> ivNumDisp:
+2022-01-14 15:16:24.767 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:16:24.767 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 8, 9, 9
+2022-01-14 15:16:25.431 D: -> SudokuBoard:
+2022-01-14 15:16:25.431 D: -> Celula tocada: linha = 7, coluna = 7, numero = 0
+2022-01-14 15:16:26.239 D: -> ivNumDisp:
+2022-01-14 15:16:26.277 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 15:16:26.277 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 8, 8, 9
+2022-01-14 15:16:27.007 D: -> SudokuBoard:
+2022-01-14 15:16:27.007 D: -> Celula tocada: linha = 8, coluna = 8, numero = 0
+2022-01-14 15:16:27.807 D: -> ivNumDisp:
+2022-01-14 15:16:27.847 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:16:27.847 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 8, 8, 8
+2022-01-14 15:16:29.456 D: -> SudokuBoard:
+2022-01-14 15:16:29.456 D: -> Celula tocada: linha = 0, coluna = 4, numero = 0
+2022-01-14 15:16:30.751 D: -> ivNumDisp:
+2022-01-14 15:16:30.791 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:16:30.791 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 8, 8, 7
+2022-01-14 15:16:31.744 D: -> SudokuBoard:
+2022-01-14 15:16:31.744 D: -> Celula tocada: linha = 1, coluna = 4, numero = 0
+2022-01-14 15:16:32.944 D: -> ivNumDisp:
+2022-01-14 15:16:32.975 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:16:32.975 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 8, 7, 7
+2022-01-14 15:16:33.736 D: -> SudokuBoard:
+2022-01-14 15:16:33.736 D: -> Celula tocada: linha = 2, coluna = 4, numero = 0
+2022-01-14 15:16:35.063 D: -> ivNumDisp:
+2022-01-14 15:16:35.100 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:16:35.100 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 7, 7, 7
+2022-01-14 15:16:35.999 D: -> SudokuBoard:
+2022-01-14 15:16:35.999 D: -> Celula tocada: linha = 3, coluna = 4, numero = 0
+2022-01-14 15:16:37.375 D: -> ivNumDisp:
+2022-01-14 15:16:37.375 D:    - invalido Qm: Qm=4; lin=5; col=5 num=6
+2022-01-14 15:16:37.398 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:16:37.398 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 7, 7, 7
+2022-01-14 15:16:43.503 D: -> ivNumDisp:
+2022-01-14 15:16:43.545 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:16:43.545 D:    - arIntQti: 
+    8, 8, 7, 8, 8, 8, 7, 7, 7
+2022-01-14 15:16:44.736 D: -> SudokuBoard:
+2022-01-14 15:16:44.736 D: -> Celula tocada: linha = 5, coluna = 4, numero = 0
+2022-01-14 15:16:51.921 D: -> ivNumDisp:
+2022-01-14 15:16:51.964 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 2, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:16:51.964 D:    - arIntQti: 
+    8, 7, 7, 8, 8, 8, 7, 7, 7
+2022-01-14 15:16:52.945 D: -> SudokuBoard:
+2022-01-14 15:16:52.945 D: -> Celula tocada: linha = 6, coluna = 4, numero = 0
+2022-01-14 15:16:56.439 D: -> ivNumDisp:
+2022-01-14 15:16:56.477 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 2, 6, 0, 0, 0
+    0, 0, 0, 0, 4, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:16:56.477 D:    - arIntQti: 
+    8, 7, 7, 7, 8, 8, 7, 7, 7
+2022-01-14 15:16:57.423 D: -> SudokuBoard:
+2022-01-14 15:16:57.423 D: -> Celula tocada: linha = 7, coluna = 4, numero = 0
+2022-01-14 15:17:00.768 D: -> ivNumDisp:
+2022-01-14 15:17:00.804 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 2, 6, 0, 0, 0
+    0, 0, 0, 0, 4, 0, 7, 0, 0
+    0, 0, 0, 0, 6, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 15:17:00.804 D:    - arIntQti: 
+    8, 7, 7, 7, 8, 7, 7, 7, 7
+2022-01-14 15:17:03.039 D: -> SudokuBoard:
+2022-01-14 15:17:03.039 D: -> Celula tocada: linha = 8, coluna = 4, numero = 0
+2022-01-14 15:17:04.263 D: -> ivNumDisp:
+2022-01-14 15:17:04.301 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 2, 6, 0, 0, 0
+    0, 0, 0, 0, 4, 0, 7, 0, 0
+    0, 0, 0, 0, 6, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:04.301 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 7, 7, 7
+2022-01-14 15:17:05.862 D: -> SudokuBoard:
+2022-01-14 15:17:05.863 D: -> Celula tocada: linha = 8, coluna = 0, numero = 0
+2022-01-14 15:17:06.049 D: -> SudokuBoard:
+2022-01-14 15:17:06.049 D: -> Celula tocada: linha = 8, coluna = 0, numero = 0
+2022-01-14 15:17:08.015 D: -> ivNumDisp:
+2022-01-14 15:17:08.049 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 2, 6, 0, 0, 0
+    0, 0, 0, 0, 4, 0, 7, 0, 0
+    0, 0, 0, 0, 6, 0, 0, 8, 0
+    8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:08.049 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 7, 6, 7
+2022-01-14 15:17:09.007 D: -> SudokuBoard:
+2022-01-14 15:17:09.008 D: -> Celula tocada: linha = 7, coluna = 1, numero = 0
+2022-01-14 15:17:10.214 D: -> ivNumDisp:
+2022-01-14 15:17:10.258 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 2, 6, 0, 0, 0
+    0, 0, 0, 0, 4, 0, 7, 0, 0
+    0, 9, 0, 0, 6, 0, 0, 8, 0
+    8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:10.258 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 7, 6, 6
+2022-01-14 15:17:11.359 D: -> SudokuBoard:
+2022-01-14 15:17:11.359 D: -> Celula tocada: linha = 6, coluna = 2, numero = 0
+2022-01-14 15:17:14.495 D: -> ivNumDisp:
+2022-01-14 15:17:14.541 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 2, 6, 0, 0, 0
+    0, 0, 6, 0, 4, 0, 7, 0, 0
+    0, 9, 0, 0, 6, 0, 0, 8, 0
+    8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:14.541 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 6, 7, 6, 6
+2022-01-14 15:17:15.439 D: -> SudokuBoard:
+2022-01-14 15:17:15.439 D: -> Celula tocada: linha = 5, coluna = 3, numero = 0
+2022-01-14 15:17:17.128 D: -> ivNumDisp:
+2022-01-14 15:17:17.174 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 7, 2, 6, 0, 0, 0
+    0, 0, 6, 0, 4, 0, 7, 0, 0
+    0, 9, 0, 0, 6, 0, 0, 8, 0
+    8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:17.174 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 6, 6, 6, 6
+2022-01-14 15:17:18.519 D: -> SudokuBoard:
+2022-01-14 15:17:18.519 D: -> Celula tocada: linha = 3, coluna = 5, numero = 0
+2022-01-14 15:17:19.967 D: -> ivNumDisp:
+2022-01-14 15:17:20.010 D: Qm Lin Col Num val
+2022-01-14 15:17:20.016 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 8, 0, 0, 0, 0
+    0, 0, 3, 0, 7, 0, 0, 0, 0
+    0, 0, 0, 4, 3, 1, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 7, 2, 6, 0, 0, 0
+    0, 0, 6, 0, 4, 0, 7, 0, 0
+    0, 9, 0, 0, 6, 0, 0, 8, 0
+    8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:20.016 D:    - arIntQti: 
+    6, 7, 7, 7, 8, 6, 6, 6, 6
+2022-01-14 15:17:23.469 D: -> Tap no btnJogaJogo
+2022-01-14 15:17:23.469 D: Qm Lin Col Num val
+2022-01-14 15:17:23.613 D: -> Jogo válido!
+2022-01-14 15:17:23.716 D: -> Preset 0
+2022-01-14 15:17:23.716 D:    - tenta adaptar o jogo (1)
+2022-01-14 15:17:23.716 D: linha 0 : 1, 0, 0, 0, 9, 0, 0, 0, 0
+2022-01-14 15:17:23.716 D: linha 1 : 0, 2, 0, 0, 8, 0, 0, 0, 0
+2022-01-14 15:17:23.716 D: linha 2 : 0, 0, 3, 0, 7, 0, 0, 0, 0
+2022-01-14 15:17:23.716 D: linha 3 : 0, 0, 0, 4, 3, 1, 0, 0, 0
+2022-01-14 15:17:23.716 D: linha 4 : 0, 0, 0, 0, 5, 0, 0, 0, 0
+2022-01-14 15:17:23.717 D: linha 5 : 0, 0, 0, 7, 2, 6, 0, 0, 0
+2022-01-14 15:17:23.717 D: linha 6 : 0, 0, 6, 0, 4, 0, 7, 0, 0
+2022-01-14 15:17:23.717 D: linha 7 : 0, 9, 0, 0, 6, 0, 0, 8, 0
+2022-01-14 15:17:23.717 D: linha 8 : 8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:23.960 D: -> Jogo com preset 0 adaptado
+2022-01-14 15:17:23.960 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-14 15:17:23.960 D: linha 0 : 1, 4, 5, 2, 9, 3, 6, 7, 8
+2022-01-14 15:17:23.960 D: linha 1 : 6, 2, 7, 1, 8, 4, 3, 9, 5
+2022-01-14 15:17:23.960 D: linha 2 : 9, 8, 3, 6, 7, 5, 1, 2, 4
+2022-01-14 15:17:23.960 D: linha 3 : 2, 6, 8, 4, 3, 1, 9, 5, 7
+2022-01-14 15:17:23.960 D: linha 4 : 3, 7, 1, 8, 5, 9, 2, 4, 6
+2022-01-14 15:17:23.960 D: linha 5 : 4, 5, 9, 7, 2, 6, 8, 1, 3
+2022-01-14 15:17:23.960 D: linha 6 : 5, 1, 6, 9, 4, 8, 7, 3, 2
+2022-01-14 15:17:23.960 D: linha 7 : 7, 9, 4, 3, 6, 2, 5, 8, 1
+2022-01-14 15:17:23.960 D: linha 8 : 8, 3, 2, 5, 1, 7, 4, 6, 9
+2022-01-14 15:17:23.960 D: -> Jogo (preset):
+2022-01-14 15:17:23.960 D: linha 0 : 1, 0, 0, 0, 9, 0, 0, 0, 0
+2022-01-14 15:17:23.960 D: linha 1 : 0, 2, 0, 0, 8, 0, 0, 0, 0
+2022-01-14 15:17:23.960 D: linha 2 : 0, 0, 3, 0, 7, 0, 0, 0, 0
+2022-01-14 15:17:23.960 D: linha 3 : 0, 0, 0, 4, 3, 1, 0, 0, 0
+2022-01-14 15:17:23.960 D: linha 4 : 0, 0, 0, 0, 5, 0, 0, 0, 0
+2022-01-14 15:17:23.960 D: linha 5 : 0, 0, 0, 7, 2, 6, 0, 0, 0
+2022-01-14 15:17:23.961 D: linha 6 : 0, 0, 6, 0, 4, 0, 7, 0, 0
+2022-01-14 15:17:23.961 D: linha 7 : 0, 9, 0, 0, 6, 0, 0, 8, 0
+2022-01-14 15:17:23.961 D: linha 8 : 8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:23.961 D: -> Quantidade de clues:   59
+2022-01-14 15:17:23.961 D: -> Nível jogo adaptado: Muito difícil
+2022-01-14 15:17:23.961 D:     - subnível: 9
+2022-01-14 15:17:26.963 D: -> Acerta crono.
+2022-01-14 15:17:26.963 D: -> Jogo:
+2022-01-14 15:17:26.963 D: linha 0 : 1, 0, 0, 0, 9, 0, 0, 0, 0
+2022-01-14 15:17:26.963 D: linha 1 : 0, 2, 0, 0, 8, 0, 0, 0, 0
+2022-01-14 15:17:26.963 D: linha 2 : 0, 0, 3, 0, 7, 0, 0, 0, 0
+2022-01-14 15:17:26.965 D: linha 3 : 0, 0, 0, 4, 3, 1, 0, 0, 0
+2022-01-14 15:17:26.965 D: linha 4 : 0, 0, 0, 0, 5, 0, 0, 0, 0
+2022-01-14 15:17:26.966 D: linha 5 : 0, 0, 0, 7, 2, 6, 0, 0, 0
+2022-01-14 15:17:26.968 D: linha 6 : 0, 0, 6, 0, 4, 0, 7, 0, 0
+2022-01-14 15:17:26.968 D: linha 7 : 0, 9, 0, 0, 6, 0, 0, 8, 0
+2022-01-14 15:17:26.969 D: linha 8 : 8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:17:26.971 D: -> Gabarito:
+2022-01-14 15:17:26.971 D: linha 0 : 1, 4, 5, 2, 9, 3, 6, 7, 8
+2022-01-14 15:17:26.971 D: linha 1 : 6, 2, 7, 1, 8, 4, 3, 9, 5
+2022-01-14 15:17:26.972 D: linha 2 : 9, 8, 3, 6, 7, 5, 1, 2, 4
+2022-01-14 15:17:26.973 D: linha 3 : 2, 6, 8, 4, 3, 1, 9, 5, 7
+2022-01-14 15:17:26.973 D: linha 4 : 3, 7, 1, 8, 5, 9, 2, 4, 6
+2022-01-14 15:17:26.974 D: linha 5 : 4, 5, 9, 7, 2, 6, 8, 1, 3
+2022-01-14 15:17:26.974 D: linha 6 : 5, 1, 6, 9, 4, 8, 7, 3, 2
+2022-01-14 15:17:26.977 D: linha 7 : 7, 9, 4, 3, 6, 2, 5, 8, 1
+2022-01-14 15:17:26.977 D: linha 8 : 8, 3, 2, 5, 1, 7, 4, 6, 9
+2022-01-14 15:17:28.147 D: -> Array qtidd de jogos disponível por número:
+2022-01-14 15:17:28.147 D:    Num 1 6
+2022-01-14 15:17:28.147 D:    Num 2 7
+2022-01-14 15:17:28.148 D:    Num 3 7
+2022-01-14 15:17:28.148 D:    Num 4 7
+2022-01-14 15:17:28.148 D:    Num 5 8
+2022-01-14 15:17:28.148 D:    Num 6 6
+2022-01-14 15:17:28.149 D:    Num 7 6
+2022-01-14 15:17:28.149 D:    Num 8 6
+2022-01-14 15:17:28.149 D:    Num 9 6
+2022-01-14 15:17:50.882 D: -> 00:00 - Inicia
+2022-01-14 15:17:50.882 D: -> Acerta crono.
+2022-01-14 15:17:50.883 D: -> Parte o crono.
+2022-01-14 15:19:57.597 D:    - invalido Qm: Qm=8; lin=8; col=8 num=9
+2022-01-14 15:20:00.831 D:    - invalido Qm: Qm=8; lin=8; col=8 num=9
+2022-01-14 15:22:33.899 D: -> Tap no btn "Salvar" 
+2022-01-14 15:22:37.764 D: -> "Sim" was pressed
+2022-01-14 15:22:37.765 D: -> Arquivos raw (listRaw):
+2022-01-14 15:22:37.765 D: 0: modelo_arq_xml_sudoku1
+2022-01-14 15:22:37.765 D: -> Arquivo modelo_arq_xml_sudoku1:
+2022-01-14 15:22:37.803 D:    0: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 15:22:37.803 D: -> modelo arq Sudoku xml
+2022-01-14 15:22:37.803 D: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 15:22:38.686 D: -> Tag: 11, Conteudo: <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Muito Difícil</nivel><subnivel>9</subnivel></header><body><linha0>1, 0, 0, 0, 9, 0, 0, 0, 0</linha0><linha1>0, 2, 0, 0, 8, 0, 0, 0, 0</linha1><linha2>0, 0, 3, 0, 7, 0, 0, 0, 0</linha2><linha3>0, 0, 0, 4, 3, 1, 0, 0, 0</linha3><linha4>0, 0, 0, 0, 5, 0, 0, 0, 0</linha4><linha5>0, 0, 0, 7, 2, 6, 0, 0, 0</linha5><linha6>0, 0, 6, 0, 4, 0, 7, 0, 0</linha6><linha7>0, 9, 0, 0, 6, 0, 0, 8, 0</linha7><linha8>8, 0, 0, 0, 1, 0, 0, 0, 9</linha8></body><jogos><id>1</id><opcaoJogo>JogoEditado</opcaoJogo><dataHora>14/01/2022 13:22:38</dataHora><tempoJogo>04:46</tempoJogo><erros>7</erros><status>ativo</status></jogos><body2><linha0>1, 0, 0, 0, 9, 0, 0, 0, 0</linha0><linha1>0, 2, 0, 1, 8, 0, 0, 0, 0</linha1><linha2>0, 0, 3, 0, 7, 0, 0, 0, 0</linha2><linha3>0, 0, 0, 4, 3, 1, 0, 0, 0</linha3><linha4>0, 0, 0, 8, 5, 9, 0, 0, 0</linha4><linha5>0, 0, 0, 7, 2, 6, 0, 0, 0</linha5><linha6>0, 1, 6, 9, 4, 8, 7, 0, 0</linha6><linha7>7, 9, 0, 0, 6, 0, 0, 8, 0</linha7><linha8>8, 0, 0, 0, 1, 7, 0, 6, 9</linha8></body2></presets>
+2022-01-14 15:22:38.770 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/jogos/jogo_6.xml OK!
+2022-01-14 15:22:38.770 D: -> Jogos salvos: 
+2022-01-14 15:22:38.774 D:    - jogo_6.xml
+2022-01-14 15:22:38.774 D:    - jogo_5.xml
+2022-01-14 15:22:38.774 D:    - jogo_4.xml
+2022-01-14 15:22:38.774 D:    - jogo_3.xml
+2022-01-14 15:22:38.774 D:    - jogo_2.xml
+2022-01-14 15:22:38.774 D:    - jogo_1.xml
+2022-01-14 15:22:47.335 D: -> Tap no btn "Reset" 
+2022-01-14 15:22:50.027 D: -> "Sim" was pressed
+2022-01-14 15:22:50.028 D: -> 04:58 - Reset
+2022-01-14 15:22:50.028 D: -> Acerta crono.
+2022-01-14 15:22:50.028 D: -> Jogo:
+2022-01-14 15:22:50.028 D: linha 0 : 1, 0, 0, 0, 9, 0, 0, 0, 0
+2022-01-14 15:22:50.028 D: linha 1 : 0, 2, 0, 0, 8, 0, 0, 0, 0
+2022-01-14 15:22:50.029 D: linha 2 : 0, 0, 3, 0, 7, 0, 0, 0, 0
+2022-01-14 15:22:50.029 D: linha 3 : 0, 0, 0, 4, 3, 1, 0, 0, 0
+2022-01-14 15:22:50.029 D: linha 4 : 0, 0, 0, 0, 5, 0, 0, 0, 0
+2022-01-14 15:22:50.029 D: linha 5 : 0, 0, 0, 7, 2, 6, 0, 0, 0
+2022-01-14 15:22:50.029 D: linha 6 : 0, 0, 6, 0, 4, 0, 7, 0, 0
+2022-01-14 15:22:50.029 D: linha 7 : 0, 9, 0, 0, 6, 0, 0, 8, 0
+2022-01-14 15:22:50.029 D: linha 8 : 8, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 15:22:50.029 D: -> Gabarito:
+2022-01-14 15:22:50.029 D: linha 0 : 1, 4, 5, 2, 9, 3, 6, 7, 8
+2022-01-14 15:22:50.029 D: linha 1 : 6, 2, 7, 1, 8, 4, 3, 9, 5
+2022-01-14 15:22:50.029 D: linha 2 : 9, 8, 3, 6, 7, 5, 1, 2, 4
+2022-01-14 15:22:50.029 D: linha 3 : 2, 6, 8, 4, 3, 1, 9, 5, 7
+2022-01-14 15:22:50.029 D: linha 4 : 3, 7, 1, 8, 5, 9, 2, 4, 6
+2022-01-14 15:22:50.029 D: linha 5 : 4, 5, 9, 7, 2, 6, 8, 1, 3
+2022-01-14 15:22:50.029 D: linha 6 : 5, 1, 6, 9, 4, 8, 7, 3, 2
+2022-01-14 15:22:50.029 D: linha 7 : 7, 9, 4, 3, 6, 2, 5, 8, 1
+2022-01-14 15:22:50.029 D: linha 8 : 8, 3, 2, 5, 1, 7, 4, 6, 9
+2022-01-14 15:22:50.163 D: -> Array qtidd de jogos disponível por número:
+2022-01-14 15:22:50.164 D:    Num 1 6
+2022-01-14 15:22:50.164 D:    Num 2 7
+2022-01-14 15:22:50.164 D:    Num 3 7
+2022-01-14 15:22:50.164 D:    Num 4 7
+2022-01-14 15:22:50.164 D:    Num 5 8
+2022-01-14 15:22:50.164 D:    Num 6 6
+2022-01-14 15:22:50.164 D:    Num 7 6
+2022-01-14 15:22:50.164 D:    Num 8 6
+2022-01-14 15:22:50.164 D:    Num 9 6
+2022-01-14 15:22:58.500 D: -> Tap no btn "Salvar" 
+2022-01-14 15:23:01.348 D: -> "Sim" was pressed
+2022-01-14 15:23:01.348 D: -> Arquivos raw (listRaw):
+2022-01-14 15:23:01.348 D: 0: modelo_arq_xml_sudoku1
+2022-01-14 15:23:01.363 D: -> Arquivo modelo_arq_xml_sudoku1:
+2022-01-14 15:23:01.365 D:    0: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 15:23:01.365 D: -> modelo arq Sudoku xml
+2022-01-14 15:23:01.366 D: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+    <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 15:23:01.367 D: -> Tag: 11, Conteudo: <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Muito Difícil</nivel><subnivel>9</subnivel></header><body><linha0>1, 0, 0, 0, 9, 0, 0, 0, 0</linha0><linha1>0, 2, 0, 0, 8, 0, 0, 0, 0</linha1><linha2>0, 0, 3, 0, 7, 0, 0, 0, 0</linha2><linha3>0, 0, 0, 4, 3, 1, 0, 0, 0</linha3><linha4>0, 0, 0, 0, 5, 0, 0, 0, 0</linha4><linha5>0, 0, 0, 7, 2, 6, 0, 0, 0</linha5><linha6>0, 0, 6, 0, 4, 0, 7, 0, 0</linha6><linha7>0, 9, 0, 0, 6, 0, 0, 8, 0</linha7><linha8>8, 0, 0, 0, 1, 0, 0, 0, 9</linha8></body><jogos><id>1</id><opcaoJogo>JogoEditado</opcaoJogo><dataHora>14/01/2022 13:23:01</dataHora><tempoJogo>00:00</tempoJogo><erros>0</erros><status>ativo</status></jogos><body2><linha0>1, 0, 0, 0, 9, 0, 0, 0, 0</linha0><linha1>0, 2, 0, 0, 8, 0, 0, 0, 0</linha1><linha2>0, 0, 3, 0, 7, 0, 0, 0, 0</linha2><linha3>0, 0, 0, 4, 3, 1, 0, 0, 0</linha3><linha4>0, 0, 0, 0, 5, 0, 0, 0, 0</linha4><linha5>0, 0, 0, 7, 2, 6, 0, 0, 0</linha5><linha6>0, 0, 6, 0, 4, 0, 7, 0, 0</linha6><linha7>0, 9, 0, 0, 6, 0, 0, 8, 0</linha7><linha8>8, 0, 0, 0, 1, 0, 0, 0, 9</linha8></body2></presets>
+2022-01-14 15:23:01.525 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/jogos/jogo_7.xml OK!
+2022-01-14 15:23:01.525 D: -> Jogos salvos: 
+2022-01-14 15:23:01.526 D:    - jogo_7.xml
+2022-01-14 15:23:01.526 D:    - jogo_6.xml
+2022-01-14 15:23:01.526 D:    - jogo_5.xml
+2022-01-14 15:23:01.526 D:    - jogo_4.xml
+2022-01-14 15:23:01.526 D:    - jogo_3.xml
+2022-01-14 15:23:01.526 D:    - jogo_2.xml
+2022-01-14 15:23:01.526 D:    - jogo_1.xml
+2022-01-14 15:23:13.416 D: -> Tap no btnAdaptaJogo
+2022-01-14 15:23:13.416 D:    - rbAdapta: Edição
+2022-01-14 15:23:16.022 D: -> "Carrega" was pressed
+2022-01-14 15:23:16.675 D: -> Presset is checked
+2022-01-14 15:23:16.864 D: -> Launch AdaptarActivity
+2022-01-14 15:23:17.822 D: -> Jogos salvos: 
+2022-01-14 15:23:17.822 D:    - jogo_7.xml
+2022-01-14 15:23:17.832 D:    - jogo_6.xml
+2022-01-14 15:23:17.836 D:    - jogo_5.xml
+2022-01-14 15:23:17.838 D:    - jogo_4.xml
+2022-01-14 15:23:17.864 D:    - jogo_3.xml
+2022-01-14 15:23:17.867 D:    - jogo_2.xml
+2022-01-14 15:23:17.885 D:    - jogo_1.xml
+2022-01-14 15:23:22.415 D: -> Del sel checkBox 1
+2022-01-14 15:23:22.416 D: -> itemsChkDel: [false, true, false, false, false, false, false]
+2022-01-14 15:23:28.945 D: -> Tap no 'three dots' actionBar menu
+2022-01-14 15:23:31.437 D: -> Tap no 'three dots' actionBar menu
+2022-01-14 15:23:32.968 D: -> Tap no 'three dots' actionBar menu
+2022-01-14 15:23:38.847 D: -> Tap em actionBar / Deletar selecionados
+2022-01-14 15:23:38.864 D:    - Deleção de: jogo_6.xml OK!
+2022-01-14 15:23:38.974 D: -> Jogos salvos: 
+2022-01-14 15:23:38.974 D:    - jogo_7.xml
+2022-01-14 15:23:38.977 D:    - jogo_5.xml
+2022-01-14 15:23:39.303 D:    - jogo_4.xml
+2022-01-14 15:23:39.456 D:    - jogo_3.xml
+2022-01-14 15:23:39.705 D:    - jogo_2.xml
+2022-01-14 15:23:39.854 D:    - jogo_1.xml
+2022-01-14 15:23:42.400 D: -> Retorna da activity for result
+2022-01-14 15:23:42.400 D: -> activity results OK! Status: Deletar Jogo
+2022-01-14 15:23:52.675 D: -> Jogos salvos: 
+2022-01-14 15:23:52.675 D:    - jogo_7.xml
+2022-01-14 15:23:52.679 D:    - jogo_5.xml
+2022-01-14 15:23:52.682 D:    - jogo_4.xml
+2022-01-14 15:23:52.995 D:    - jogo_3.xml
+2022-01-14 15:23:56.871 D:    - jogo_2.xml
+2022-01-14 15:23:58.274 D:    - jogo_1.xml
+2022-01-14 15:24:31.001 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 15:24:31.001 D: -> Dimensões screen:
+2022-01-14 15:24:31.002 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 15:24:31.002 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 15:24:31.002 D:    - Diagonal :  4.88"
+2022-01-14 15:24:31.002 D:    - fatorlargura :  0.92
+2022-01-14 15:24:31.002 D:    - fatorAltura  :  1.00
+2022-01-14 15:24:31.002 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 15:24:34.437 D: -> main Verifica permissões
+2022-01-14 15:24:34.437 D:    - Checa se permissões Ok
+2022-01-14 15:24:34.441 D:      - android.permission.INTERNET: true
+2022-01-14 15:24:34.444 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 15:24:34.447 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-14 15:24:34.569 D: Permission Granted!
+2022-01-14 15:24:34.569 D: -> Registra activity for result
+
+
+================================================================================
+Commit143- bug na edição de preset - 1
+================================================================================
+--------------------------------------------------------------------------------
+2022-01-14 11:44:13.402 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 11:44:13.402 D: -> Dimensões screen:
+2022-01-14 11:44:13.403 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 11:44:13.403 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 11:44:13.403 D:    - Diagonal :  4.88"
+2022-01-14 11:44:13.403 D:    - fatorlargura :  0.92
+2022-01-14 11:44:13.403 D:    - fatorAltura  :  1.00
+2022-01-14 11:44:13.403 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 11:44:23.314 D: -> main Verifica permissões
+2022-01-14 11:44:23.314 D:    - Checa se permissões Ok
+2022-01-14 11:44:23.315 D:      - android.permission.INTERNET: true
+2022-01-14 11:44:23.316 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 11:44:23.316 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-14 11:44:23.322 D: Permission Granted!
+2022-01-14 11:44:23.322 D: -> Registra activity for result
+2022-01-14 11:48:08.493 D: -> Tap no btnGeraJogo
+2022-01-14 11:48:08.943 D:    - Nível: Fácil (20) Subnível: 0
+2022-01-14 11:48:09.222 D: -> Jogo 3: válido!
+2022-01-14 11:48:09.222 D: linha 0 : 4, 8, 3, 9, 7, 6, 1, 2, 5
+2022-01-14 11:48:09.222 D: linha 1 : 9, 1, 7, 5, 8, 2, 6, 4, 3
+2022-01-14 11:48:09.222 D: linha 2 : 2, 5, 6, 1, 4, 3, 8, 9, 7
+2022-01-14 11:48:09.222 D: linha 3 : 1, 6, 4, 2, 5, 7, 3, 8, 9
+2022-01-14 11:48:09.222 D: linha 4 : 8, 3, 9, 6, 1, 4, 5, 7, 2
+2022-01-14 11:48:09.222 D: linha 5 : 7, 2, 5, 8, 3, 9, 4, 6, 1
+2022-01-14 11:48:09.222 D: linha 6 : 6, 9, 1, 4, 2, 5, 7, 3, 8
+2022-01-14 11:48:09.222 D: linha 7 : 5, 7, 2, 3, 6, 8, 9, 1, 4
+2022-01-14 11:48:09.222 D: linha 8 : 3, 4, 8, 7, 9, 1, 2, 5, 6
+2022-01-14 11:48:09.223 D: -> Jogo gerado preparado:
+2022-01-14 11:48:09.223 D: linha 0 : 4, 8, 3, 9, 7, 0, 1, 0, 5
+2022-01-14 11:48:09.223 D: linha 1 : 0, 1, 7, 5, 8, 2, 6, 4, 0
+2022-01-14 11:48:09.223 D: linha 2 : 0, 5, 6, 1, 4, 0, 8, 9, 7
+2022-01-14 11:48:09.223 D: linha 3 : 1, 6, 4, 0, 0, 7, 3, 8, 9
+2022-01-14 11:48:09.223 D: linha 4 : 0, 3, 9, 6, 0, 4, 5, 0, 0
+2022-01-14 11:48:09.223 D: linha 5 : 7, 2, 0, 8, 3, 0, 4, 6, 1
+2022-01-14 11:48:09.223 D: linha 6 : 6, 9, 0, 4, 2, 5, 7, 3, 0
+2022-01-14 11:48:09.224 D: linha 7 : 5, 7, 2, 0, 6, 0, 9, 1, 4
+2022-01-14 11:48:09.224 D: linha 8 : 0, 4, 8, 7, 9, 1, 2, 5, 0
+2022-01-14 11:48:09.340 D: -> Gabarito gerado pelo Backtracking:
+2022-01-14 11:48:09.340 D: linha 0 : 4, 8, 3, 9, 7, 6, 1, 2, 5
+2022-01-14 11:48:09.340 D: linha 1 : 9, 1, 7, 5, 8, 2, 6, 4, 3
+2022-01-14 11:48:09.341 D: linha 2 : 2, 5, 6, 1, 4, 3, 8, 9, 7
+2022-01-14 11:48:09.341 D: linha 3 : 1, 6, 4, 2, 5, 7, 3, 8, 9
+2022-01-14 11:48:09.341 D: linha 4 : 8, 3, 9, 6, 1, 4, 5, 7, 2
+2022-01-14 11:48:09.341 D: linha 5 : 7, 2, 5, 8, 3, 9, 4, 6, 1
+2022-01-14 11:48:09.341 D: linha 6 : 6, 9, 1, 4, 2, 5, 7, 3, 8
+2022-01-14 11:48:09.341 D: linha 7 : 5, 7, 2, 3, 6, 8, 9, 1, 4
+2022-01-14 11:48:09.341 D: linha 8 : 3, 4, 8, 7, 9, 1, 2, 5, 6
+2022-01-14 11:48:09.341 D: -> Quantidade de clues:   20
+2022-01-14 11:48:09.341 D: -> Nível jogo gerado: Fácil
+2022-01-14 11:48:09.341 D:     - subnível: 0
+2022-01-14 11:48:21.095 D: -> Tap no btnJogaJogo
+2022-01-14 11:48:21.095 D: Qm Lin Col Num val
+2022-01-14 11:48:21.226 D: -> Jogo válido!
+2022-01-14 11:48:21.421 D: -> Preset 0
+2022-01-14 11:48:21.421 D:    - tenta adaptar o jogo (1)
+2022-01-14 11:48:21.421 D: linha 0 : 4, 8, 3, 9, 7, 0, 1, 0, 5
+2022-01-14 11:48:21.421 D: linha 1 : 0, 1, 7, 5, 8, 2, 6, 4, 0
+2022-01-14 11:48:21.421 D: linha 2 : 0, 5, 6, 1, 4, 0, 8, 9, 7
+2022-01-14 11:48:21.421 D: linha 3 : 1, 6, 4, 0, 0, 7, 3, 8, 9
+2022-01-14 11:48:21.421 D: linha 4 : 0, 3, 9, 6, 0, 4, 5, 0, 0
+2022-01-14 11:48:21.421 D: linha 5 : 7, 2, 0, 8, 3, 0, 4, 6, 1
+2022-01-14 11:48:21.421 D: linha 6 : 6, 9, 0, 4, 2, 5, 7, 3, 0
+2022-01-14 11:48:21.421 D: linha 7 : 5, 7, 2, 0, 6, 0, 9, 1, 4
+2022-01-14 11:48:21.421 D: linha 8 : 0, 4, 8, 7, 9, 1, 2, 5, 0
+2022-01-14 11:48:21.421 D: -> Jogo com preset 0 adaptado
+2022-01-14 11:48:21.421 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-14 11:48:21.421 D: linha 0 : 4, 8, 3, 9, 7, 6, 1, 2, 5
+2022-01-14 11:48:21.421 D: linha 1 : 9, 1, 7, 5, 8, 2, 6, 4, 3
+2022-01-14 11:48:21.421 D: linha 2 : 2, 5, 6, 1, 4, 3, 8, 9, 7
+2022-01-14 11:48:21.421 D: linha 3 : 1, 6, 4, 2, 5, 7, 3, 8, 9
+2022-01-14 11:48:21.421 D: linha 4 : 8, 3, 9, 6, 1, 4, 5, 7, 2
+2022-01-14 11:48:21.421 D: linha 5 : 7, 2, 5, 8, 3, 9, 4, 6, 1
+2022-01-14 11:48:21.421 D: linha 6 : 6, 9, 1, 4, 2, 5, 7, 3, 8
+2022-01-14 11:48:21.421 D: linha 7 : 5, 7, 2, 3, 6, 8, 9, 1, 4
+2022-01-14 11:48:21.421 D: linha 8 : 3, 4, 8, 7, 9, 1, 2, 5, 6
+2022-01-14 11:48:21.421 D: -> Jogo (preset):
+2022-01-14 11:48:21.421 D: linha 0 : 4, 8, 3, 9, 7, 0, 1, 0, 5
+2022-01-14 11:48:21.421 D: linha 1 : 0, 1, 7, 5, 8, 2, 6, 4, 0
+2022-01-14 11:48:21.421 D: linha 2 : 0, 5, 6, 1, 4, 0, 8, 9, 7
+2022-01-14 11:48:21.421 D: linha 3 : 1, 6, 4, 0, 0, 7, 3, 8, 9
+2022-01-14 11:48:21.421 D: linha 4 : 0, 3, 9, 6, 0, 4, 5, 0, 0
+2022-01-14 11:48:21.422 D: linha 5 : 7, 2, 0, 8, 3, 0, 4, 6, 1
+2022-01-14 11:48:21.422 D: linha 6 : 6, 9, 0, 4, 2, 5, 7, 3, 0
+2022-01-14 11:48:21.422 D: linha 7 : 5, 7, 2, 0, 6, 0, 9, 1, 4
+2022-01-14 11:48:21.422 D: linha 8 : 0, 4, 8, 7, 9, 1, 2, 5, 0
+2022-01-14 11:48:21.422 D: -> Quantidade de clues:   20
+2022-01-14 11:48:21.422 D: -> Nível jogo adaptado: Fácil
+2022-01-14 11:48:21.422 D:     - subnível: 0
+2022-01-14 11:48:23.097 D: -> Acerta crono.
+2022-01-14 11:48:23.097 D: -> Jogo:
+2022-01-14 11:48:23.097 D: linha 0 : 4, 8, 3, 9, 7, 0, 1, 0, 5
+2022-01-14 11:48:23.097 D: linha 1 : 0, 1, 7, 5, 8, 2, 6, 4, 0
+2022-01-14 11:48:23.097 D: linha 2 : 0, 5, 6, 1, 4, 0, 8, 9, 7
+2022-01-14 11:48:23.097 D: linha 3 : 1, 6, 4, 0, 0, 7, 3, 8, 9
+2022-01-14 11:48:23.097 D: linha 4 : 0, 3, 9, 6, 0, 4, 5, 0, 0
+2022-01-14 11:48:23.097 D: linha 5 : 7, 2, 0, 8, 3, 0, 4, 6, 1
+2022-01-14 11:48:23.097 D: linha 6 : 6, 9, 0, 4, 2, 5, 7, 3, 0
+2022-01-14 11:48:23.097 D: linha 7 : 5, 7, 2, 0, 6, 0, 9, 1, 4
+2022-01-14 11:48:23.097 D: linha 8 : 0, 4, 8, 7, 9, 1, 2, 5, 0
+2022-01-14 11:48:23.097 D: -> Gabarito:
+2022-01-14 11:48:23.097 D: linha 0 : 4, 8, 3, 9, 7, 6, 1, 2, 5
+2022-01-14 11:48:23.097 D: linha 1 : 9, 1, 7, 5, 8, 2, 6, 4, 3
+2022-01-14 11:48:23.097 D: linha 2 : 2, 5, 6, 1, 4, 3, 8, 9, 7
+2022-01-14 11:48:23.097 D: linha 3 : 1, 6, 4, 2, 5, 7, 3, 8, 9
+2022-01-14 11:48:23.097 D: linha 4 : 8, 3, 9, 6, 1, 4, 5, 7, 2
+2022-01-14 11:48:23.098 D: linha 5 : 7, 2, 5, 8, 3, 9, 4, 6, 1
+2022-01-14 11:48:23.098 D: linha 6 : 6, 9, 1, 4, 2, 5, 7, 3, 8
+2022-01-14 11:48:23.098 D: linha 7 : 5, 7, 2, 3, 6, 8, 9, 1, 4
+2022-01-14 11:48:23.098 D: linha 8 : 3, 4, 8, 7, 9, 1, 2, 5, 6
+2022-01-14 11:48:23.735 D: -> Array qtidd de jogos disponível por número:
+2022-01-14 11:48:23.735 D:    Num 1 2
+2022-01-14 11:48:23.735 D:    Num 2 4
+2022-01-14 11:48:23.735 D:    Num 3 4
+2022-01-14 11:48:23.735 D:    Num 4 0
+2022-01-14 11:48:23.735 D:    Num 5 2
+2022-01-14 11:48:23.735 D:    Num 6 2
+2022-01-14 11:48:23.736 D:    Num 7 1
+2022-01-14 11:48:23.736 D:    Num 8 3
+2022-01-14 11:48:23.736 D:    Num 9 2
+2022-01-14 11:51:25.933 D: -> 00:00 - Inicia
+2022-01-14 11:51:25.933 D: -> Acerta crono.
+2022-01-14 11:51:25.933 D: -> Parte o crono.
+2022-01-14 11:53:33.242 D: -> 02:06 - Fim
+2022-01-14 11:53:39.045 D: -> Tap no btn "Salvar" 
+2022-01-14 11:53:42.458 D: -> "Sim" was pressed
+2022-01-14 11:53:42.458 D: -> Arquivos raw (listRaw):
+2022-01-14 11:53:42.458 D: 0: modelo_arq_xml_sudoku1
+2022-01-14 11:53:42.458 D: -> Arquivo modelo_arq_xml_sudoku1:
+2022-01-14 11:53:42.459 D:    0: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 11:53:42.459 D: -> modelo arq Sudoku xml
+2022-01-14 11:53:42.459 D: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 11:53:42.460 D: -> Tag: 12, Conteudo: <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Fácil</nivel><subnivel>0</subnivel></header><body><linha0>4, 8, 3, 9, 7, 0, 1, 0, 5</linha0><linha1>0, 1, 7, 5, 8, 2, 6, 4, 0</linha1><linha2>0, 5, 6, 1, 4, 0, 8, 9, 7</linha2><linha3>1, 6, 4, 0, 0, 7, 3, 8, 9</linha3><linha4>0, 3, 9, 6, 0, 4, 5, 0, 0</linha4><linha5>7, 2, 0, 8, 3, 0, 4, 6, 1</linha5><linha6>6, 9, 0, 4, 2, 5, 7, 3, 0</linha6><linha7>5, 7, 2, 0, 6, 0, 9, 1, 4</linha7><linha8>0, 4, 8, 7, 9, 1, 2, 5, 0</linha8></body><jogos><id>1</id><opcaoJogo>JogoGerado</opcaoJogo><dataHora>14/01/2022 09:53:42</dataHora><tempoJogo>02:06</tempoJogo><erros>0</erros><status>finalizado</status></jogos></presets>
+2022-01-14 11:53:42.518 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/jogos/jogo_4.xml OK!
+2022-01-14 11:53:42.518 D: -> Jogos salvos: 
+2022-01-14 11:53:42.519 D:    - jogo_4.xml
+2022-01-14 11:53:42.519 D:    - jogo_3.xml
+2022-01-14 11:53:42.519 D:    - jogo_2.xml
+2022-01-14 11:53:42.519 D:    - jogo_1.xml
+2022-01-14 11:56:12.867 D: -> Tap no btnAdaptaJogo
+2022-01-14 11:56:12.868 D:    - rbAdapta: Preset
+2022-01-14 11:56:15.711 D: -> "Carrega" was pressed
+2022-01-14 11:56:16.288 D: -> Presset is checked
+2022-01-14 11:56:16.389 D: -> Launch AdaptarActivity
+2022-01-14 11:56:16.616 D: -> Jogos salvos: 
+2022-01-14 11:56:16.616 D:    - jogo_4.xml
+2022-01-14 11:56:16.619 D:    - jogo_3.xml
+2022-01-14 11:56:16.620 D:    - jogo_2.xml
+2022-01-14 11:56:16.722 D:    - jogo_1.xml
+2022-01-14 11:56:24.122 D: -> jogoTxt 0
+2022-01-14 11:56:24.122 D: -> 
+2022-01-14 11:56:24.122 D: -> item textViews:
+    Arq: jogo_4.xml  JogoGerado
+    Data: 14/01/2022 09:53:42  Status: finalizado  Nivel: Fácil  sub: 0  Erros: 0  tempo: 02:06
+2022-01-14 11:56:24.122 D: -> nome do arquivo: jogo_4.xml
+2022-01-14 11:56:24.123 D: -> dados do jogo salvo:
+    <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Fácil</nivel><subnivel>0</subnivel></header><body><linha0>4, 8, 3, 9, 7, 0, 1, 0, 5</linha0><linha1>0, 1, 7, 5, 8, 2, 6, 4, 0</linha1><linha2>0, 5, 6, 1, 4, 0, 8, 9, 7</linha2><linha3>1, 6, 4, 0, 0, 7, 3, 8, 9</linha3><linha4>0, 3, 9, 6, 0, 4, 5, 0, 0</linha4><linha5>7, 2, 0, 8, 3, 0, 4, 6, 1</linha5><linha6>6, 9, 0, 4, 2, 5, 7, 3, 0</linha6><linha7>5, 7, 2, 0, 6, 0, 9, 1, 4</linha7><linha8>0, 4, 8, 7, 9, 1, 2, 5, 0</linha8></body><jogos><id>1</id><opcaoJogo>JogoGerado</opcaoJogo><dataHora>14/01/2022 09:53:42</dataHora><tempoJogo>02:06</tempoJogo><erros>0</erros><status>finalizado</status></jogos></presets>
+2022-01-14 11:56:24.124 D: -> status:  finalizado
+2022-01-14 11:56:24.124 D: Sudoku - Jogo finalizado.
+2022-01-14 11:56:24.182 D: -> Preset 0
+2022-01-14 11:56:24.182 D:    - tenta adaptar o jogo (1)
+2022-01-14 11:56:24.182 D: linha 0 : 4, 8, 3, 9, 7, 0, 1, 0, 5
+2022-01-14 11:56:24.182 D: linha 1 : 0, 1, 7, 5, 8, 2, 6, 4, 0
+2022-01-14 11:56:24.182 D: linha 2 : 0, 5, 6, 1, 4, 0, 8, 9, 7
+2022-01-14 11:56:24.182 D: linha 3 : 1, 6, 4, 0, 0, 7, 3, 8, 9
+2022-01-14 11:56:24.182 D: linha 4 : 0, 3, 9, 6, 0, 4, 5, 0, 0
+2022-01-14 11:56:24.182 D: linha 5 : 7, 2, 0, 8, 3, 0, 4, 6, 1
+2022-01-14 11:56:24.182 D: linha 6 : 6, 9, 0, 4, 2, 5, 7, 3, 0
+2022-01-14 11:56:24.182 D: linha 7 : 5, 7, 2, 0, 6, 0, 9, 1, 4
+2022-01-14 11:56:24.182 D: linha 8 : 0, 4, 8, 7, 9, 1, 2, 5, 0
+2022-01-14 11:56:24.182 D: -> Jogo com preset 0 adaptado
+2022-01-14 11:56:24.182 D: -> Gabarito do jogo (adaptação do preset):
+2022-01-14 11:56:24.182 D: linha 0 : 4, 8, 3, 9, 7, 6, 1, 2, 5
+2022-01-14 11:56:24.182 D: linha 1 : 9, 1, 7, 5, 8, 2, 6, 4, 3
+2022-01-14 11:56:24.182 D: linha 2 : 2, 5, 6, 1, 4, 3, 8, 9, 7
+2022-01-14 11:56:24.182 D: linha 3 : 1, 6, 4, 2, 5, 7, 3, 8, 9
+2022-01-14 11:56:24.182 D: linha 4 : 8, 3, 9, 6, 1, 4, 5, 7, 2
+2022-01-14 11:56:24.182 D: linha 5 : 7, 2, 5, 8, 3, 9, 4, 6, 1
+2022-01-14 11:56:24.182 D: linha 6 : 6, 9, 1, 4, 2, 5, 7, 3, 8
+2022-01-14 11:56:24.182 D: linha 7 : 5, 7, 2, 3, 6, 8, 9, 1, 4
+2022-01-14 11:56:24.182 D: linha 8 : 3, 4, 8, 7, 9, 1, 2, 5, 6
+2022-01-14 11:56:24.182 D: -> Jogo (preset):
+2022-01-14 11:56:24.182 D: linha 0 : 4, 8, 3, 9, 7, 0, 1, 0, 5
+2022-01-14 11:56:24.182 D: linha 1 : 0, 1, 7, 5, 8, 2, 6, 4, 0
+2022-01-14 11:56:24.182 D: linha 2 : 0, 5, 6, 1, 4, 0, 8, 9, 7
+2022-01-14 11:56:24.182 D: linha 3 : 1, 6, 4, 0, 0, 7, 3, 8, 9
+2022-01-14 11:56:24.182 D: linha 4 : 0, 3, 9, 6, 0, 4, 5, 0, 0
+2022-01-14 11:56:24.182 D: linha 5 : 7, 2, 0, 8, 3, 0, 4, 6, 1
+2022-01-14 11:56:24.182 D: linha 6 : 6, 9, 0, 4, 2, 5, 7, 3, 0
+2022-01-14 11:56:24.182 D: linha 7 : 5, 7, 2, 0, 6, 0, 9, 1, 4
+2022-01-14 11:56:24.182 D: linha 8 : 0, 4, 8, 7, 9, 1, 2, 5, 0
+2022-01-14 11:56:24.182 D: -> Quantidade de clues:   20
+2022-01-14 11:56:24.182 D: -> Nível jogo adaptado: Fácil
+2022-01-14 11:56:24.182 D:     - subnível: 0
+2022-01-14 11:56:24.182 D: idxLin = 0
+2022-01-14 11:56:24.182 D: idxLin = 1
+2022-01-14 11:56:24.182 D: idxLin = 2
+2022-01-14 11:56:24.182 D: idxLin = 3
+2022-01-14 11:56:24.182 D: idxLin = 4
+2022-01-14 11:56:24.182 D: idxLin = 5
+2022-01-14 11:56:24.182 D: idxLin = 6
+2022-01-14 11:56:24.182 D: idxLin = 7
+2022-01-14 11:56:24.182 D: idxLin = 8
+2022-01-14 11:56:24.183 D: Qm Lin Col Num val
+2022-01-14 11:56:24.852 D: -> Acerta crono.
+2022-01-14 11:56:24.852 D: -> Jogo:
+2022-01-14 11:56:24.852 D: linha 0 : 4, 8, 3, 9, 7, 0, 1, 0, 5
+2022-01-14 11:56:24.852 D: linha 1 : 0, 1, 7, 5, 8, 2, 6, 4, 0
+2022-01-14 11:56:24.852 D: linha 2 : 0, 5, 6, 1, 4, 0, 8, 9, 7
+2022-01-14 11:56:24.852 D: linha 3 : 1, 6, 4, 0, 0, 7, 3, 8, 9
+2022-01-14 11:56:24.852 D: linha 4 : 0, 3, 9, 6, 0, 4, 5, 0, 0
+2022-01-14 11:56:24.859 D: linha 5 : 7, 2, 0, 8, 3, 0, 4, 6, 1
+2022-01-14 11:56:24.859 D: linha 6 : 6, 9, 0, 4, 2, 5, 7, 3, 0
+2022-01-14 11:56:24.859 D: linha 7 : 5, 7, 2, 0, 6, 0, 9, 1, 4
+2022-01-14 11:56:24.859 D: linha 8 : 0, 4, 8, 7, 9, 1, 2, 5, 0
+2022-01-14 11:56:24.859 D: -> Gabarito:
+2022-01-14 11:56:24.859 D: linha 0 : 4, 8, 3, 9, 7, 6, 1, 2, 5
+2022-01-14 11:56:24.859 D: linha 1 : 9, 1, 7, 5, 8, 2, 6, 4, 3
+2022-01-14 11:56:24.859 D: linha 2 : 2, 5, 6, 1, 4, 3, 8, 9, 7
+2022-01-14 11:56:24.859 D: linha 3 : 1, 6, 4, 2, 5, 7, 3, 8, 9
+2022-01-14 11:56:24.862 D: linha 4 : 8, 3, 9, 6, 1, 4, 5, 7, 2
+2022-01-14 11:56:24.862 D: linha 5 : 7, 2, 5, 8, 3, 9, 4, 6, 1
+2022-01-14 11:56:24.862 D: linha 6 : 6, 9, 1, 4, 2, 5, 7, 3, 8
+2022-01-14 11:56:24.862 D: linha 7 : 5, 7, 2, 3, 6, 8, 9, 1, 4
+2022-01-14 11:56:24.862 D: linha 8 : 3, 4, 8, 7, 9, 1, 2, 5, 6
+2022-01-14 11:56:25.692 D: -> Array qtidd de jogos disponível por número:
+2022-01-14 11:56:25.693 D:    Num 1 2
+2022-01-14 11:56:25.694 D:    Num 2 4
+2022-01-14 11:56:25.694 D:    Num 3 4
+2022-01-14 11:56:25.695 D:    Num 4 0
+2022-01-14 11:56:25.695 D:    Num 5 2
+2022-01-14 11:56:25.695 D:    Num 6 2
+2022-01-14 11:56:25.695 D:    Num 7 1
+2022-01-14 11:56:25.695 D:    Num 8 3
+2022-01-14 11:56:25.695 D:    Num 9 2
+2022-01-14 11:56:32.169 D: -> 00:00 - Inicia
+2022-01-14 11:56:32.170 D: -> Acerta crono.
+2022-01-14 11:56:32.170 D: -> Parte o crono.
+2022-01-14 11:56:53.039 D: -> Tap no btn "Salvar" 
+2022-01-14 11:56:55.716 D: -> "Sim" was pressed
+2022-01-14 11:56:55.716 D: -> Arquivos raw (listRaw):
+2022-01-14 11:56:55.716 D: 0: modelo_arq_xml_sudoku1
+2022-01-14 11:56:55.716 D: -> Arquivo modelo_arq_xml_sudoku1:
+2022-01-14 11:56:55.716 D:    0: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 11:56:55.716 D: -> modelo arq Sudoku xml
+2022-01-14 11:56:55.716 D: <?xml version="1.0" encoding="utf-8"?><presets><header><id></id><nivel></nivel><subnivel></subnivel></header><body><linha0></linha0><linha1></linha1><linha2></linha2><linha3></linha3><linha4></linha4><linha5></linha5><linha6></linha6><linha7></linha7><linha8></linha8></body><jogos><id></id><opcaoJogo></opcaoJogo><dataHora></dataHora><tempoJogo></tempoJogo><erros></erros><status></status></jogos></presets>
+2022-01-14 11:56:55.717 D: -> Tag: 11, Conteudo: <?xml version="1.0" encoding="utf-8"?><presets><header><id>3</id><nivel>Fácil</nivel><subnivel>0</subnivel></header><body><linha0>4, 8, 3, 9, 7, 0, 1, 0, 5</linha0><linha1>0, 1, 7, 5, 8, 2, 6, 4, 0</linha1><linha2>0, 5, 6, 1, 4, 0, 8, 9, 7</linha2><linha3>1, 6, 4, 0, 0, 7, 3, 8, 9</linha3><linha4>0, 3, 9, 6, 0, 4, 5, 0, 0</linha4><linha5>7, 2, 0, 8, 3, 0, 4, 6, 1</linha5><linha6>6, 9, 0, 4, 2, 5, 7, 3, 0</linha6><linha7>5, 7, 2, 0, 6, 0, 9, 1, 4</linha7><linha8>0, 4, 8, 7, 9, 1, 2, 5, 0</linha8></body><jogos><id>1</id><opcaoJogo>JogoPresetado: jogo_4.xml</opcaoJogo><dataHora>14/01/2022 09:56:55</dataHora><tempoJogo>00:22</tempoJogo><erros>0</erros><status>ativo</status></jogos><body2><linha0>4, 8, 3, 9, 7, 0, 1, 0, 5</linha0><linha1>0, 1, 7, 5, 8, 2, 6, 4, 0</linha1><linha2>0, 5, 6, 1, 4, 0, 8, 9, 7</linha2><linha3>1, 6, 4, 0, 0, 7, 3, 8, 9</linha3><linha4>0, 3, 9, 6, 1, 4, 5, 0, 0</linha4><linha5>7, 2, 0, 8, 3, 0, 4, 6, 1</linha5><linha6>6, 9, 1, 4, 2, 5, 7, 3, 0</linha6><linha7>5, 7, 2, 0, 6, 0, 9, 1, 4</linha7><linha8>0, 4, 8, 7, 9, 1, 2, 5, 0</linha8></body2></presets>
+2022-01-14 11:56:55.725 D: -> Escrita arquivo storage/emulated/0/Download/sudoku/jogos/jogo_5.xml OK!
+2022-01-14 11:56:55.725 D: -> Jogos salvos: 
+2022-01-14 11:56:55.855 D:    - jogo_5.xml
+2022-01-14 11:56:55.855 D:    - jogo_4.xml
+2022-01-14 11:56:55.855 D:    - jogo_3.xml
+2022-01-14 11:56:55.855 D:    - jogo_2.xml
+2022-01-14 11:56:55.855 D:    - jogo_1.xml
+2022-01-14 11:57:08.664 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 11:57:08.664 D: -> Dimensões screen:
+2022-01-14 11:57:08.665 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 11:57:08.665 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 11:57:08.666 D:    - Diagonal :  4.88"
+2022-01-14 11:57:08.666 D:    - fatorlargura :  0.92
+2022-01-14 11:57:08.666 D:    - fatorAltura  :  1.00
+2022-01-14 11:57:08.666 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 11:57:09.910 D: -> main Verifica permissões
+2022-01-14 11:57:09.910 D:    - Checa se permissões Ok
+2022-01-14 11:57:09.911 D:      - android.permission.INTERNET: true
+2022-01-14 11:57:09.911 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 11:57:09.911 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-14 11:57:09.914 D: Permission Granted!
+2022-01-14 11:57:09.914 D: -> Registra activity for result
+2022-01-14 11:57:10.191 D: -> Retorna da activity for result
+2022-01-14 11:57:10.191 D: -> activity results NÃO OK!
+2022-01-14 11:57:19.676 D: -> Tap no btnAdaptaJogo
+2022-01-14 11:57:19.677 D:    - rbAdapta: Preset
+2022-01-14 11:57:19.774 D: -> Tap no btnAdaptaJogo
+2022-01-14 11:57:19.775 D:    - rbAdapta: Preset
+2022-01-14 11:57:23.218 D: -> "Carrega" was pressed
+2022-01-14 11:57:23.531 D: -> Presset is checked
+2022-01-14 11:57:23.724 D: -> Launch AdaptarActivity
+2022-01-14 11:57:24.604 D: -> Jogos salvos: 
+2022-01-14 11:57:24.604 D:    - jogo_5.xml
+2022-01-14 11:57:24.619 D:    - jogo_4.xml
+2022-01-14 11:57:24.624 D:    - jogo_3.xml
+2022-01-14 11:57:24.630 D:    - jogo_2.xml
+2022-01-14 11:57:24.637 D:    - jogo_1.xml
+2022-01-14 11:57:44.179 D: -> Retorna da activity for result
+2022-01-14 11:57:44.179 D: -> activity results NÃO OK!
+2022-01-14 11:57:49.041 D: -> "Edita" was pressed
+2022-01-14 11:58:45.581 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 11:58:45.581 D: -> Dimensões screen:
+2022-01-14 11:58:45.582 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 11:58:45.582 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 11:58:45.582 D:    - Diagonal :  4.88"
+2022-01-14 11:58:45.582 D:    - fatorlargura :  0.92
+2022-01-14 11:58:45.582 D:    - fatorAltura  :  1.00
+2022-01-14 11:58:45.582 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 11:58:46.726 D: -> main Verifica permissões
+2022-01-14 11:58:46.726 D:    - Checa se permissões Ok
+2022-01-14 11:58:46.727 D:      - android.permission.INTERNET: true
+2022-01-14 11:58:46.729 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 11:58:46.731 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-14 11:58:46.768 D: Permission Granted!
+2022-01-14 11:58:46.768 D: -> Registra activity for result
+2022-01-14 11:59:01.520 D: -> Tap no btnAdaptaJogo
+2022-01-14 11:59:01.520 D:    - rbAdapta: Preset
+2022-01-14 11:59:04.272 D: -> "Edita" was pressed
+2022-01-14 11:59:07.956 D: -> SudokuBoard:
+2022-01-14 11:59:07.956 D: -> Celula tocada: linha = 0, coluna = 0, numero = 0
+2022-01-14 11:59:10.852 D: -> ivNumDisp:
+2022-01-14 11:59:10.896 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 11:59:10.896 D:    - arIntQti: 
+    8, 9, 9, 9, 9, 9, 9, 9, 9
+2022-01-14 11:59:11.763 D: -> SudokuBoard:
+2022-01-14 11:59:11.763 D: -> Celula tocada: linha = 1, coluna = 1, numero = 0
+2022-01-14 11:59:12.940 D: -> ivNumDisp:
+2022-01-14 11:59:12.973 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 11:59:12.973 D:    - arIntQti: 
+    8, 8, 9, 9, 9, 9, 9, 9, 9
+2022-01-14 11:59:14.028 D: -> SudokuBoard:
+2022-01-14 11:59:14.028 D: -> Celula tocada: linha = 2, coluna = 2, numero = 0
+2022-01-14 11:59:15.404 D: -> ivNumDisp:
+2022-01-14 11:59:15.444 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 11:59:15.444 D:    - arIntQti: 
+    8, 8, 8, 9, 9, 9, 9, 9, 9
+2022-01-14 11:59:16.347 D: -> SudokuBoard:
+2022-01-14 11:59:16.347 D: -> Celula tocada: linha = 3, coluna = 3, numero = 0
+2022-01-14 11:59:17.219 D: -> ivNumDisp:
+2022-01-14 11:59:17.257 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 11:59:17.257 D:    - arIntQti: 
+    8, 8, 8, 8, 9, 9, 9, 9, 9
+2022-01-14 11:59:18.060 D: -> SudokuBoard:
+2022-01-14 11:59:18.060 D: -> Celula tocada: linha = 4, coluna = 4, numero = 0
+2022-01-14 11:59:18.915 D: -> ivNumDisp:
+2022-01-14 11:59:18.960 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 11:59:18.960 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 9, 9, 9, 9
+2022-01-14 11:59:19.916 D: -> SudokuBoard:
+2022-01-14 11:59:19.916 D: -> Celula tocada: linha = 5, coluna = 5, numero = 0
+2022-01-14 11:59:21.091 D: -> ivNumDisp:
+2022-01-14 11:59:21.127 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 11:59:21.127 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 9, 9, 9
+2022-01-14 11:59:21.996 D: -> SudokuBoard:
+2022-01-14 11:59:21.996 D: -> Celula tocada: linha = 6, coluna = 6, numero = 0
+2022-01-14 11:59:35.425 D: -> ivNumDisp:
+2022-01-14 11:59:35.448 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 11:59:35.448 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 8, 9, 9
+2022-01-14 11:59:36.273 D: -> SudokuBoard:
+2022-01-14 11:59:36.273 D: -> Celula tocada: linha = 7, coluna = 7, numero = 0
+2022-01-14 11:59:37.128 D: -> ivNumDisp:
+2022-01-14 11:59:37.158 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0
+2022-01-14 11:59:37.158 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 8, 8, 9
+2022-01-14 11:59:37.920 D: -> SudokuBoard:
+2022-01-14 11:59:37.920 D: -> Celula tocada: linha = 8, coluna = 8, numero = 0
+2022-01-14 11:59:38.761 D: -> ivNumDisp:
+2022-01-14 11:59:38.786 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 9
+2022-01-14 11:59:38.786 D:    - arIntQti: 
+    8, 8, 8, 8, 8, 8, 8, 8, 8
+2022-01-14 11:59:40.017 D: -> SudokuBoard:
+2022-01-14 11:59:40.017 D: -> Celula tocada: linha = 0, coluna = 4, numero = 0
+2022-01-14 11:59:41.313 D: -> SudokuBoard:
+2022-01-14 11:59:41.313 D: -> Celula tocada: linha = 8, coluna = 4, numero = 0
+2022-01-14 11:59:42.377 D: -> ivNumDisp:
+2022-01-14 11:59:42.401 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 11:59:42.401 D:    - arIntQti: 
+    7, 8, 8, 8, 8, 8, 8, 8, 8
+2022-01-14 11:59:43.280 D: -> SudokuBoard:
+2022-01-14 11:59:43.281 D: -> Celula tocada: linha = 7, coluna = 4, numero = 0
+2022-01-14 11:59:44.336 D: -> ivNumDisp:
+2022-01-14 11:59:44.364 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 11:59:44.364 D:    - arIntQti: 
+    7, 7, 8, 8, 8, 8, 8, 8, 8
+2022-01-14 11:59:45.259 D: -> SudokuBoard:
+2022-01-14 11:59:45.259 D: -> Celula tocada: linha = 6, coluna = 4, numero = 0
+2022-01-14 11:59:46.539 D: -> ivNumDisp:
+2022-01-14 11:59:46.585 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 11:59:46.585 D:    - arIntQti: 
+    7, 7, 7, 8, 8, 8, 8, 8, 8
+2022-01-14 11:59:47.428 D: -> SudokuBoard:
+2022-01-14 11:59:47.428 D: -> Celula tocada: linha = 5, coluna = 4, numero = 0
+2022-01-14 11:59:48.362 D: -> ivNumDisp:
+2022-01-14 11:59:48.362 D:    - invalido Qm: Qm=4; lin=3; col=3 num=4
+2022-01-14 11:59:48.482 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 11:59:48.482 D:    - arIntQti: 
+    7, 7, 7, 8, 8, 8, 8, 8, 8
+2022-01-14 11:59:49.360 D: -> SudokuBoard:
+2022-01-14 11:59:49.360 D: -> Celula tocada: linha = 3, coluna = 4, numero = 0
+2022-01-14 11:59:54.171 D: -> SudokuBoard:
+2022-01-14 11:59:54.171 D: -> Celula tocada: linha = 5, coluna = 4, numero = 0
+2022-01-14 11:59:57.842 D: -> ivNumDisp:
+2022-01-14 11:59:57.894 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 11:59:57.894 D:    - arIntQti: 
+    7, 7, 7, 8, 8, 8, 7, 8, 8
+2022-01-14 11:59:59.075 D: -> SudokuBoard:
+2022-01-14 11:59:59.075 D: -> Celula tocada: linha = 3, coluna = 4, numero = 0
+2022-01-14 12:00:02.060 D: -> ivNumDisp:
+2022-01-14 12:00:02.060 D:  - invalido col: linha=6; col=4; num=3
+2022-01-14 12:00:02.071 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 12:00:02.071 D:    - arIntQti: 
+    7, 7, 7, 8, 8, 8, 7, 8, 8
+2022-01-14 12:00:11.603 D: -> ivNumDisp:
+2022-01-14 12:00:11.639 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 12:00:11.639 D:    - arIntQti: 
+    7, 7, 7, 8, 8, 8, 7, 7, 8
+2022-01-14 12:00:12.739 D: -> SudokuBoard:
+2022-01-14 12:00:12.739 D: -> Celula tocada: linha = 2, coluna = 4, numero = 0
+2022-01-14 12:00:17.628 D: -> ivNumDisp:
+2022-01-14 12:00:17.669 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 12:00:17.669 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 8, 7, 7, 8
+2022-01-14 12:00:18.691 D: -> SudokuBoard:
+2022-01-14 12:00:18.691 D: -> Celula tocada: linha = 1, coluna = 4, numero = 0
+2022-01-14 12:00:20.778 D: -> ivNumDisp:
+2022-01-14 12:00:20.807 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 12:00:20.807 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 7, 7, 8
+2022-01-14 12:00:20.937 D: -> ivNumDisp:
+2022-01-14 12:00:21.033 D:    - arArInt : 
+    1, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 9
+2022-01-14 12:00:21.033 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 7, 7, 8
+2022-01-14 12:00:21.809 D: -> SudokuBoard:
+2022-01-14 12:00:21.809 D: -> Celula tocada: linha = 0, coluna = 4, numero = 0
+2022-01-14 12:00:23.555 D: -> SudokuBoard:
+2022-01-14 12:00:23.555 D: -> Celula tocada: linha = 8, coluna = 8, numero = 9
+2022-01-14 12:00:27.187 D: -> "Limpe-a" was pressed
+2022-01-14 12:00:29.051 D: -> SudokuBoard:
+2022-01-14 12:00:29.051 D: -> Celula tocada: linha = 0, coluna = 4, numero = 0
+2022-01-14 12:00:30.474 D: -> ivNumDisp:
+2022-01-14 12:00:30.517 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    0, 0, 0, 0, 1, 0, 0, 0, 0
+2022-01-14 12:00:30.518 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 7, 7, 8
+2022-01-14 12:00:34.003 D: -> SudokuBoard:
+2022-01-14 12:00:34.003 D: -> Celula tocada: linha = 8, coluna = 0, numero = 0
+2022-01-14 12:00:36.530 D: -> ivNumDisp:
+2022-01-14 12:00:36.569 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 0, 0, 0, 2, 0, 0, 8, 0
+    9, 0, 0, 0, 1, 0, 0, 0, 0
+2022-01-14 12:00:36.569 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 7, 7, 7
+2022-01-14 12:00:38.418 D: -> SudokuBoard:
+2022-01-14 12:00:38.418 D: -> Celula tocada: linha = 7, coluna = 1, numero = 0
+2022-01-14 12:00:39.987 D: -> ivNumDisp:
+2022-01-14 12:00:40.029 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 0, 0, 3, 0, 7, 0, 0
+    0, 7, 0, 0, 2, 0, 0, 8, 0
+    9, 0, 0, 0, 1, 0, 0, 0, 0
+2022-01-14 12:00:40.029 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 6, 7, 7
+2022-01-14 12:00:41.115 D: -> SudokuBoard:
+2022-01-14 12:00:41.115 D: -> Celula tocada: linha = 6, coluna = 2, numero = 0
+2022-01-14 12:00:43.746 D: -> ivNumDisp:
+2022-01-14 12:00:43.789 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 0, 7, 6, 0, 0, 0
+    0, 0, 8, 0, 3, 0, 7, 0, 0
+    0, 7, 0, 0, 2, 0, 0, 8, 0
+    9, 0, 0, 0, 1, 0, 0, 0, 0
+2022-01-14 12:00:43.789 D:    - arIntQti: 
+    7, 7, 7, 7, 8, 7, 6, 6, 7
+2022-01-14 12:00:46.090 D: -> SudokuBoard:
+2022-01-14 12:00:46.091 D: -> Celula tocada: linha = 5, coluna = 3, numero = 0
+2022-01-14 12:00:48.138 D: -> ivNumDisp:
+2022-01-14 12:00:48.183 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 0, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 3, 7, 6, 0, 0, 0
+    0, 0, 8, 0, 3, 0, 7, 0, 0
+    0, 7, 0, 0, 2, 0, 0, 8, 0
+    9, 0, 0, 0, 1, 0, 0, 0, 0
+2022-01-14 12:00:48.183 D:    - arIntQti: 
+    7, 7, 6, 7, 8, 7, 6, 6, 7
+2022-01-14 12:00:49.130 D: -> SudokuBoard:
+2022-01-14 12:00:49.130 D: -> Celula tocada: linha = 3, coluna = 5, numero = 0
+2022-01-14 12:00:51.130 D: -> ivNumDisp:
+2022-01-14 12:00:51.155 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 0, 0, 0
+    0, 0, 0, 4, 8, 2, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 3, 7, 6, 0, 0, 0
+    0, 0, 8, 0, 3, 0, 7, 0, 0
+    0, 7, 0, 0, 2, 0, 0, 8, 0
+    9, 0, 0, 0, 1, 0, 0, 0, 0
+2022-01-14 12:00:51.155 D:    - arIntQti: 
+    7, 6, 6, 7, 8, 7, 6, 6, 7
+2022-01-14 12:00:52.738 D: -> SudokuBoard:
+2022-01-14 12:00:52.738 D: -> Celula tocada: linha = 2, coluna = 6, numero = 0
+2022-01-14 12:00:53.898 D: -> ivNumDisp:
+2022-01-14 12:00:53.934 D: Qm Lin Col Num val
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=1; lin=0; col=4 num=9
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=0; lin=1; col=1 num=2
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=1; lin=1; col=4 num=6
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=0; lin=2; col=2 num=3
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=1; lin=2; col=4 num=4
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=4; lin=3; col=3 num=4
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=4; lin=3; col=4 num=8
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=4; lin=3; col=5 num=2
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=4; lin=4; col=4 num=5
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=4; lin=5; col=3 num=3
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=4; lin=5; col=4 num=7
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=4; lin=5; col=5 num=6
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=6; lin=6; col=2 num=8
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=7; lin=6; col=4 num=3
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=8; lin=6; col=6 num=7
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=6; lin=7; col=1 num=7
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=7; lin=7; col=4 num=2
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=8; lin=7; col=7 num=8
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=6; lin=8; col=0 num=9
+2022-01-14 12:00:53.937 D:    - invalido Qm: Qm=7; lin=8; col=4 num=1
+2022-01-14 12:00:53.938 D:    - arArInt : 
+    1, 0, 0, 0, 9, 0, 0, 0, 0
+    0, 2, 0, 0, 6, 0, 0, 0, 0
+    0, 0, 3, 0, 4, 0, 1, 0, 0
+    0, 0, 0, 4, 8, 2, 0, 0, 0
+    0, 0, 0, 0, 5, 0, 0, 0, 0
+    0, 0, 0, 3, 7, 6, 0, 0, 0
+    0, 0, 8, 0, 3, 0, 7, 0, 0
+    0, 7, 0, 0, 2, 0, 0, 8, 0
+    9, 0, 0, 0, 1, 0, 0, 0, 0
+2022-01-14 12:00:53.938 D:    - arIntQti: 
+    6, 6, 6, 7, 8, 7, 6, 6, 7
+2022-01-14 12:00:57.438 D: -> Tap no btnJogaJogo
+2022-01-14 12:00:57.438 D: Qm Lin Col Num val
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=1; lin=0; col=4 num=9
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=0; lin=1; col=1 num=2
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=1; lin=1; col=4 num=6
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=0; lin=2; col=2 num=3
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=1; lin=2; col=4 num=4
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=4; lin=3; col=3 num=4
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=4; lin=3; col=4 num=8
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=4; lin=3; col=5 num=2
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=4; lin=4; col=4 num=5
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=4; lin=5; col=3 num=3
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=4; lin=5; col=4 num=7
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=4; lin=5; col=5 num=6
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=6; lin=6; col=2 num=8
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=7; lin=6; col=4 num=3
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=8; lin=6; col=6 num=7
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=6; lin=7; col=1 num=7
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=7; lin=7; col=4 num=2
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=8; lin=7; col=7 num=8
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=6; lin=8; col=0 num=9
+2022-01-14 12:00:57.438 D:    - invalido Qm: Qm=7; lin=8; col=4 num=1
+2022-01-14 12:00:57.541 D: -> Jogo inválido!
+2022-01-14 12:01:06.365 D: -> Tap no btnJogaJogo
+2022-01-14 12:01:06.366 D: Qm Lin Col Num val
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=1; lin=0; col=4 num=9
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=0; lin=1; col=1 num=2
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=1; lin=1; col=4 num=6
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=0; lin=2; col=2 num=3
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=1; lin=2; col=4 num=4
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=4; lin=3; col=3 num=4
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=4; lin=3; col=4 num=8
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=4; lin=3; col=5 num=2
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=4; lin=4; col=4 num=5
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=4; lin=5; col=3 num=3
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=4; lin=5; col=4 num=7
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=4; lin=5; col=5 num=6
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=6; lin=6; col=2 num=8
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=7; lin=6; col=4 num=3
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=8; lin=6; col=6 num=7
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=6; lin=7; col=1 num=7
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=7; lin=7; col=4 num=2
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=8; lin=7; col=7 num=8
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=6; lin=8; col=0 num=9
+2022-01-14 12:01:06.366 D:    - invalido Qm: Qm=7; lin=8; col=4 num=1
+2022-01-14 12:01:06.372 D: -> Jogo inválido!
+2022-01-14 12:01:26.751 D: -> Tap no btnJogaJogo
+2022-01-14 12:01:26.752 D: Qm Lin Col Num val
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=1; lin=0; col=4 num=9
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=0; lin=1; col=1 num=2
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=1; lin=1; col=4 num=6
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=0; lin=2; col=2 num=3
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=1; lin=2; col=4 num=4
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=4; lin=3; col=3 num=4
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=4; lin=3; col=4 num=8
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=4; lin=3; col=5 num=2
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=4; lin=4; col=4 num=5
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=4; lin=5; col=3 num=3
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=4; lin=5; col=4 num=7
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=4; lin=5; col=5 num=6
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=6; lin=6; col=2 num=8
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=7; lin=6; col=4 num=3
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=8; lin=6; col=6 num=7
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=6; lin=7; col=1 num=7
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=7; lin=7; col=4 num=2
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=8; lin=7; col=7 num=8
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=6; lin=8; col=0 num=9
+2022-01-14 12:01:26.752 D:    - invalido Qm: Qm=7; lin=8; col=4 num=1
+2022-01-14 12:01:26.758 D: -> Jogo inválido!
+2022-01-14 12:01:52.929 D: -> Tap no btnJogaJogo
+2022-01-14 12:01:52.929 D: Qm Lin Col Num val
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=1; lin=0; col=4 num=9
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=0; lin=1; col=1 num=2
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=1; lin=1; col=4 num=6
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=0; lin=2; col=2 num=3
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=1; lin=2; col=4 num=4
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=4; lin=3; col=3 num=4
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=4; lin=3; col=4 num=8
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=4; lin=3; col=5 num=2
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=4; lin=4; col=4 num=5
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=4; lin=5; col=3 num=3
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=4; lin=5; col=4 num=7
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=4; lin=5; col=5 num=6
+2022-01-14 12:01:52.929 D:    - invalido Qm: Qm=6; lin=6; col=2 num=8
+2022-01-14 12:01:52.930 D:    - invalido Qm: Qm=7; lin=6; col=4 num=3
+2022-01-14 12:01:52.930 D:    - invalido Qm: Qm=8; lin=6; col=6 num=7
+2022-01-14 12:01:52.930 D:    - invalido Qm: Qm=6; lin=7; col=1 num=7
+2022-01-14 12:01:52.930 D:    - invalido Qm: Qm=7; lin=7; col=4 num=2
+2022-01-14 12:01:52.930 D:    - invalido Qm: Qm=8; lin=7; col=7 num=8
+2022-01-14 12:01:52.930 D:    - invalido Qm: Qm=6; lin=8; col=0 num=9
+2022-01-14 12:01:52.930 D:    - invalido Qm: Qm=7; lin=8; col=4 num=1
+2022-01-14 12:01:52.948 D: -> Jogo inválido!
+
+
+--------------------------------------------------------------------------------
+2022-01-14 11:01:02.058 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 11:01:02.058 D: -> Dimensões screen:
+2022-01-14 11:01:02.061 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 11:01:02.063 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 11:01:02.064 D:    - Diagonal :  4.88"
+2022-01-14 11:01:02.064 D:    - fatorlargura :  0.92
+2022-01-14 11:01:02.064 D:    - fatorAltura  :  1.00
+2022-01-14 11:01:02.064 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 11:01:02.745 D: -> main Verifica permissões
+2022-01-14 11:01:02.745 D:    - Checa se permissões Ok
+2022-01-14 11:01:02.747 D:      - android.permission.INTERNET: true
+2022-01-14 11:01:02.748 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 11:01:02.749 D:      - android.permission.WRITE_EXTERNAL_STORAGE: false
+2022-01-14 11:01:02.749 D: -> Recurso SEM Permissão atual:
+2022-01-14 11:01:02.750 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 11:01:02.750 D: -> SO solicita autorização para permissão:
+2022-01-14 11:01:02.750 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 11:01:02.941 D: Permission unGranted
+2022-01-14 11:01:02.941 D: -> Registra activity for result
+2022-01-14 11:01:06.024 D: Permissions: 
+    android.permission.WRITE_EXTERNAL_STORAGE=-1 
+2022-01-14 11:01:06.024 D: - Permissão NÃO concedida!
+2022-01-14 11:01:16.236 D: -> O usuário optou por finalizar o App.
+2022-01-14 11:02:19.838 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 11:02:19.838 D: -> Dimensões screen:
+2022-01-14 11:02:19.839 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 11:02:19.839 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 11:02:19.839 D:    - Diagonal :  4.88"
+2022-01-14 11:02:19.840 D:    - fatorlargura :  0.92
+2022-01-14 11:02:19.840 D:    - fatorAltura  :  1.00
+2022-01-14 11:02:19.840 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 11:02:19.999 D: -> main Verifica permissões
+2022-01-14 11:02:19.999 D:    - Checa se permissões Ok
+2022-01-14 11:02:20.025 D:      - android.permission.INTERNET: true
+2022-01-14 11:02:20.025 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 11:02:20.025 D:      - android.permission.WRITE_EXTERNAL_STORAGE: false
+2022-01-14 11:02:20.025 D: -> Recurso SEM Permissão atual:
+2022-01-14 11:02:20.025 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 11:02:20.026 D: -> SO solicita autorização para permissão:
+2022-01-14 11:02:20.026 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 11:02:20.039 D: Permission unGranted
+2022-01-14 11:02:20.039 D: -> Registra activity for result
+2022-01-14 11:02:25.864 D: Permissions: 
+    android.permission.WRITE_EXTERNAL_STORAGE=0 
+2022-01-14 11:02:25.865 D: - Permissão concedida!
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+2022-01-14 11:02:53.080 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 11:02:53.080 D: -> Dimensões screen:
+2022-01-14 11:02:53.082 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 11:02:53.082 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 11:02:53.082 D:    - Diagonal :  4.88"
+2022-01-14 11:02:53.082 D:    - fatorlargura :  0.92
+2022-01-14 11:02:53.083 D:    - fatorAltura  :  1.00
+2022-01-14 11:02:53.083 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 11:02:54.591 D: -> main Verifica permissões
+2022-01-14 11:02:54.591 D:    - Checa se permissões Ok
+2022-01-14 11:02:54.630 D:      - android.permission.INTERNET: true
+2022-01-14 11:02:54.631 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 11:02:54.631 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-14 11:02:54.641 D: Permission Granted!
+2022-01-14 11:02:54.641 D: -> Registra activity for result
+2022-01-14 11:03:41.922 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 11:03:41.922 D: -> Dimensões screen:
+2022-01-14 11:03:41.925 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 11:03:41.925 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 11:03:41.925 D:    - Diagonal :  4.88"
+2022-01-14 11:03:41.926 D:    - fatorlargura :  0.92
+2022-01-14 11:03:41.926 D:    - fatorAltura  :  1.00
+2022-01-14 11:03:41.926 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 11:03:42.068 D: -> main Verifica permissões
+2022-01-14 11:03:42.068 D:    - Checa se permissões Ok
+2022-01-14 11:03:42.068 D:      - android.permission.INTERNET: true
+2022-01-14 11:03:42.069 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 11:03:42.070 D:      - android.permission.WRITE_EXTERNAL_STORAGE: true
+2022-01-14 11:03:42.074 D: Permission Granted!
+2022-01-14 11:03:42.074 D: -> Registra activity for result
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+2022-01-14 10:52:21.399 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 10:52:21.399 D: -> Dimensões screen:
+2022-01-14 10:52:21.400 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 10:52:21.400 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 10:52:21.400 D:    - Diagonal :  4.88"
+2022-01-14 10:52:21.400 D:    - fatorlargura :  0.92
+2022-01-14 10:52:21.400 D:    - fatorAltura  :  1.00
+2022-01-14 10:52:21.400 D: -> BaseOS: 10 SDK_INT: API29
+--------------------------------------------------------------------------------
+2022-01-14 10:52:22.249 D: -> main Verifica permissões
+2022-01-14 10:52:22.249 D:    - Checa se permissões Ok
+2022-01-14 10:52:22.252 D:      - android.permission.INTERNET: true
+2022-01-14 10:52:22.254 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 10:52:22.258 D:      - android.permission.WRITE_EXTERNAL_STORAGE: false
+2022-01-14 10:52:22.258 D: -> Recurso SEM Permissão atual:
+2022-01-14 10:52:22.259 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 10:52:22.259 D: -> SO solicita autorização para permissão:
+2022-01-14 10:52:22.260 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 10:52:22.515 D: Permission unGranted
+2022-01-14 10:52:22.647 D: -> Registra activity for result
+2022-01-14 10:52:26.347 D: Permissions: 
+    android.permission.WRITE_EXTERNAL_STORAGE=-1 
+2022-01-14 10:52:26.347 D: - Permissão NÃO concedida!
+2022-01-14 10:52:54.409 D: -> O usuário optou por continuar sem salvamento.
+--------------------------------------------------------------------------------
+2022-01-14 10:53:04.305 D: -> Tap no btnJogaJogo
+2022-01-14 10:53:04.312 D: -> Jogo inválido!
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+2022-01-14 10:39:42.728 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 10:39:42.728 D: -> Dimensões screen:
+2022-01-14 10:39:42.729 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 10:39:42.729 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 10:39:42.730 D:    - Diagonal :  4.88"
+2022-01-14 10:39:42.730 D:    - fatorlargura :  0.92
+2022-01-14 10:39:42.730 D:    - fatorAltura  :  1.00
+2022-01-14 10:39:42.730 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 10:39:43.078 D: -> main Verifica permissões
+2022-01-14 10:39:43.078 D:    - Checa se permissões Ok
+2022-01-14 10:39:43.078 D:      - android.permission.INTERNET: true
+2022-01-14 10:39:43.078 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 10:39:43.078 D:      - android.permission.WRITE_EXTERNAL_STORAGE: false
+2022-01-14 10:39:43.078 D: -> SO solicita autorização para permissão:
+2022-01-14 10:39:43.078 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 10:39:43.078 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 10:39:43.085 D: Permission unGranted
+2022-01-14 10:39:43.085 D: -> Registra activity for result
+2022-01-14 10:39:45.615 D: Permissions: 
+    android.permission.WRITE_EXTERNAL_STORAGE=-1 
+2022-01-14 10:39:45.616 D: - Permissão NÃO concedida!
+--------------------------------------------------------------------------------
+2022-01-14 10:39:56.938 D: -> O usuário optou por finalizar o App.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+2022-01-14 10:40:43.598 D: Smartphone: Google - Android SDK built for x86Build: generic_x86
+2022-01-14 10:40:43.598 D: -> Dimensões screen:
+2022-01-14 10:40:43.599 D:    - largura  :  1440.00 px (2.25")
+2022-01-14 10:40:43.600 D:    - altura   :  2768.00 px (4.33")
+2022-01-14 10:40:43.601 D:    - Diagonal :  4.88"
+2022-01-14 10:40:43.601 D:    - fatorlargura :  0.92
+2022-01-14 10:40:43.602 D:    - fatorAltura  :  1.00
+2022-01-14 10:40:43.602 D: -> BaseOS: 10 SDK_INT: API29
+2022-01-14 10:40:43.730 D: -> main Verifica permissões
+2022-01-14 10:40:43.730 D:    - Checa se permissões Ok
+2022-01-14 10:40:43.731 D:      - android.permission.INTERNET: true
+2022-01-14 10:40:43.803 D:      - android.permission.READ_EXTERNAL_STORAGE: true
+2022-01-14 10:40:43.804 D:      - android.permission.WRITE_EXTERNAL_STORAGE: false
+2022-01-14 10:40:43.804 D: -> SO solicita autorização para permissão:
+2022-01-14 10:40:43.804 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 10:40:43.804 D:    - android.permission.WRITE_EXTERNAL_STORAGE
+2022-01-14 10:40:43.817 D: Permission unGranted
+2022-01-14 10:40:43.817 D: -> Registra activity for result
+2022-01-14 10:40:46.642 D: Permissions: 
+    android.permission.WRITE_EXTERNAL_STORAGE=-1 
+2022-01-14 10:40:46.642 D: - Permissão NÃO concedida!
+--------------------------------------------------------------------------------
+2022-01-14 10:40:57.264 D: -> O usuário optou por continuar sem salvamento.
+================================================================================

@@ -1,0 +1,44 @@
+//--------------------------------------------------------------------------
+23/01/22 12:18
+//--------------------------------------------------------------------------
+
+8-> envio de atualizações
+- Segue a versão mais recente do Manual e do app. 
+  Sugiro desinstalar a atual e instalar a próxima.
+  Boa diversão.
+
+
+
+//--------------------------------------------------------------------------
+15/01/22 12:40
+//--------------------------------------------------------------------------
+
+1-> envia anúncio do interesse de compartilhar o app
+
+a- Caros colegas: desenvolvi um App Sudoku Android e gostaria de compartilhá-lo com os interessados. 
+Favor me responder no private se quiser que te envie uma cópia gratuita. 
+Abraços!
+
+b- Bom dia Silvana! Tudo bem? Desenvolvi um App Sudoku Android e gostaria de compartilhá-lo com você. Interessa?
+
+c- Desenvolvi um App Sudoku Android e gostaria de compartilhá-lo com você por achar que você gosta desse tipo de passatempo. 
+Se quiser te envio uma cópia (é gratuito e sem publicidade!). 
+
+
+2-> aguarda resposta
+
+3-> msg após a resposta
+Ótimo! Tô te mandando! Qualquer coisa me fala!
+
+4-> envia os arquivos
+
+5-> verificar se instalou corretamente
+E então? Conseguiu instalar?
+
+6-> assim que rodar, envia a mensagem:
+Boa diversão! Gostaria muito de seu feedback! 
+Qualquer coisa não pense prá me fazer saber ....
+
+7-> aguardar feedbacks
+
+================================================================================

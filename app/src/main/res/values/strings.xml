@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Sudoku</string>
+
+    <string name="gera_novo_jogo">Gerar</string>
+    <string name="adaptar_jogo"  >Adaptar</string>
+    <string name="jogar_jogo"    >Jogar</string>
+
+    <string name="tapBtnGerarJogo"  ><![CDATA[-> Tap no btnGerarJogo]]></string>
+    <string name="tapBtnAdaptarJogo"><![CDATA[-> Tap no btnAdaptarJogo]]></string>
+    <string name="tapBtnJogarJogo"  ><![CDATA[-> Tap no btnJogarJogo]]></string>
+
+    <string name="linhaZerada">0 0 0 0 0 0 0 0 0 </string>
+
+    <string name="caractPerm">0123456789 </string>
+
+    <string name="menu_settings">Settings</string>
+
+    <!-- Content Description para ImageView -->
+    <string name="testeCanva3" >Sudoku Board</string>
+    <string name="numDisp"     >Quadro números disponíveis</string>
+
+    <!-- Legendas radioButtons -->
+    <string name="center"      >Center</string>
+    <string name="centerCrop"  >CenterCrop</string>
+    <string name="centerInside">CenterInside</string>
+    <string name="fitCenter"   >FitCenter</string>
+    <string name="fitStart"    >FitStart</string>
+    <string name="fitEnd"      >FitEnd</string>
+    <string name="fitXY"       >FitXY</string>
+
+    <!-- Legendas Buttons -->
+    <string name="reset"    > Reset  </string>
+    <string name="inicia"   > Inicia </string>
+    <string name="pause"    > Pause  </string>
+    <string name="reinicia" >ReInicia</string>
+
+    <string name="crono_inic">00:00</string>
+    <string name="nivel"     >Nivel: </string>
+    <string name="nivelVal"  >1000</string>
+    <string name="legErros"  >Erros: </string>
+    <string name="erros_inic">99</string>
+    <string name="legClues"  >Clues: </string>
+    <string name="clues_inic">0</string>
+
+    <string name="legNivel"    >Nivel: </string>
+    <string name="nivelFacil"  >Fácil</string>
+    <string name="nivelMedio"  >Médio</string>
+    <string name="nivelDificil">Difícil</string>
+    <string name="nivelMuitoDificil">Muito difícil</string>
+
+    <string name="legSubnivel" >Sub Nível: </string>
+    <string name="valor0"      >0</string>
+    <string name="prioridade"  >prioridade</string>
+    <string name="edicao" >Edição</string>
+    <string name="preset" >Preset</string>
+    <string name="numeros">Números:</string>
+    <string name="clues"  >Clues: </string>
+    <string name="valor81">81</string>
+    <string name="salvar">Salvar</string>
+    <string name="deletar_todos">Deletar todos</string>
+    <string name="selecionar">Selecionar</string>
+    <string name="deletar_selecionados">Deletar selecionados</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="op_es">Opções</string>
+    <string name="jogo">Jogo:</string>
+    <string name="arquivo">Arquivo:</string>
+    <string name="selecionar_todos">Selecionar todos</string>
+    <string name="desselecionar">Desselecionar</string>
+    <string name="threedots">threeDots</string>
+    <string name="muito_dif_cil">Muito difícil</string>
+    <string name="value_9">9</string>
+    <string name="aguarde">Aguarde ...</string>
+    <string name="desliga_app">Desliga App</string>
+    <string name="finalizar_app">Finalizar App</string>
+
+    <string name="limite_erros">Limite Erros: </string>
+    <string name="limite_tempo">Limite Tempo: </string>
+    <string name="par_metros_do_jogo">Parâmetros do Jogo</string>
+    <string name="limite_de_erros">Limite de êrros:</string>
+    <string name="limite_de_tempo">Limite de Tempo:</string>
+    <string name="valor_menos1">-1</string>
+    <string name="time_HHss">00:00</string>
+    <string name="nivel_inicial">- Nivel inicial:</string>
+
+</resources>

@@ -1,0 +1,1767 @@
+
+
+https://www.sudoku-solutions.com/
+
+//--------------------------------------------------------------------------
+20/01/22 10:09:00
+//--------------------------------------------------------------------------
+// sudoku_#9.0.158
+
+
+
+
+//--------------------------------------------------------------------------
+13/01/22 17:43:00
+//--------------------------------------------------------------------------
+// sudoku_#8.5.1
+
+
+    /* SudokuBackTracking.kt
+
+        /*
+        if (!flagAdaptaPreset) {
+
+            //-------------------------
+            btnAdaptaJogoClick(view)
+            //-------------------------
+            flagAdaptaPreset = true
+
+        }
+         */
+
+    /*
+    //--- quantZeros
+    fun quantZeros(arArIntJogo : Array <Array <Int>>) : Int{
+
+        var intQtiZeros = 0
+        for (idxLin in 0..8) {
+            for (idxCol in 0..8) {
+                if (arArIntJogo[idxLin][idxCol] == 0) intQtiZeros++
+            }
+        }
+        //Log.d(cTAG, "-> Quantidade de Zeros: $intQtiZeros")
+
+        return intQtiZeros
+
+    }
+     */
+
+    //--- inicQuadMaiorAdaptacao
+    private fun inicQuadMaiorAdaptacao(jogoAdaptar : Int) {
+
+        var quadMaiorAdapta = arrayOf<Array<Int>>()
+        var array : Array <Int>
+
+        //--- Simula os dados iniciais propostos
+        when (jogoAdaptar) {
+
+            1 -> run {
+
+                for (linha in 0..8) {
+
+                    // array = arrayOf<Int>()
+                    array = when (linha) {
+
+                        0 -> arrayOf(0, 0, 4, 6, 0, 5, 8, 0, 0)
+                        1 -> arrayOf(6, 5, 0, 0, 8, 0, 0, 0, 0)
+                        2 -> arrayOf(0, 0, 8, 0, 4, 7, 6, 0, 5)
+                        3 -> arrayOf(2, 8, 0, 3, 5, 6, 0, 0, 0)
+                        4 -> arrayOf(7, 4, 0, 0, 0, 8, 2, 5, 6)
+                        5 -> arrayOf(5, 6, 0, 4, 7, 2, 9, 0, 8)
+                        6 -> arrayOf(8, 2, 5, 7, 0, 4, 3, 6, 0)
+                        7 -> arrayOf(4, 3, 6, 5, 2, 0, 0, 8, 0)
+                        else -> arrayOf(0, 0, 0, 8, 6, 3, 5, 4, 2)
+
+                    }
+                    quadMaiorAdapta += array
+
+                }
+            }
+
+            2 -> run {
+
+                for (linha in 0..8) {
+
+                    // array = arrayOf<Int>()
+                    array = when (linha) {
+
+                        0 -> arrayOf(0, 6, 0, 7, 0, 8, 1, 9, 2)
+                        1 -> arrayOf(1, 0, 5, 2, 0, 0, 0, 0, 7)
+                        2 -> arrayOf(0, 2, 0, 0, 0, 6, 0, 0, 0)
+                        3 -> arrayOf(0, 5, 0, 9, 3, 0, 0, 4, 0)
+                        4 -> arrayOf(0, 0, 6, 5, 0, 2, 7, 8, 0)
+                        5 -> arrayOf(9, 7, 0, 0, 0, 0, 3, 2, 5)
+                        6 -> arrayOf(0, 0, 7, 4, 0, 0, 8, 0, 6)
+                        7 -> arrayOf(8, 9, 4, 0, 7, 0, 0, 0, 0)
+                        else -> arrayOf(0, 1, 0, 3, 0, 0, 0, 7, 4)
+
+                    }
+                    quadMaiorAdapta += array
+                }
+            }
+
+            3 -> run {
+
+                for (linha in 0..8) {
+
+                    // array = arrayOf<Int>()
+                    array = when (linha) {
+
+                        0 -> arrayOf(0, 0, 3, 5, 0, 0, 4, 9, 0)
+                        1 -> arrayOf(7, 6, 0, 0, 0, 0, 5, 0, 1)
+                        2 -> arrayOf(0, 5, 4, 0, 7, 3, 6, 0, 8)
+                        3 -> arrayOf(0, 1, 0, 0, 0, 0, 3, 0, 0)
+                        4 -> arrayOf(0, 0, 7, 2, 6, 1, 0, 0, 0)
+                        5 -> arrayOf(2, 0, 6, 0, 9, 0, 0, 1, 4)
+                        6 -> arrayOf(6, 3, 2, 8, 5, 0, 0, 0, 0)
+                        7 -> arrayOf(4, 0, 0, 0, 0, 2, 8, 0, 6)
+                        else -> arrayOf(8, 0, 5, 0, 0, 7, 2, 0, 0)
+
+                    }
+                    quadMaiorAdapta += array
+                }
+            }
+
+            // 4
+            else -> run {
+
+                for (linha in 0..8) {
+
+                    // array = arrayOf<Int>()
+                    array = when (linha) {
+
+                        0 -> arrayOf(9, 0, 0, 8, 4, 1, 3, 0, 0)
+                        1 -> arrayOf(0, 0, 1, 9, 0, 0, 4, 2, 0)
+                        2 -> arrayOf(0, 0, 0, 2, 0, 0, 0, 1, 0)
+                        3 -> arrayOf(8, 7, 0, 1, 0, 0, 5, 4, 0)
+                        4 -> arrayOf(1, 5, 0, 3, 6, 0, 0, 0, 2)
+                        5 -> arrayOf(2, 0, 0, 0, 0, 0, 7, 6, 0)
+                        6 -> arrayOf(7, 2, 0, 0, 0, 5, 1, 9, 0)
+                        7 -> arrayOf(6, 3, 0, 0, 0, 0, 2, 0, 7)
+                        else -> arrayOf(0, 1, 5, 7, 0, 2, 0, 0, 8)
+
+                    }
+                    quadMaiorAdapta += array
+                }
+            }
+        }
+
+        //--- Prepara o QM com os números propostos
+        quadMaiorRet = arrayOf()
+        for (linha in 0..8) {
+
+            array = arrayOf()
+            for (coluna in 0..8) { array += quadMaiorAdapta[linha][coluna] }
+
+            quadMaiorRet += array
+
+        }
+        //-----------------
+        //listaQuadMaior()
+        //-----------------
+
+    }
+    */
+
+
+
+//--------------------------------------------------------------------------
+11/01/22 06:47:00
+//--------------------------------------------------------------------------
+// sudoku_#8.5.1
+
+
+JogarActivity
+
+    /*
+    //--- copiaBmpByBuffer
+    fun copiaBmpByBuffer(bmpSrc: Bitmap?, bmpDest: Bitmap?) {
+
+        val buffBase = IntBuffer.allocate(bmpSrc!!.width * bmpSrc.height)
+        //--------------------------------------
+        bmpSrc.copyPixelsToBuffer(buffBase)
+        //--------------------------------------
+        buffBase.rewind()
+        //----------------------------------------
+        bmpDest!!.copyPixelsFromBuffer(buffBase)
+        //----------------------------------------
+
+    }
+
+     */
+
+    /*
+    //--- copiaArArInt
+    private fun copiaArArInt(arArIntPreset: Array<Array<Int>>): Array<Array<Int>> {
+
+        /* https://stackoverflow.com/questions/45199704/kotlin-2d-array-initialization
+            // A 6x5 array of Int, all set to 0.
+            var m = Array(6) {Array(5) {0} }
+         */
+
+        //-------------------------------------------------------
+        val arArIntTmp = Array(9) { Array(9) { 0 } }
+        //-------------------------------------------------------
+
+        for (intLin in 0..8) {
+            for (intCol in 0..8) {
+                arArIntTmp[intLin][intCol] = arArIntPreset[intLin][intCol]
+                arArIntCopia[intLin][intCol] = arArIntPreset[intLin][intCol]
+            }
+        }
+
+        return arArIntTmp
+
+    }
+     */
+
+    /*
+    //--- quantZeros
+    private fun quantZeros(arArIntJogo: Array<Array<Int>>): Int {
+
+        var intQtiZeros = 0
+        for (idxLin in 0..8) {
+            for (idxCol in 0..8) {
+                if (arArIntJogo[idxLin][idxCol] == 0) intQtiZeros++
+            }
+        }
+        Log.d(cTAG, "-> Quantidade de Zeros: $intQtiZeros")
+
+        return intQtiZeros
+
+    }
+    */
+
+MaainActivity - onCreate
+
+        //--- Smartphone
+        Log.d (cTAG, "-> Smartphone: ${Build.MANUFACTURER} - ${Build.MODEL}")
+        Log.d (cTAG, "-> App: $strApp")
+
+        //--- Versão do Android e versão da API
+        versAndroid = Build.VERSION.RELEASE    //.BASE_OS  // samsung/on5xelteub/on5xelte:8.0.0/R16NW/G570MUBU4CSB1:user/release-keys
+        //val intSepInic  = versAndroid.indexOf(":", 0, false) + 1
+        //val intSepFim   = versAndroid.indexOf("/", intSepInic, false)
+
+        var strSO = ""
+        try {
+
+            //strSO = "A${versAndroid.substring(intSepInic, intSepFim)}"
+            strSO = "A$versAndroid"
+
+
+        } catch (exc : Exception) {
+
+            //---------------------------------------------------------------
+            utilsKt.mToast(this, "-> Erro: ${exc.message}")
+            //---------------------------------------------------------------
+
+        }
+
+        utils.flagSO_A11 = (strSO == "A11")
+
+        strToast = "BaseOS: $strSO SDK_INT: API${Build.VERSION.SDK_INT}"
+        
+        Toast.makeText(this, strToast, Toast.LENGTH_SHORT).show()
+
+        Log.d(cTAG, "-> $strToast")
+
+
+
+//--------------------------------------------------------------------------
+09/01/22 09:58:00
+//--------------------------------------------------------------------------
+ 
+// sudoku_#8.5.1
+
+
+// Scoped storage    
+
+private fun downloadFile(fileUrl: String, fileName: String) {
+
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
+
+        strToast = "You must use device running Android 10 or higher"
+        Toast.makeText(this, strToast, Toast.LENGTH_SHORT).show()
+
+        return
+
+    }
+
+    thread {
+
+        try {
+
+            //----------------------------------------------------------------------------------
+            // Recepção do arquivo
+            //----------------------------------------------------------------------------------
+            //--- Conexão http
+            val url = URL(fileUrl)
+            val connection = url.openConnection() as HttpURLConnection
+            connection.requestMethod  = "GET"
+            connection.connectTimeout = 8000
+            connection.readTimeout    = 8000
+
+            //--- Recepção do arquivo em stream
+            val inputStream = connection.inputStream
+            val bis         = BufferedInputStream(inputStream)
+
+            //----------------------------------------------------------------------------------
+            // Salvamento do arquivo
+            //----------------------------------------------------------------------------------
+            //--- Prepara para salvar o arquivo recebido
+            val values = ContentValues()
+            values.put(MediaStore.MediaColumns.DISPLAY_NAME, fileName)
+            values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS)
+            val uri = contentResolver.insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, values)
+
+            //--- Salva o arquivo stream
+            if (uri != null) {
+
+                val outputStream = contentResolver.openOutputStream(uri)
+                if (outputStream != null) {
+
+                    val bos    = BufferedOutputStream(outputStream)
+
+                    val buffer = ByteArray(1024)
+                    var bytes  = bis.read(buffer)
+                    while (bytes >= 0) {
+
+                        bos.write(buffer, 0 , bytes)
+                        bos.flush()
+                        bytes = bis.read(buffer)
+
+                    }
+                    bos.close()
+
+                    runOnUiThread {
+                        strToast = "$fileName is in Download directory now."
+                        Toast.makeText(this, strToast, Toast.LENGTH_SHORT).show()
+                    }
+
+                }
+            }
+            bis.close()
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+}
+
+
+//--------------------------------------------------------------------------
+08/01/22 09:09:00
+//--------------------------------------------------------------------------
+ 
+    // sudoku_#8.5.1
+
+//---------------------------------------------------------------------------------------------------------------
+
+    boolean validate(Activity activity, int requestCode, String... permissions) {
+
+
+        boolean flagValidateOk = false;
+
+        List<String> list = new ArrayList<String>();
+
+        //--- Prepara a lista de permissions ungranted
+        for (String permission : permissions) {
+            // Valida permissão
+            //---------------------------------------------------------------------------
+            boolean ok = ContextCompat.checkSelfPermission(activity, permission) ==
+                                                       PackageManager.PERMISSION_GRANTED;
+            //---------------------------------------------------------------------------
+            if (! ok ) {
+                list.add(permission);
+            }
+        }
+
+        //--- Se todas as permissions estiverem granted retorna com true
+        if (list.isEmpty()) {
+
+            flagValidateOk = true;
+
+        }
+        //--- Se houver 1+ permissions ungranted: solicita permissions requer permission
+        else {
+
+            String[] newPermissions = new String[list.size()];
+            list.toArray(newPermissions);
+            //----------------------------------------------------------------------------
+            ActivityCompat.requestPermissions(activity, newPermissions, 1);
+            //----------------------------------------------------------------------------
+        }
+
+        return flagValidateOk;
+
+    }
+
+//---------------------------------------------------------------------------------------------------------------
+
+    // sudoku_#8.5.0 e anteriores
+
+    /*
+    private fun atualizaIVQtiNumDisp() {
+
+        //--- Pinta-o e preenche-o
+        val bmpQtiNumDisp = BitmapFactory.decodeResource(resources, R.drawable.quadro_nums_disp)
+            .copy(Bitmap.Config.ARGB_8888, true)
+        val canvasQtiNumDisp = Canvas(bmpQtiNumDisp)
+
+        for (idxQtiNum in (0..8)) {
+
+            val strTxt = arIntQtiNumDisp[idxQtiNum].toString()
+
+            val yCoord = intCellheight * 3 / 4
+            val xCoord = intCellwidth / 3 + idxQtiNum * intCellwidth
+
+            pincelPreto.textSize = intTamTxt * scale
+
+            //--------------------------------------------------------------------------------------
+            canvasQtiNumDisp.drawText(
+                strTxt, toPx(xCoord.toFloat()), toPx(yCoord.toFloat()),
+                pincelPreto
+            )
+            //--------------------------------------------------------------------------------------
+
+        }
+        //-------------------------------------------
+        ivQtiNumDisp.setImageBitmap(bmpQtiNumDisp)
+        //-------------------------------------------
+
+    }
+    */
+
+    /*
+    //--- separaArq
+    private fun separaArq(arStrLeit: ArrayList<String>, strTag: String): String {
+
+        var strTmp = ""
+        var strReturn = ""
+
+        val strTagInic = "<$strTag>"
+        val strTagFim = "</$strTag>"
+
+        for (idxCampo in arStrLeit.indices) {
+            strTmp += arStrLeit[idxCampo]
+        }
+
+        val intIdxInic = strTmp.indexOf(strTagInic)
+        val intIdxFim = strTmp.indexOf(strTagFim) + strTagFim.length
+
+        if (intIdxInic > -1 && intIdxFim > -1 && intIdxFim > intIdxInic) {
+
+            strReturn += strTmp.substring(intIdxInic, intIdxFim)
+
+        }
+
+        return strReturn
+
+    }
+    */
+
+    /*
+    //--- separaCampo
+    private fun separaCampo(strCampo: String, strSubTag: String): String {
+
+        val strTmp: String
+        var strReturn = ""
+
+        val strSubTagInic = "<$strSubTag>"
+        val strSubTagFim = "</$strSubTag>"
+
+        val intIdxInic = strCampo.indexOf(strSubTagInic) + strSubTagInic.length
+        val intIdxFim = strCampo.indexOf(strSubTagFim)
+
+        if (intIdxInic > -1 && intIdxFim > -1 && intIdxFim > intIdxInic) {
+
+            strTmp = strCampo.substring(intIdxInic, intIdxFim)
+            strReturn = strTmp.trimStart()
+
+        }
+
+        return strReturn
+
+    }
+    */
+
+        private fun requestPermission() = // SDK >= Android 11
+        if (SDK_INT >= Build.VERSION_CODES.R) {
+
+            try {
+
+                val intent = Intent(ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)
+                intent.addCategory("android.intent.category.DEFAULT")
+                intent.data = Uri.parse(String.format("package:%s", applicationContext.packageName))
+
+                //startActivityForResult(intent, 2296)
+
+            } catch (e: Exception) {
+                val intent = Intent()
+                intent.action = ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION
+
+                //startActivityForResult(intent, 2296)
+
+            }
+        }
+        //below android 11
+        else {
+
+            ActivityCompat.requestPermissions(
+                JogarActivity::Class,
+                arrayOf(WRITE_EXTERNAL_STORAGE),
+                PERMISSION_REQUEST_CODE
+            )
+        }
+
+    /*
+    //--- leituraPreset em resources/raw
+    private fun leResRawPreset(numPreset : Int) : Array < Array <Int> > {
+
+        var arArIntJogoAdaptar = arrayOf < Array <Int>> ()  //= Array(9) { Array(9) { 0 } }
+
+        var flagLeituraParcialOk = false
+        var flagLeituraPresetOk  = false
+        val strNomeArq = "preset_$numPreset"
+
+        //--- Obtém lista de arquivos em resource / raw
+        //-------------------------------------------------------
+        val arStrNomeArqRaw: Array<String> = utils.ListRaw()
+        //-------------------------------------------------------
+        Log.d(cTAG, "-> Arquivos raw (listRaw):")
+        for (idxFileName in arStrNomeArqRaw.indices) {
+
+            val strFileNameDir = arStrNomeArqRaw[idxFileName]
+            Log.d(cTAG, "$idxFileName: $strFileNameDir")
+
+            flagLeituraParcialOk = (strFileNameDir == strNomeArq)
+            if (flagLeituraParcialOk) break
+
+        }
+
+        //--- Leitura de arquivo
+        if (!flagLeituraParcialOk) return (Array(9) { Array(9) { 0 } })
+        else {
+
+            Log.d(cTAG, "-> Arquivo $strNomeArq:")
+            //--------------------------------------------------------------------------------------
+            val arStrLeitArqRaw: ArrayList<String> = utils.LeituraFileRaw(this, strNomeArq)
+            //--------------------------------------------------------------------------------------
+            for (idxDecl in 0 until arStrLeitArqRaw.size) {
+
+                Log.d(cTAG, "   $idxDecl: ${arStrLeitArqRaw[idxDecl]}")
+
+            }
+
+            //--- Prepara os arrays com os tags e subtags
+            arStrTags = arrayOf("header", "body", "jogos")
+            arArStrTags[0] = arrayOf("id", "nivel", "subnivel")  //, "", "", "", "", "", "")
+            arArStrTags[1] = arrayOf(
+                "linha0", "linha1", "linha2", "linha3", "linha4", "linha5",
+                "linha6", "linha7", "linha8"
+            )
+            arArStrTags[2] =
+                arrayOf("id", "dataHora", "tempoJogo", "erros", "status")   //, "", "", "")
+
+            //--- Obtém os campos entre os tags principais
+            for (idxTag in arStrTags.indices) {
+
+                var strTAG = arStrTags[idxTag]
+
+                /*
+                strLog  = "-> Obtém "
+                strLog += if (strTAG == "jogos") "os " else "o "
+                strLog += "$strTAG"
+                Log.d(cTAG, strLog)
+                 */
+
+                //--------------------------------------------------
+                val strCampo = separaArq(arStrLeitArqRaw, strTAG)
+                //--------------------------------------------------
+                if (strCampo == "") Log.d(cTAG, "Esse arquivo não contém o tag \"$strTAG\"")
+                else {
+
+                    //Log.d(cTAG, strCampo)
+
+                    when (idxTag) {
+
+                        0 -> { // "home"
+
+                            Log.d(cTAG, "-> Tag: ${arStrTags[idxTag]}")
+
+                            for (idxSubTag in 0 until 3) {
+
+                                strTAG = arArStrTags[0][idxSubTag]
+                                strLog = "   - subTag: $strTAG  conteúdo: "
+
+                                //------------------------------------------------
+                                val strSubCampo = separaCampo(strCampo, strTAG)
+                                //------------------------------------------------
+
+                                strLog += strSubCampo
+                                Log.d(cTAG, strLog)
+
+                            }
+                        }
+
+                        1 -> { // "body"
+
+                            Log.d(cTAG, "-> Tag: ${arStrTags[idxTag]}")
+                            for (idxSubTag in 0 until 9) {
+
+                                strTAG = arArStrTags[1][idxSubTag]
+                                strLog = "   - subTag: $strTAG  conteúdo: "
+
+                                //------------------------------------------------
+                                val strSubCampo = separaCampo(strCampo, strTAG)
+                                //------------------------------------------------
+
+                                strLog += strSubCampo
+                                Log.d(cTAG, strLog)
+
+                                var array = arrayOf<Int>()
+
+                                val lstChNum : List<String> = strSubCampo.split(",")
+
+                                lstChNum.forEach () {
+
+                                   array += (it.trim()).toInt()
+
+                                }
+                                arArIntJogoAdaptar += array
+
+                            }
+                        }
+
+                        2 -> { // "jogos"
+
+                            Log.d(cTAG, "-> Tag: ${arStrTags[idxTag]}")
+                            for (idxSubTag in 0 until 5) {
+
+                                strTAG = arArStrTags[2][idxSubTag]
+                                strLog = "   - subTag: $strTAG  conteúdo: "
+
+                                //------------------------------------------------
+                                val strSubCampo = separaCampo(strCampo, strTAG)
+                                //------------------------------------------------
+
+                                strLog += strSubCampo
+                                Log.d(cTAG, strLog)
+
+                            }
+                        }
+
+                        else -> {
+                        }
+
+                    }
+                }
+            }
+
+        }
+        return arArIntJogoAdaptar
+    }
+    */
+
+    /*
+    //--- leExtMem:  Download/sudoku/ do smartphone
+    private fun leExtMemDownload(numPreset: Int): Array<Array<Int>> {
+
+        var arArIntJogoAdaptar = arrayOf<Array<Int>>()  //= Array(9) { Array(9) { 0 } }
+
+        var flagLeituraParcialOk = false
+        //var flagLeituraPresetOk  = false
+        val strNomeArq = "preset_$numPreset"
+
+        //--- Obtém lista de arquivos em Download
+        val strPath = "/sudoku/jogos"
+        //-------------------------------------------------------------------
+        val arStrNomeArq: Array<String> = utils.listaExtMemArqDir(strPath)
+        //-------------------------------------------------------------------
+        Log.d(cTAG, "-> Arquivos Sudoku :")
+        for (idxFileName in arStrNomeArq.indices) {
+
+            val strFileNameDir = arStrNomeArq[idxFileName]
+            Log.d(cTAG, "$idxFileName: $strFileNameDir")
+
+            flagLeituraParcialOk = (strFileNameDir == strNomeArq)
+            if (flagLeituraParcialOk) break
+
+        }
+
+        //--- Leitura de arquivo
+        if (!flagLeituraParcialOk) return (Array(9) { Array(9) { 0 } })
+        else {
+
+            Log.d(cTAG, "-> Arquivo $strNomeArq:")
+            val strNomeComPath = "sudoku/jogos/$strNomeArq"
+            //----------------------------------------------------------------------------
+            val arStrLeitArq: ArrayList<String> = utils.leitExtMemTextFile(strNomeComPath)
+            //----------------------------------------------------------------------------
+            for (idxDecl in 0 until arStrLeitArq.size) {
+
+                Log.d(cTAG, "   $idxDecl: ${arStrLeitArq[idxDecl]}")
+
+            }
+
+            //--- Prepara os arrays com os tags e subtags
+            arStrTags = arrayOf("header", "body", "jogos")
+            arArStrTags[0] = arrayOf("id", "nivel", "subnivel")  //, "", "", "", "", "", "")
+            arArStrTags[1] = arrayOf(
+                "linha0", "linha1", "linha2", "linha3", "linha4", "linha5",
+                "linha6", "linha7", "linha8"
+            )
+            arArStrTags[2] =
+                arrayOf("id", "dataHora", "tempoJogo", "erros", "status")   //, "", "", "")
+
+            //--- Obtém os campos entre os tags principais
+            for (idxTag in arStrTags.indices) {
+
+                var strTAG = arStrTags[idxTag]
+
+                /*
+                strLog  = "-> Obtém "
+                strLog += if (strTAG == "jogos") "os " else "o "
+                strLog += "$strTAG"
+                Log.d(cTAG, strLog)
+                 */
+
+                //-----------------------------------------------
+                val strCampo = separaArq(arStrLeitArq, strTAG)
+                //-----------------------------------------------
+                if (strCampo == "") Log.d(cTAG, "Esse arquivo não contém o tag \"$strTAG\"")
+                else {
+
+                    //Log.d(cTAG, strCampo)
+
+                    when (idxTag) {
+
+                        0 -> { // "home"
+
+                            Log.d(cTAG, "-> Tag: ${arStrTags[idxTag]}")
+
+                            for (idxSubTag in 0 until 3) {
+
+                                strTAG = arArStrTags[0][idxSubTag]
+                                strLog = "   - subTag: $strTAG  conteúdo: "
+
+                                //------------------------------------------------
+                                val strSubCampo = separaCampo(strCampo, strTAG)
+                                //------------------------------------------------
+
+                                strLog += strSubCampo
+                                Log.d(cTAG, strLog)
+
+                            }
+                        }
+
+                        1 -> { // "body"
+
+                            Log.d(cTAG, "-> Tag: ${arStrTags[idxTag]}")
+                            for (idxSubTag in 0 until 9) {
+
+                                strTAG = arArStrTags[1][idxSubTag]
+                                strLog = "   - subTag: $strTAG  conteúdo: "
+
+                                //------------------------------------------------
+                                val strSubCampo = separaCampo(strCampo, strTAG)
+                                //------------------------------------------------
+
+                                strLog += strSubCampo
+                                Log.d(cTAG, strLog)
+
+                                var array = arrayOf<Int>()
+
+                                val lstChNum: List<String> = strSubCampo.split(",")
+
+                                lstChNum.forEach {
+
+                                    array += (it.trim()).toInt()
+
+                                }
+                                arArIntJogoAdaptar += array
+
+                            }
+                        }
+
+                        2 -> { // "jogos"
+
+                            Log.d(cTAG, "-> Tag: ${arStrTags[idxTag]}")
+                            for (idxSubTag in 0 until 5) {
+
+                                strTAG = arArStrTags[2][idxSubTag]
+                                strLog = "   - subTag: $strTAG  conteúdo: "
+
+                                //------------------------------------------------
+                                val strSubCampo = separaCampo(strCampo, strTAG)
+                                //------------------------------------------------
+
+                                strLog += strSubCampo
+                                Log.d(cTAG, strLog)
+
+                            }
+                        }
+
+                        else -> {
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        return arArIntJogoAdaptar
+
+    }
+    */
+
+    /*
+    //--- preparaJogoSelec
+    private fun preparaJogoSelec(strJogoSelec: String) {
+
+        //--- Continua a adaptação após um tempo para atualização da UI (progress bar e txtDadosJogo)
+        val waitTime = 100L  // milisegundos
+        Handler(Looper.getMainLooper()).postDelayed(
+            {
+
+                //-----------------------------
+                visibilidadeViews(INVISIBLE)
+                //-----------------------------
+                groupRBadapta.visibility = VISIBLE
+
+                //----------------------------------------------
+                quadMaiorAdapta = extraeQMSelec(strJogoSelec)
+                //----------------------------------------------
+
+                sgg.quadMaiorRet = copiaArArInt(quadMaiorAdapta)
+
+                //---------------------------------------
+                quadMaior = sgg.adaptaJogoAlgoritmo2()
+                //---------------------------------------
+
+                //--- Apresenta o nível e o subnível do preset
+                nivelJogo = (sgg.intQtiZeros / 10) * 10
+                subNivelJogo = sgg.intQtiZeros % 10
+                val rbNivelJogo: RadioButton = when (nivelJogo) {
+
+                    20 -> {
+                        strNivelJogo = "Fácil"
+                        rbFacil
+                    }
+                    30 -> {
+                        strNivelJogo = "Médio"
+                        rbMedio
+                    }
+                    40 -> {
+                        strNivelJogo = "Difícil"
+                        rbDificil
+                    }
+                    50 -> {
+                        strNivelJogo = "Muito Difícil"
+                        rbMuitoDificil
+                    }
+                    else -> {
+                        strNivelJogo = "Fácil"
+                        rbFacil
+                    }
+
+                }
+                rbNivelJogo.isChecked = true
+
+                edtViewSubNivel.setText(subNivelJogo.toString())
+
+                //---------------------------
+                prepRBniveis(false)
+                //---------------------------
+                edtViewSubNivel.isEnabled = false
+
+                //-------------------------------
+                preencheSudokuBoard(quadMaior)
+                //-------------------------------
+
+                txtDadosJogo.text = String.format("%s%d", "Preset #", sgg.intJogoAdaptar)
+
+                flagJogoAdaptadoOk = true
+
+                //--- Desativa o progress bar
+                progressBar.visibility = INVISIBLE
+
+            },
+            waitTime
+        )  // value in milliseconds
+
+    }
+    */
+
+    /*
+    //--- extraeQMSelec
+    private fun extraeQMSelec(strJogoSelec: String): Array<Array<Int>> {
+
+        var arArJogoSelec = Array(9) { Array(9) { 0 } }
+
+        return arArJogoSelec
+
+    }
+    */
+
+
+
+
+
+
+
+//--------------------------------------------------------------------------
+05/01/22 09:16:00
+//--------------------------------------------------------------------------
+ 
+    // sudoku_#8.5
+
+
+    //private lateinit var toolBar     : androidx.appcompat.widget.Toolbar
+    //private lateinit var progressBar : ProgressBar
+
+    //------------------------------------------------------------------------------------------
+    // Implementa o Progress Bar
+    //------------------------------------------------------------------------------------------
+    /*
+    progressBar = ProgressBar(this)
+
+    //setting height and width of progressBar
+    progressBar.layoutParams = LinearLayout.LayoutParams(
+        ViewGroup.LayoutParams.WRAP_CONTENT,
+        ViewGroup.LayoutParams.WRAP_CONTENT)
+
+    //accessing our relative layout where the progressBar will add up
+    val layout = findViewById<RelativeLayout>(R.id.layoutProgBar)
+    // Add ProgressBar to our layout
+    layout?.addView(progressBar)
+
+    //--- Ativa o progressBar
+    progressBar.visibility = View.VISIBLE
+    */
+
+    //------------------------------------------------------------------------------------------
+    // Implementa o actionBar
+    //------------------------------------------------------------------------------------------
+    /*
+    toolBar = findViewById(R.id.toolbar)
+    setSupportActionBar(toolBar)
+    supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    */
+
+    /*
+    //---------------------------------------------------------------------------------------
+    customAdapter = JogoAdapter(itemsListArq, itemsListJogo, object : JogoClickedListener {
+    //---------------------------------------------------------------------------------------
+
+        //--- Listener para click na info do arquivo de um dos jogos
+        override fun infoItem (posicao : Int) {
+
+            //---------------------------------------------------------------------------------
+            val strfileName = leCampo(itemsListArq[posicao], "Arq: ", " Data:")
+            //---------------------------------------------------------------------------------
+
+            strToast = "Tapped $posicao: $strfileName!"
+            Toast.makeText(baseContext, strToast, Toast.LENGTH_SHORT).show()
+
+            //-------------------------
+            adaptaEjogaJogo(posicao)
+            //-------------------------
+
+        }
+
+        //--- Listener para click na info de um dos jogos
+        override fun jogoItem(posicao : Int) {
+
+            //---------------------------------------------------------------------------------
+            val strNivel = leCampo(itemsListJogo[posicao], "Nivel: ", " sub: ")
+            //---------------------------------------------------------------------------------
+
+            strToast = "Tapped $posicao: $strNivel!"
+            Toast.makeText(baseContext, strToast, Toast.LENGTH_SHORT).show()
+
+            //-------------------------
+            adaptaEjogaJogo(posicao)
+            //-------------------------
+
+        }
+
+    })
+
+    recyclerView!!.adapter = customAdapter
+    */
+
+    //--- Desativa o progressbar
+    // progressBar.visibility = View.INVISIBLE
+
+
+
+//--------------------------------------------------------------------------
+02/01/22 13:13:00
+//--------------------------------------------------------------------------
+// sudoku_#4
+        //--- Torna inválidos os jogos gerado e adaptado
+//        flagJogoGeradoOk   = false
+        flagJogoAdaptadoOk = false
+
+
+
+
+//--------------------------------------------------------------------------
+27/12/21 07:00:00
+//--------------------------------------------------------------------------
+
+
+, object : JogoClickedListener {
+        //--------------------------------------------------------------------------------------
+
+            //--- Listener para click em um dos jogos
+            //--- Listener para click na info do arquivo de um dos jogos
+            override fun infoItem (posicao : Int) {
+
+                val itemListArq = itemsListArq[posicao]
+                val intIdxInic  = itemListArq.indexOf("Arq: ") + 5
+                val intIdxFim   = itemListArq.indexOf(" Data:")
+                val strfileName = itemListArq.substring(intIdxInic, intIdxFim)
+                //---------------------------------------------------------------------------------
+                val strfileName = leCampo(itemsListArq[posicao], "Arq: ", " Data:")
+                //---------------------------------------------------------------------------------
+
+                strToast = "Tapped $posicao: $strfileName!"
+                Toast.makeText(baseContext, strToast, Toast.LENGTH_SHORT).show()
+
+            }
+
+            //--- Listener para click na info de um dos jogos
+            override fun jogoItem(posicao : Int) {
+
+                /*
+                strToast = "Tapped jogoItem $posicao!"
+                Toast.makeText(baseContext, strToast, Toast.LENGTH_LONG).show()
+
+                strLog   = "   - $strToast"
+                Log.d(cTAG, strLog)
+                */
+
+                val itemListJogo= itemsListJogo[posicao]
+                val intIdxInic  = itemListJogo.indexOf("Nivel: ") + 7
+                val intIdxFim   = itemListJogo.indexOf(" sub:")
+                val strNivel    = itemListJogo.substring(intIdxInic, intIdxFim)
+                //---------------------------------------------------------------------------------
+                val strNivel = leCampo(itemsListJogo[posicao], "Nivel: ", " sub: ")
+                //---------------------------------------------------------------------------------
+
+                strToast = "Tapped $posicao: $strNivel!"
+                Toast.makeText(baseContext, strToast, Toast.LENGTH_SHORT).show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package br.com.jhconsultores.sudoku.adapter
+
+import android.annotation.SuppressLint
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+
+import br.com.jhconsultores.sudoku.R
+
+class JogoAdapter(private val arStrItemsListArq  : ArrayList<String>,
+                  private val arStrItemsListJogo : ArrayList<String>,
+                  private val listener : JogoClickedListener) :
+                                                          RecyclerView.Adapter<JogosViewHolder>() {
+
+//class JogoAdapter(private val listener : JogoClickedListener) : RecyclerView.Adapter<JogosViewHolder>() {
+
+    //--------------------------------------------------------------------------
+    // Instancializações e inicializações
+    //--------------------------------------------------------------------------
+    private val cTAG = "Sudoku"
+
+//    lateinit var arStrItemsListArq  : ArrayList<String>
+//    lateinit var arStrItemsListJogo : ArrayList<String>
+
+    //--------------------------------------------------------------------------
+    // Eventos
+    //--------------------------------------------------------------------------
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JogosViewHolder {
+
+        val view = LayoutInflater.from(parent.context)
+                                            .inflate(R.layout.jogos_item, parent, false)
+        return JogosViewHolder(view)
+
+    }
+
+    @SuppressLint("ResourceAsColor")
+    override fun onBindViewHolder(holder: JogosViewHolder, position: Int) {
+
+        holder.arqTxt.text  = arStrItemsListArq [position]
+        holder.jogoTxt.text = arStrItemsListJogo[position]
+
+        val strDado    = arStrItemsListArq [position]
+        val intIdxInic = strDado.indexOf("Status: ") + 8
+        val strStatus  = strDado.substring(intIdxInic)
+
+        val cardColor : Long = if (strStatus.contains("ativo")) 0xFFA5F55C else 0xFF3D91E4
+
+        holder.arqTxt.setBackgroundColor  (cardColor.toInt())
+        holder.jogoTxt.setBackgroundColor (cardColor.toInt())
+
+
+        //--- Atende o tap num ítem e chama o respectivo listener
+        holder.arqTxt.setOnClickListener {
+
+            Log.d(cTAG, "-> arqTxt - posição: $position")
+
+            //----------------------------
+            listener.infoItem(position)
+            //----------------------------
+
+        }
+
+        //--- Atende o tap num ítem e chama o respectivo listener
+        holder.jogoTxt.setOnClickListener {
+
+            Log.d(cTAG, "-> jogoTxt - posição: $position")
+
+            //----------------------------
+            listener.jogoItem(position)
+            //----------------------------
+
+        }
+
+    }
+
+    //----------------------------------------------------------------------------------------------
+    // Funções
+    //----------------------------------------------------------------------------------------------
+    override fun getItemCount(): Int {
+
+        Log.d(cTAG, "   - ítemsJogo = ${arStrItemsListArq.size}")
+        return (arStrItemsListArq.size)
+
+    }
+
+}
+
+//------------------------------------------------------------------------------
+// Classe interna
+//------------------------------------------------------------------------------
+class JogosViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+
+    val arqTxt  : TextView = itemView.findViewById(R.id.card_Arq_txt)
+    val jogoTxt : TextView = itemView.findViewById(R.id.card_Jogo_txt)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package br.com.jhconsultores.sudoku.adapter
+
+import android.annotation.SuppressLint
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+
+import br.com.jhconsultores.sudoku.R
+
+class JogoAdapter (private val listener : JogoClickedListener) :
+                                             RecyclerView.Adapter<JogoAdapter.JogosViewHolder>()  {
+
+    //--------------------------------------------------------------------------
+    // Instancializações e inicializações
+    //--------------------------------------------------------------------------
+    private val cTAG = "Sudoku"
+
+    lateinit var arStrItemsListArq  : ArrayList<String>
+    lateinit var arStrItemsListJogo : ArrayList<String>
+
+    //------------------------------------------------------------------------------
+    // Métodos da Classe JogoAdapter
+    //------------------------------------------------------------------------------
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JogosViewHolder {
+
+//        val inflatedView = parent.inflate(R.layout.jogos_item, false)
+//        return JogosViewHolder(inflatedView)
+
+        val view = LayoutInflater.from(parent.context)
+                                            .inflate(R.layout.jogos_item, parent, false)
+        return JogosViewHolder(view)
+
+    }
+
+    override fun onBindViewHolder(holder: JogosViewHolder, position: Int) {
+
+        holder.arqTxt.text  = arStrItemsListArq [position]
+        holder.jogoTxt.text = arStrItemsListJogo[position]
+
+        val strDado    = arStrItemsListArq [position]
+        val intIdxInic = strDado.indexOf("Status: ") + 8
+        val strStatus  = strDado.substring(intIdxInic)
+
+        val cardColor : Long = if (strStatus.contains("ativo")) 0xFFA5F55C else 0xFF3D91E4
+
+        holder.arqTxt.setBackgroundColor  (cardColor.toInt())
+        holder.jogoTxt.setBackgroundColor (cardColor.toInt())
+
+        //--- Atende o tap num ítem e chama o respectivo listener
+        holder.arqTxt.setOnClickListener {
+
+            Log.d(cTAG, "-> arqTxt - posição: $position")
+
+            //----------------------------
+            listener.infoItem(position)
+            //----------------------------
+
+        }
+
+        //--- Atende o tap num ítem e chama o respectivo listener
+        holder.jogoTxt.setOnClickListener {
+
+            Log.d(cTAG, "-> jogoTxt - posição: $position")
+
+            //----------------------------
+            listener.jogoItem(position)
+            //----------------------------
+
+        }
+
+    }
+
+    override fun getItemCount() = arStrItemsListArq.size
+
+    //------------------------------------------------------------------------------
+    // Classe interna
+    //------------------------------------------------------------------------------
+    /*
+    class JogosViewHolder(itemView: View): RecyclerView.ViewHolder(itemView), View.OnClickListener {
+
+        private var view: View    = itemView
+        private var jogo: String? = null
+
+        //3
+        init {
+
+            itemView.setOnClickListener(this)
+
+        }
+
+        //4
+        override fun onClick(v: View) {
+
+            Log.d("cTAG", "CLICK!")
+
+        }
+
+        companion object {
+            //5
+            private val JOGO_KEY = "JOGO"
+        }
+
+        val arqTxt  : TextView = itemView.findViewById(R.id.card_Arq_txt)
+        val jogoTxt : TextView = itemView.findViewById(R.id.card_Jogo_txt)
+
+    }
+    */
+}
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+        /*
+        val strFileName = "download/sudoku/preset.xml" //""./res/raw/preset.xml"   // "./input/preset.xml"   //"./src/main/res/raw/preset.xml"
+        try {
+            //--------------------------------------------
+            document = readXml(strFileName)
+            //--------------------------------------------
+        } catch (exc : Exception) {
+
+            Log.d(cTAG, "Erro: ${exc.message}")
+
+        }
+         */
+
+        val projectDirAbsolutePath = Paths.get("").toAbsolutePath().toString()
+        val resourcesPath = Paths.get(projectDirAbsolutePath, "/src/main/resources")            .filter { item -> item.toString().endsWith(".xml") }
+            val paths         = Files.walk(resourcesPath)
+            .filter  { item -> Files.isRegularFile(item) }
+            .forEach { item -> Log.d(cTAG, "filename: $item") }
+
+            //.filter { item -> item.toString().endsWith(".xml") }
+
+            /*
+            val dir = File( object {}.javaClass.getResource("preset.xml").file)   //"/src/main/resources").file )
+
+            dir.walk().forEach { f ->
+                if(f.isFile) {
+                    //println("file ${f.name}")
+                    Log.d(cTAG, "file ${f.name}")
+                } else {
+                    //println("dir ${f.name}")
+                    Log.d(cTAG, "Dir ${f.name}")
+                }
+            }
+*/
+
+
+
+
+        OnTouchListener MyOnTouchListener = new OnTouchListener()
+        {
+            @Override
+            public boolean onTouch (View v, MotionEvent event)
+            {
+                switch(event.getAction() & MotionEvent.ACTION_MASK)
+                {
+                    case MotionEvent.ACTION_DOWN:
+                    startTime = System.currentTimeMillis();
+                    clickCount++;
+                    break;
+                    case MotionEvent.ACTION_UP:
+                    long time = System.currentTimeMillis() - startTime;
+                    duration=  duration + time;
+                    if(clickCount == 2)
+                    {
+                        if(duration<= MAX_DURATION)
+                        {
+                            Toast.makeText(captureActivity.this, "double tap",Toast.LENGTH_LONG).show();
+                        }
+                        clickCount = 0;
+                        duration = 0;
+                        break;
+                    }
+                }
+                return true;
+            }
+        }
+
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.speech.RecognitionListener;
+import android.speech.RecognizerIntent;
+import android.speech.SpeechRecognizer;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.EditText;
+import androidx.appcompat.app.AppCompatActivity;
+import java.util.ArrayList;
+import java.util.Locale;
+
+public class MainActivity extends AppCompatActivity {
+
+    // declare editText
+    EditText editText;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        // definition of editText using method findViewById()
+        editText = findViewById(R.id.edit_text);
+        
+        // initializing mSpeechRecognizer using SpeechRecognizer class
+        final SpeechRecognizer mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
+        final Intent mSpeechRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        
+        mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        mSpeechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        
+        // various methods of RecognitionListener class
+        mSpeechRecognizer.setRecognitionListener(new RecognitionListener() {
+            @Override
+            public void onReadyForSpeech(Bundle bundle) {
+
+            }
+
+            @Override
+            public void onBeginningOfSpeech() {
+
+            }
+
+            @Override
+            public void onRmsChanged(float v) {
+
+            }
+
+            @Override
+            public void onBufferReceived(byte[] bytes) {
+
+            }
+
+            @Override
+            public void onEndOfSpeech() {
+
+            }
+
+            @Override
+            public void onError(int i) {
+
+            }
+
+            @Override
+            public void onResults(Bundle bundle) {
+                
+                // getting all the matches
+                ArrayList<String> matches = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+
+                // displaying the first match
+                if (matches != null)
+                    editText.setText(matches.get(0));
+            }
+
+            @Override
+            public void onPartialResults(Bundle bundle) {
+
+            }
+
+            @Override
+            public void onEvent(int i, Bundle bundle) {
+
+            }
+        });
+        
+        // set OnTouchListener to imageView named microphone
+        findViewById(R.id.microphone).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction()) {
+                    
+                    // case MotionEvent.ACTION_UP run when user will remove
+                    // his/her finger from microphone imageView
+                    case MotionEvent.ACTION_UP:
+                        
+                        mSpeechRecognizer.stopListening();
+                        editText.setHint(" ");
+                        break;
+
+                    // case MotionEvent.ACTION_UP run when user will put his/her
+                    // finger from microphone imageView
+                    case MotionEvent.ACTION_DOWN:
+                        
+                        mSpeechRecognizer.startListening(mSpeechRecognizerIntent);
+                        editText.setText("");
+                        editText.setHint("");
+                        break;
+                }
+                return false;
+            }
+        });
+    }
+}
+
+
+
+
+
+
+
+    /*
+    //--- trataCelTocada em Números disponíveis
+    private fun trataCelNumsDisp(xEvent : Int) {
+
+        val x = xEvent
+
+        //--- Coordenada X e valor da célula tocada
+        val intCol = x / intCellwidth
+        val intNum = intCol + 1
+        val intQtidd = arIntNumsDisp[intNum - 1]
+        strLog = "-> Celula tocada em NumDisp: coluna = $intCol, qtidd = $intQtidd"
+        Log.d(cTAG, strLog)
+
+    }
+
+    //--- inflateIVNumDisp
+    /*
+    private fun inflateIVNumDisp() {
+
+        val layout   = findViewById<LinearLayout>(R.id.loImageViewNumDisp)
+        val inflater = LayoutInflater.from(this)
+
+        ivNumDisp = (inflater.inflate(R.layout.inflate_ivnumdisp, layout, false)
+                                                                                      as ImageView)
+        layout.addView(ivNumDisp)
+
+    }
+     */
+
+    //--- desInflateIVNumDisp
+    private fun desInflateIVNumDisp() {
+
+        val layout = findViewById<LinearLayout>(R.id.loImageViewNumDisp)
+        layout.removeAllViews()
+
+    }
+
+    /*
+    fun ivNumDisp3Click (view: View?) {
+
+        Toast.makeText(
+            this, "Clicou no imageview dos NumDisps!",
+            Toast.LENGTH_SHORT
+        ).show()
+
+    }
+    */
+
+        /*
+        try {
+
+            canvasMyImage?.setBitmap(bmpMyImage!!)
+
+        } catch (exc: Exception) {
+            Log.d(cTAG, "Erro: ${exc.message}")
+        }
+         */
+
+                /*
+                if (intNum > 0) {
+                    flagJoga = false    // Não quer jogar; só quer analisar ...
+                    intLinJogar = 0
+                    intColJogar = 0
+                    //-------------------------
+                    mostraNumsIguais(intNum)
+                    //-------------------------
+                }
+                //--- Se não contiver um número, quer jogar
+                else {
+                    flagJoga = true     // Vamos ao jogo!
+                    intLinJogar = intLinha
+                    intColJogar = intCol
+                    //------------------------------------------
+                    mostraCelAJogar(intLinJogar, intColJogar)
+                    //------------------------------------------
+                }
+                */
+
+
+            // txtDadosJogo.append(sgg.txtDados)
+
+
+        //--- Image view dos números disponíveis
+        /*
+        //-------------------
+        preparaIVNumDisp()
+        //-------------------
+        */
+
+        /*
+        ivNumDisp.setOnTouchListener { _, event ->
+
+            //--- Coordenada X do numsDisps tocada
+            val xEvent = event.x.toInt()
+
+            //-----------------------
+            trataCelTocada(xEvent)
+            //-----------------------
+
+            false
+
+        }
+        */
+
+        /*
+        ivNumDisp.setOnTouchListener(OnTouchListener { v, event ->
+
+            Log.d(cTAG, "-> onTouch do ivNumDisp!")
+
+            false })
+        */
+
+        /*
+
+            /*
+                val flagJoga = false
+
+                //--- Só transfere o número para o board se estiver jogando
+                if (flagJoga) {
+
+                    //--- Coordenada X do numsDisps tocada
+                    val x = event.x.toInt()
+
+                    //--- Coordenada X e valor da célula tocada
+                    val intCol = x / intCellwidth
+                    val intNum = intCol + 1
+                    val intQtidd = arIntNumsDisp[intNum - 1]
+
+                    /*
+                    //strLog = "-> Celula tocada em NumDisp: coluna = " + intCol +
+                    //        ", qtidd = " + intQtidd
+                    //Log.d(cTAG, strLog)
+
+                    //--- Verifica se ainda tem desse número para jogar e se esse número é válido.
+                    var flagNumValido: Boolean
+                    if (intQtidd > 0) {
+
+                        //--- Verifica se num válido
+                        // Determina a que Qm o número pertence
+                        //----------------------------------------------------------
+                        val intQuadMenor = determinaQm(intLinJogar, intColJogar)
+                        //----------------------------------------------------------
+
+                        //Log.d(
+                        //    cTAG, "-> linhaJogar= " + intLinJogar + " colJogar= " +
+                        //            intColJogar + " Qm = " + intQuadMenor )
+
+                        // Verifica se esse número ainda não existe no seu Qm e nem no seu QM
+                        //------------------------------------------------------------------------------
+                        flagNumValido =
+                            verifValidade(intQuadMenor, intLinJogar, intColJogar, intNum)
+                        //------------------------------------------------------------------------------
+                        if (!flagNumValido) {
+
+                            //strLog = "-> Número NÃO válido (linha, coluna ou quadro); NÃO será incluído" +
+                            //        " no Sudoku board."
+                            //Log.d(cTAG, strLog)
+
+                            strToast = "Número NÃO Ok (linha, coluna ou quadro)"
+                            //-----------------------------------------------------------------
+                            Toast.makeText(this, strToast, Toast.LENGTH_SHORT).show()
+                            //-----------------------------------------------------------------
+
+                        }
+                        // Verifica se esse número, nessa célula, é o mesmo do gabarito
+                        else {
+
+                            //--- Número diferente do num do gabarito
+                            if (intNum != arArIntGab[intLinJogar][intColJogar]) {
+
+                                flagNumValido = false
+
+                                //strLog = "-> Número NÃO válido (gab); NÃO será incluído" +
+                                //         " no Sudoku board."
+                                //Log.d(cTAG, strLog)
+
+                                strToast = "Número NÃO Ok (gabarito)"
+                                //-----------------------------------------------------------------
+                                Toast.makeText(this, strToast, Toast.LENGTH_SHORT).show()
+                                //-----------------------------------------------------------------
+
+                            }
+                            //--- Número OK qto ao gabarito
+                            else {
+
+                                //Log.d(cTAG, "-> Número válido; será incluído no Sudoku board.")
+
+                                //strToast = "Número Ok!"
+                                //----------------------------------------------------------------
+                                //Toast.makeText(this, strToast, Toast.LENGTH_LONG).show()
+                                //----------------------------------------------------------------
+
+                                //--- Atualiza o Sudoku board
+                                //----------------------------------------------------------------------
+                                pintaCelula(intLinJogar, intColJogar, pincelBranco)
+                                //----------------------------------------------------------------------
+                                escreveCelula(
+                                    intLinJogar,
+                                    intColJogar,
+                                    intNum.toString(),
+                                    pincelAzul
+                                )
+                                //----------------------------------------------------------------------
+                                desenhaSudokuBoard(false)
+                                //-----------------------------------
+                                preencheJogo()
+                                //---------------
+
+                                //--- Salva esse bitmap
+                                //--------------------------------------
+                                copiaBmpByBuffer(bmpMyImage, bmpJogo)
+                                //--------------------------------------
+
+                                //--- Atualiza a base de dados
+                                arArIntNums[intLinJogar][intColJogar] = intNum
+                                arIntNumsDisp[intNum - 1]--
+
+                                //--- Atualiza a qtidd disponível para esse número
+                                //-------------------
+                                atualizaNumDisp()
+                                //-------------------
+
+                                //--- Destaca os números iguais a esse já jogados
+                                //--------------------------
+                                mostraNumsIguais(intNum)
+                                //--------------------------
+
+                                flagJoga = false
+
+                            }
+                        }
+
+                        if (!flagNumValido) {
+                            tvErros!!.text = "${++intContaErro}"
+                        }
+
+                    }
+
+                    //--- Verifica se fim de jogo (todas as qtidds foram zeradas
+                    var flagContJogo = false
+                    for (idxVetorNumDisp in 0..8) {
+
+                        if (arIntNumsDisp[idxVetorNumDisp] > 0) flagContJogo = true
+
+                    }
+                    //--- Se já foram utilizados todos os números disponíveis, pára o cronometro
+                    if (!flagContJogo) {
+
+                        Log.d(cTAG, "-> ${crono.text} - Fim")
+
+                        crono.stop()
+                        flagJoga = false
+
+                        btnInicia.text = strInicia
+                        btnInicia.isEnabled = false
+
+                    }
+                }
+                */
+
+                }
+
+             */
+
+            false
+
+        }
+        */
+

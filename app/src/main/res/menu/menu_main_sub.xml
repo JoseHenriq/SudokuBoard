@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu android:id   ="@+id/meuMainSubMenu"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app    ="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/controles" >
+
+        <item android:id ="@+id/action_ajustarQtiddErros"
+        android:title    ="@string/limite_erros"
+        app:showAsAction ="never" />
+
+        <item android:id="@+id/action_ajustarTempoDeJogo"
+        android:title    ="@string/limite_tempo"
+        app:showAsAction ="never" />
+
+    </group>
+
+    <group android:id="@+id/ferramentas_auxiliares" >
+
+        <item android:id ="@+id/action_mostrar_numeros_iguais"
+        android:title    ="Mostrar números iguais"
+        app:showAsAction ="never" />
+
+    </group>
+
+    <group android:id="@+id/comandos" >
+
+        <item android:id ="@+id/action_exit"
+        android:title    ="@string/desliga_app"
+        app:showAsAction ="never" />
+
+    </group>
+</menu>

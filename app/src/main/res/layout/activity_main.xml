@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:id   = "@+id/layoutMain"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app    ="http://schemas.android.com/apk/res-auto"
+    xmlns:tools  ="http://schemas.android.com/tools"
+
+    android:layout_width ="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.MainActivity">
+
+    <!-- Guias verticais -->
+    <!-- 30% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_30pct"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation  ="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+    <!-- 50% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_center_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+    <!-- 70% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id           ="@+id/guide_70pct"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation  ="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <!-- Guias horizontais -->
+    <!-- 50% -->
+    <!--androidx.constraintlayout.widget.Guideline
+
+        android:id           ="@+id/guide_center_horiz"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation  ="horizontal"
+        app:layout_constraintGuide_percent="0.5" /-->
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/maintoolbar"
+
+        android:layout_width ="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf    ="parent"
+
+        android:background="@color/design_default_color_primary"
+        app:titleTextColor="@color/white"
+
+        app:title         ="@string/app_name" />
+
+    <!-- Nível do Jogo -->
+    <!-- 1- Legenda -->
+    <TextView android:id ="@+id/legNivel"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maintoolbar"
+
+        android:layout_marginTop  ="@dimen/RB_MargemTop"
+        android:layout_marginStart="5dp"
+
+        android:textSize         ="@dimen/TamanhoTxt"
+        android:text             ="@string/legNivel"/>
+
+    <!-- 2- Radio Buttons para escolha do nível do jogo qdo gerar Jogo-->
+    <RadioGroup android:id="@+id/radioGrpNivel"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf ="@id/maintoolbar"
+        app:layout_constraintStart_toEndOf  ="@id/legNivel"
+        android:layout_marginStart="0dp"
+
+        android:gravity    ="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/nivelFacil"
+
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+            android:onClick="rbJogoFacil"
+
+            android:text="@string/nivelFacil" />
+
+        <RadioButton
+            android:id="@+id/nivelMédio"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="rbJogoMedio"
+            android:text="@string/nivelMedio" />
+
+        <RadioButton
+            android:id="@+id/nivelDifícil"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="rbJogoDificil"
+            android:text="@string/nivelDificil" />
+
+        <RadioButton
+            android:id="@+id/nivelMuitoDifícil"
+
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+
+            android:onClick="rbJogoMuitoDificil"
+            android:text="@string/nivelMuitoDificil" />
+
+    </RadioGroup>
+
+    <!-- Sub-nível do jogo -->
+    <!-- 1- Legenda -->
+    <TextView android:id ="@+id/legSubNivel"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf ="@+id/legNivel"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+
+        android:textSize         ="@dimen/TamanhoTxt"
+        android:text             ="@string/legSubnivel"/>
+
+    <!-- 2- EditText para edição do subnível: de 0 à 9 -->
+    <EditText android:id="@+id/edtViewSubNivel"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop  ="90dp"
+
+        android:cursorVisible="true"
+
+        android:inputType="numberDecimal"
+        android:maxLength="1"
+
+        android:maxLines="1"
+        android:text    ="@string/valor0"
+        android:textSize="@dimen/TamanhoTxt"
+        app:layout_constraintStart_toEndOf="@id/legSubNivel"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <!-- Radio Buttons para escolha se adapta preset ou edição -->
+    <RadioGroup android:id="@+id/radioGrpAdapta"
+
+        android:layout_width ="155dp"
+        android:layout_height="35dp"
+
+        android:orientation="horizontal"
+        android:background ="@drawable/moldura_grupo2"
+
+        app:layout_constraintBottom_toTopOf ="@id/separador_subnivel_ivJogo"
+        app:layout_constraintLeft_toRightOf ="@id/guide_center_vert"
+        android:layout_marginBottom="5dp"
+
+        android:visibility="visible" >
+
+        <RadioButton android:id="@+id/preset"
+
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked      ="true"
+
+            android:onClick="RBpresetClick"
+
+            android:text="@string/preset" />
+
+        <RadioButton android:id="@+id/edicao"
+
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="RBedicaoClick"
+            android:text="@string/edicao" />
+
+    </RadioGroup>
+
+    <!-- Separador entre subnível do jogo e imageView Jogo -->
+    <View android:id="@+id/separador_subnivel_ivJogo"
+
+        android:layout_width ="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/darker_gray"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf ="@id/legSubNivel"
+        android:layout_marginTop            ="10dp" />
+
+    <ImageView android:id ="@+id/ivSudokuBoardMain"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop  ="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf    ="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintTop_toBottomOf ="@id/separador_subnivel_ivJogo"
+
+        android:contentDescription="@string/testeCanva3"
+        android:src="@drawable/sudoku_board3" />
+    <!-- Android 6.0.1 (S5Duos):
+         1- add Gradle / proguard-rules.pro:
+         'keep class android.support.v7.widget.** { *; }'
+         2- os jpgs devem ser copiados para res/drawable /-->
+
+    <!-- Separador entre imageView do jogo e scrollView -->
+    <View android:id="@+id/separador_ivJogo_scroll"
+
+        android:layout_width ="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/darker_gray"
+
+        app:layout_constraintTop_toBottomOf="@id/ivSudokuBoardMain"
+        android:layout_marginTop="10dp" />
+
+    <!-- Layout para o progressBar -->
+    <RelativeLayout android:id = "@+id/relLayoutProgBar"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation            ="vertical"
+        android:layout_centerHorizontal="true"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf    ="parent"
+        app:layout_constraintTop_toBottomOf ="@id/separador_ivJogo_scroll" >
+
+        <TextView android:id ="@+id/msg1user"
+
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf   ="parent"
+            app:layout_constraintBottom_toBottomOf ="parent"
+
+            android:layout_marginTop  ="50dp"
+            android:gravity           ="center_horizontal"
+
+            android:textSize         ="@dimen/TamanhoTxt"
+            android:text             ="@string/aguarde"/>
+
+    </RelativeLayout>
+
+    <!-- Qtidd de números já colocados em jogo -->
+    <TextView android:id ="@+id/legContaNums"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf ="@+id/separador_ivJogo_scroll"
+
+        android:layout_marginTop  ="10dp"
+        android:layout_marginStart="10dp"
+
+        android:textSize         ="@dimen/TamanhoTxt"
+        android:text             ="@string/numeros"/>
+
+    <TextView android:id ="@+id/ContaNums"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toEndOf  ="@id/legContaNums"
+        app:layout_constraintTop_toBottomOf ="@+id/separador_ivJogo_scroll"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop  ="10dp"
+
+        android:textSize ="@dimen/TamanhoTxt"
+        android:text     ="@string/valor0"/>
+
+    <!-- Qtidd de clues no jogo -->
+    <TextView android:id ="@+id/legContaClues"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toEndOf="@id/ContaNums"
+        app:layout_constraintTop_toBottomOf ="@+id/separador_ivJogo_scroll"
+
+        android:layout_marginTop  ="10dp"
+        android:layout_marginStart="10dp"
+
+        android:textSize         ="@dimen/TamanhoTxt"
+        android:text             ="@string/clues"/>
+
+    <TextView android:id ="@+id/ContaClues"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toEndOf  ="@id/legContaClues"
+        app:layout_constraintTop_toBottomOf ="@+id/separador_ivJogo_scroll"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop  ="10dp"
+
+        android:textSize ="@dimen/TamanhoTxt"
+        android:text     ="@string/valor81"/>
+
+    <!-- Teste RV -->
+    <!-- DEBUG -->
+    <!-- Button android:id="@+id/btn_TesteRV"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="40dp"
+
+        app:layout_constraintStart_toEndOf  ="@id/ContaClues"
+        app:layout_constraintTop_toBottomOf ="@id/separador_ivJogo_scroll"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+
+        android:textColor ="@android:color/white"
+
+        android:textAlignment="center"
+        android:textAllCaps  ="false"
+        android:textSize     ="@dimen/TamanhoTxt"
+        android:text         ="Testa RV"
+
+        android:onClick      ="btnTesteRVClick" /-->
+
+    <!-- Image view dos números disponíveis -->
+    <ImageView android:id ="@+id/imageView3"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf ="@id/ContaClues"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf    ="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        android:layout_marginTop  ="10dp"
+
+        android:contentDescription="@string/numDisp"
+        android:src ="@drawable/quadro_nums_disp" />
+
+    <!-- Image view das qtidds dos números disponíveis -->
+    <!-- DEBUG -->
+    <!--ImageView android:id ="@+id/imageView4"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf ="@id/imageView3"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop  ="0dp"
+
+        android:contentDescription="@string/numDisp"
+        android:src ="@drawable/quadro_nums_disp" /-->
+
+    <!-- scrolling e seu Textview -->
+    <ScrollView
+        android:id="@+id/srcTextScrollView"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="20dp"
+        android:fillViewport="true"
+
+        android:scrollbars="vertical"
+
+        app:layout_constraintBottom_toTopOf="@id/btn_GerarJogo"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintVertical_bias="1.0"
+
+        tools:layout_editor_absoluteX="-1dp">
+
+        <TextView android:id="@+id/txtJogos"
+
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart ="10dp"
+            android:layout_marginEnd   ="10dp"
+            android:layout_marginTop   ="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:textSize="20sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf    ="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+    </ScrollView>
+
+    <!-- 4- Botões -->
+
+    <!-- Separador entre resultados e botões -->
+    <View android:id="@+id/separador_resultados_botoes"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/btn_JogarJogo" />
+
+    <Button android:id="@+id/btn_GerarJogo"
+
+        android:layout_width ="@dimen/WidthBotao"
+        android:layout_height="@dimen/HeightBotao"
+
+        android:onClick="btnGeraJogoClick"
+
+        app:layout_constraintEnd_toStartOf="@id/guide_30pct"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:textAlignment="center"
+        android:textAllCaps  ="false"
+        android:textColor    ="@android:color/white"
+        android:textSize     ="@dimen/TamanhoTxt"
+        android:text="@string/gera_novo_jogo"/>
+
+    <Button android:id="@+id/btn_AdaptarJogo"
+
+        android:layout_width ="0dp"
+        android:layout_height="@dimen/HeightBotao"
+
+        android:onClick="btnAdaptaJogoClick"
+
+        app:layout_constraintStart_toEndOf="@id/guide_30pct"
+        app:layout_constraintEnd_toStartOf="@id/guide_70pct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="5dp"
+
+        android:textAlignment="center"
+        android:textColor    ="@android:color/white"
+        android:textAllCaps  ="false"
+        android:textSize     ="15sp"
+        android:text ="@string/adaptar_jogo"/>
+
+    <Button android:id="@+id/btn_JogarJogo"
+
+        android:layout_width ="@dimen/WidthBotao"
+        android:layout_height="@dimen/HeightBotao"
+
+        android:onClick="btnJogaJogoClick"
+
+        app:layout_constraintStart_toEndOf="@id/guide_70pct"
+        app:layout_constraintEnd_toEndOf  ="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart        ="5dp"
+        android:layout_marginEnd          ="5dp"
+
+        android:textColor    ="@android:color/white"
+        android:textAlignment="center"
+        android:textAllCaps  ="false"
+        android:textSize     ="@dimen/TamanhoTxt"
+        android:text         ="@string/jogar_jogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

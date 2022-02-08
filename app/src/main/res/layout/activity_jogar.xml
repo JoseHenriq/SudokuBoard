@@ -1,0 +1,318 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools  ="http://schemas.android.com/tools"
+    xmlns:app    ="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width ="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.JogarActivity">
+
+    <!-- include layout="@layout/toolbar"/-->
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar2"
+
+        android:layout_width ="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf    ="parent"
+
+        android:background="@color/design_default_color_primary"
+        app:titleTextColor="@color/white"
+
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title         ="@string/app_name" />
+
+    <!-- 1- Infos do jogo -->
+    <!-- Nível do jogo -->
+    <TextView android:id="@+id/tv_LegNivel"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize ="24sp"
+        android:textStyle="bold"
+        android:text     ="@string/nivel"
+
+        app:layout_constraintTop_toBottomOf ="@id/toolbar2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart          ="10dp"
+
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="65dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="62dp" />
+
+    <TextView android:id="@+id/tv_Nivel"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf  = "@id/toolbar2"
+        app:layout_constraintLeft_toRightOf = "@id/tv_LegNivel"
+        android:layout_marginStart = "10dp"
+
+        android:textSize="24sp"
+        android:text    ="@string/muito_dif_cil"  />
+
+    <!--- Subnível do jogo -->
+    <TextView android:id="@+id/tv_LegSubNivel"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf ="@id/tv_LegNivel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart          ="10dp"
+
+        android:textSize ="24sp"
+        android:textStyle="bold"
+        android:text     ="@string/legSubnivel" />
+
+    <EditText
+        android:id="@+id/tv_Subnivel"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="22dp"
+        android:enabled="false"
+
+        android:inputType="textMultiLine"
+        android:lines="1"
+
+        android:maxLength="1"
+        android:maxLines="1"
+        android:text="@string/value_9"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/tv_LegSubNivel"
+        app:layout_constraintTop_toBottomOf="@id/toolbar2"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <!--- Contador de erros -->
+    <TextView android:id="@+id/tv_LegErros"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf ="@id/tv_Nivel"
+        app:layout_constraintRight_toLeftOf ="@id/tv_Erros"
+        android:layout_marginEnd            ="10dp"
+
+        android:textSize ="24sp"
+        android:textStyle="bold"
+        android:text     ="@string/legErros" />
+
+    <TextView android:id="@+id/tv_Erros"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf ="@id/tv_Nivel"
+        app:layout_constraintRight_toLeftOf ="@id/crono_layout"
+        android:layout_marginEnd            ="10dp"
+
+        android:textSize="24sp"
+        android:text    ="@string/erros_inic" />
+
+    <!--- Crono (será add no JogarActivity -->
+    <LinearLayout android:id="@+id/crono_layout"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf   ="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Nivel"
+
+        android:textAlignment    ="@id/tv_Erros"
+        android:gravity          = "center_vertical"
+        android:layout_marginEnd = "10dp"
+
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <!-- Separador entre as informações do jogo e a imageView Jogo -->
+    <View android:id="@+id/separador_infos_ivJogo"
+
+        android:layout_width ="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/darker_gray"
+
+        app:layout_constraintTop_toBottomOf ="@id/tv_LegErros"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Board -->
+    <ImageView android:id="@+id/ivSudokuBoard"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf ="@id/separador_infos_ivJogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf    ="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop  ="10dp"
+
+        android:contentDescription="@string/testeCanva3"
+        android:src="@drawable/sudoku_board3" />
+
+    <!-- Android 6.0.1 (S5Duos):
+             1- add Gradle / proguard-rules.pro:
+             'keep class android.support.v7.widget.** { *; }'
+             2- os jpgs devem ser copiados para res/drawable /-->
+
+    <!--- Quantidade de clues -->
+    <TextView android:id="@+id/tv_LegClues"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf ="@id/ivSudokuBoard"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop   ="3dp"
+        android:layout_marginStart ="10dp"
+
+        android:textSize="15sp"
+        android:text    ="@string/legClues" />
+
+    <TextView android:id="@+id/tv_Clues"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf = "@id/ivSudokuBoard"
+        app:layout_constraintLeft_toRightOf = "@id/tv_LegClues"
+        android:layout_marginTop   ="3dp"
+        android:layout_marginStart ="10dp"
+
+        android:textSize="15sp"
+        android:text    ="@string/clues_inic" />
+
+    <!--- Quantidade de clues inicial -->
+    <TextView android:id="@+id/tv_LegCluesInic"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf = "@id/ivSudokuBoard"
+        app:layout_constraintLeft_toRightOf = "@id/tv_Clues"
+        android:layout_marginTop   ="3dp"
+        android:layout_marginStart ="10dp"
+
+        android:textSize="15sp"
+        android:text    ="@string/nivel_inicial" />
+
+    <TextView android:id="@+id/tv_CluesInic"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf = "@id/ivSudokuBoard"
+        app:layout_constraintLeft_toRightOf = "@id/tv_LegCluesInic"
+        android:layout_marginTop  ="3dp"
+        android:layout_marginStart ="10dp"
+
+        android:textSize="15sp"
+        android:text    ="@string/clues_inic" />
+
+    <!-- Números disponíveis -->
+    <ImageView android:id="@+id/ivNumDisp"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf ="@id/tv_LegClues"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf    ="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop   ="20dp"
+
+        android:contentDescription = "@string/numDisp"
+        android:src ="@drawable/quadro_nums_disp" />
+    <!-- Android 6.0.1 (S5Duos):
+         1- add Gradle / proguard-rules.pro:
+         'keep class android.support.v7.widget.** { *; }'
+         2- os jpgs devem ser copiados para res/drawable /-->
+
+    <!-- Separador entre as informações do board e os buttons -->
+    <View android:id="@+id/separador_infosBoard_sudokuBoard"
+
+        android:layout_width ="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/darker_gray"
+
+        app:layout_constraintBottom_toTopOf ="@id/btnSalvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf    ="parent"
+        android:layout_marginBottom="3dp" />
+
+    <!-- Buttons -->
+
+    <Button android:id="@+id/btnSalvar"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="?android:attr/buttonStyleSmall"
+
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintStart_toStartOf   = "parent"
+        android:layout_marginTop   = "10dp"
+        android:layout_marginStart = "5dp"
+
+        android:textAllCaps="false"
+        android:text       ="@string/salvar" />
+
+    <Button android:id="@+id/btnInicia"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="?android:attr/buttonStyleSmall"
+
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintRight_toLeftOf    = "@id/btnCand"
+        android:layout_marginEnd               = "0dp"
+
+        android:textAllCaps="false"
+        android:text="@string/inicia"  />
+
+    <Button android:id="@+id/btnCand"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="?android:attr/buttonStyleSmall"
+
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toStartOf     = "@id/btnReset"
+        android:layout_marginEnd               = "0dp"
+
+        android:textAllCaps="false"
+
+        android:text="Candidatos"/>
+
+    <Button android:id="@+id/btnReset"
+
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="?android:attr/buttonStyleSmall"
+
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf       = "parent"
+        android:layout_marginEnd               = "5dp"
+
+        android:textAllCaps="false"
+
+        android:text="@string/reset"  />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

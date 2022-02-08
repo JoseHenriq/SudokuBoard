@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools  ="http://schemas.android.com/tools"
+    package      ="br.com.jhconsultores.sudoku">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"  />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <!--android:maxSdkVersion="28" -->
+
+    <!-- Android A11 -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+         tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon       ="@mipmap/ic_launcher"
+        android:label      ="@string/app_name"
+        android:roundIcon  ="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme      ="@style/Theme.Sudoku"
+        tools:ignore       ="ExtraText"
+        android:requestLegacyExternalStorage="true">      <!-- Android A10 somente! -->
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action   android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            android:screenOrientation="portrait"
+        </activity>
+
+        <activity android:name=".ui.JogarActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity android:name=".ui.AdaptarActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!-- FileProvider a ContentProvider for making the file securely available to the other end-->
+        <provider
+            android:name               ="androidx.core.content.FileProvider"
+            android:authorities        ="br.com.jhconsultores.sudoku.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported           ="false">
+            <meta-data
+                android:name    ="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/sudoku_fileprovider" />
+        </provider>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+https://stackoverflow.com/questions/42516126/fileprovider-illegalargumentexception-failed-to-find-configured-root/47308757
+UPDATE 2020 MAR 13
+Provider path for a specific path as followings:                        -->
+<!-- <external-path/>       : Environment.getExternalStorageDirectory() -->
+<!--                        : Environment.getExternalStoragePublicDirectory(DIRECTORY_DOWNLOADS) -->       <!-- Apache -->
+<!-- <external-files-path/> : Context.getExternalFilesDir(String)       -->
+<!-- <cache-path/>          : Context.getCacheDir()                     -->
+<!-- <external-cache-path/> : Context.getExternalCacheDir()             -->
+<!-- <files-path/>          : Context.getFilesDir()                     -->
+<!-- <external-media-path/> : Context.getExternalMediaDirs()            -->
+<!-- Ref: https://developer.android.com/reference/androidx/core/content/FileProvider-->
+
+<paths>
+    <external-path
+        name="external"
+        path="." />
+    <external-files-path
+        name="external_files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="." />
+    <external-cache-path
+        name="external_cache"
+        path="." />
+    <files-path
+        name="files"
+        path="." />
+    <external-media-path
+        name="external-media"
+        path="." />
+</paths>

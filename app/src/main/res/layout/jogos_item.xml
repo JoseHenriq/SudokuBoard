@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app    ="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width ="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="8dp"
+    android:elevation    ="8dp"
+    app:cardCornerRadius ="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width ="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:id="@+id/card_itemjogo_layout"
+
+            android:layout_width ="match_parent"
+            android:layout_height="60dp"
+
+            android:orientation ="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf ="parent">
+
+            <LinearLayout
+
+                android:id="@+id/card_layout"
+
+                android:layout_width ="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation  ="horizontal">
+
+                <!-- Card com as informações do arquivo -->
+                <TextView android:id="@+id/card_Arq_txt"
+
+                    android:layout_width ="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:text="Arq: jogo_6.xml\nData:09/01/2022 17:51:03 Status: ativo" />
+
+                <!--android:hint    ="@string/arquivo"
+                android:textSize="16sp"-->
+
+                <!-- Check box para seleção de arquivo a deletar -->
+                <CheckBox
+                    android:id="@+id/chkBoxSelArqDel"
+
+                    android:layout_width ="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="-30dp"
+
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="0dp"
+                    android:buttonTint      ="@color/black"
+                    android:text            =""
+                    android:visibility      ="visible">
+
+                </CheckBox>
+
+            </LinearLayout>
+
+            <!-- Card com as informações do jogo -->
+            <TextView
+                android:id="@+id/card_Jogo_txt"
+
+                android:layout_width ="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="-1dp"
+
+
+                android:hint    ="@string/jogo" />
+            <!-- android:textSize="16sp" -->
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

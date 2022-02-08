@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><setup><header><id></id></header><body><limite_erros></limite_erros><limite_tempo></limite_tempo><mostra_nums_iguais></mostra_nums_iguais></body></setup>
